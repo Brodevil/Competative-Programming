@@ -23,18 +23,15 @@ Next polindrome for 2133 is 2222
 """
 try:
     times = int(input("Enter the number of test cases : \t"))
+
+    
+    for i in range(times):
+        before_num = int(input("Enter the number :\t"))
+        while True:
+            if int(str(before_num)[::-1]) == before_num:
+                print(before_num)
+                break   
+            before_num += 1
 except ValueError:
     print("Enter a league Input i.e. numbers")
-    
-for i in range(times):
-    try:
-        before_num = int(input("Enter the number :\t"))
-    except ValueError:
-        print("Enter a league Input i.e. numbers")
-
-    while True:
-        if int(str(before_num)[::-1]) == before_num:
-            print(before_num)
-            break   
-        
-        before_num += 1
+    exit()
