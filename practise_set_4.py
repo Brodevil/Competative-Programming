@@ -21,17 +21,27 @@ Next polindrome for 10 is 11
 Next polindrome for 2133 is 2222
 
 """
+# Author : Abhinav
+# Date : 18 April
+# Purpose ; For the just practising in python
+
+
+# condition hadnling for the inputs
 try:
     times = int(input("Enter the number of test cases : \t"))
 
-    
+    # this will take the input as per the number of times 
     for i in range(times):
-        before_num = int(input("Enter the number :\t"))
+        before_num = int(input("Enter the number :\t"))     
+        store = before_num
+
+        # by infnite loop checking in the sequence the next polidrome number
         while True:
-            if int(str(before_num)[::-1]) == before_num:
-                print(before_num)
-                break   
             before_num += 1
-except ValueError:
+            if str(before_num)[::-1] == str(before_num):
+                print(f"Next polindrome for {store} is {before_num}")
+                break   
+            
+except ValueError:  # exception handling
     print("Enter a league Input i.e. numbers")
     exit()
