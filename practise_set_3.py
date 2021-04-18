@@ -29,9 +29,11 @@ Example :
 All the three method give same results
 
 """
+
 # input list while I did it very easily
 lst = list(input().split())
 
+print(f"Your list is {lst}")
 
 # by usering inbuild method of list
 result_1 = lst.copy()
@@ -56,7 +58,15 @@ for index, element in enumerate(resutl_3):
     from_last = resutl_3[len(lst)-1-index]
     resutl_3[len(lst)-1-index] = element
     resutl_3[index] = from_last
-    print(resutl_3)
+
+
+
+# better solution of 3rd method
+solu_3 = lst.copy()
+for i in range(len(solu_3)//2):
+    solu_3[i], solu_3[len(solu_3)-i-1] = solu_3[len(solu_3)-i-1], solu_3[i]
+print(f"This is another bette solution for the 3rd condition or method {solu_3}")
+
 
 
 # output stuffs
@@ -67,3 +77,4 @@ print(resutl_3)
 # checking whether the result we get same from all three methods
 if resutl_3 == result_1 == result_2:
     print("All the three method give same results")
+
