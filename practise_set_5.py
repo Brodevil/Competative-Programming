@@ -37,9 +37,11 @@ def palindromify(lis):
             
 if __name__ == "__main__":
     # getting the int of input and putting as a list
-    lst = list(map(int, input("Enter your list of numbers by space :\n").split()))
-    print("This is dones")
-
+    try:
+        lst = list(map(int, input("Enter your list of numbers by space :\n").split()))
+    except ValueError:
+        print("Enter the league input it should be integer")
+        exit()
     '''
     # one more another method to take list as a input :
     times = int(input("Enter lenght of your list : \t"))
