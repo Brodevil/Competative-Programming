@@ -13,7 +13,7 @@ Output:
 
 """
 
-import os
+import sys
 
 # Author : Abhinav
 # Date : 19 April 2021
@@ -42,7 +42,9 @@ if __name__ == "__main__":
         lst = list(map(int, input("Enter your list of numbers by space :\n").split()))
     except ValueError:
         print("Enter the league input it should be integer")
-        os._exit
+        # I can simply user exit() but for the testing and practise I user sys.exit()
+        sys.exit() 
+        
     '''
     # one more another method to take list as a input :
     times = int(input("Enter lenght of your list : \t"))
