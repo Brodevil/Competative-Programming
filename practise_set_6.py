@@ -39,46 +39,58 @@ Please guess the number between 4 and 13
 .
 Correct You tooked 7 trials to guess the number
 
->>> Player 1 wins as He tooked 3 trials and 
+>> Player 1 wins as He tooked 3 trials and
 
 """
 from random import randint as rt
 
+
 # Author = Abhinav
 # Date = 20 April 2021
-# Pourpose = Just For the python practise in very much josh
+# Purpose = Just For the python practise in very much josh
 
 
 def num_checker(actual_num, check_num):
     if actual_num > check_num:
-        return  "Wrong! Guess a greater number"
-    
+        return "Wrong! Guess a greater number"
+
     elif actual_num < check_num:
         return "Wrong! Guess a smaller number"
-    
+
     elif actual_num == check_num:
         return True
 
+
+def result(player_dict):
+        return f"First rank = {player_dict.get(sorted(player_dict.items()), sorted(player_dict.items()))}"
+
+
 if __name__ == "__main__":
-    try:
-        players = {i : 0 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
-        a = int(input("Enter the value of a i.e. first number of Range : \t"))
-        b = int(input("Enter the value of b i.e second number of Range : \t "))
-    except ValueError:
-        print("Enter a league input that will a number :\n")
+    while True:
+        try:
+            players = {i: 0 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
+            a = int(input("Enter the value of a i.e. first number of Range : \t"))
+            b = int(input("Enter the value of b i.e second number of Range : \t "))
+        except ValueError:
+            print("Enter a league input that will a number :\n")
+            continue
 
-    # rt is randome.randit for choosing a randome number as a python choose
-    python_choose = rt(a, b)
+        for i in players.keys():
+            # rt is random.randint for choosing a random number as a python choose
+            python_choose = rt(a, b)
+            print(f"{i}'s Turn :\nPlease Guess the number between {a} & {b}")
+            while True:
+                user_guess = int(input())
+                checked = num_checker(python_choose, user_guess)
 
-    for i in players.keys():
-        print(f"{i}'s Turn :\nPlease Guess the number between {a} & {b}")
-        while True:
-            user_guess = int(input())
-            checked = num_checker(python_choose, user_guess)
-            if checked == True:
-                print(f"Correct {players[i]}")
-                break
-			else:
-				print(checked)
-				players[i] += 1
+                if checked == True:
+                    print(f"Correct You took {players[i]} time of guess\n")
+                    break
+                else:
+                    print(checked)
+                    players[i] += 1
 
+        print(f"Following are the scores :\n")
+        for name, score in players.items():
+            print(f"{name} = {score} guess took")
+        print(result(players))

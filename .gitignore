@@ -1,8 +1,8 @@
 # Pycharm file
-/.idea
+.idea/
 
 # vscode files
-/.vscode
+.vscode/
 
 # rought file for to run few code
 code_n_error.py 
