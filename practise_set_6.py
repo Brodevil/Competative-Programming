@@ -60,19 +60,25 @@ def num_checker(actual_num, check_num):
         return True
 
 if __name__ == "__main__":
-    players = {i : 0 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
-    a = int(input("Enter the value of a i.e. first number of Range : \t"))
-    b = int(input("Enter the value of b i.e second number of Range : \t "))
+    try:
+        players = {i : 0 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
+        a = int(input("Enter the value of a i.e. first number of Range : \t"))
+        b = int(input("Enter the value of b i.e second number of Range : \t "))
+    except ValueError:
+        print("Enter a league input that will a number :\n")
+
     # rt is randome.randit for choosing a randome number as a python choose
     python_choose = rt(a, b)
 
-    for i in range(players.keys()):
+    for i in players.keys():
         print(f"{i}'s Turn :\nPlease Guess the number between {a} & {b}")
         while True:
             user_guess = int(input())
             checked = num_checker(python_choose, user_guess)
             if checked == True:
                 print(f"Correct {players[i]}")
+                break
 			else:
 				print(checked)
 				players[i] += 1
+
