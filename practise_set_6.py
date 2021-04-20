@@ -62,13 +62,20 @@ def num_checker(actual_num, check_num):
 
 
 def result(player_dict):
-        return f"First rank = {player_dict.get(sorted(player_dict.items()), sorted(player_dict.items()))}"
+    player_dic = {player_dict[key]:key for key in player_dict}
+    print(player_dic)
+    print(sorted(player_dic.keys()))
+    print(list(player_dic.keys()))
+    print(sorted(list(player_dict.keys())))
+    first = [player_dic.get(i, i) for i in sorted(list(player_dict.keys()))]
+    print(first)
+    # return f"First rank = {player_dic.get(i, i) for i in list(sorted(player_dic.keys()))}"
 
 
 if __name__ == "__main__":
     while True:
         try:
-            players = {i: 0 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
+            players = {i: 1 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
             a = int(input("Enter the value of a i.e. first number of Range : \t"))
             b = int(input("Enter the value of b i.e second number of Range : \t "))
         except ValueError:
