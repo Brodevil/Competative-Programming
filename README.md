@@ -2,6 +2,7 @@
 I suppose to solve few questions and do python practice 
 
 - In this repo I just dump my sloved python problem as a practise
-- nothing special but every file contain the question as well as solution
+- Nothing special but every file contain the question as well as solution
+- In repo all the file containing `code n error.py` file too had solved few problem which will a good practise for a programmer to read 
 
 ## Thank you
