@@ -230,9 +230,9 @@ if __name__ == "__main__":
     else:
         startup_time = time.time()
         for index, value in enumerate(sentences):
+            
             score.update({index: matchingword(value, search_str)})
-        
-        # 
+        # frozenset
         print(score)
-        list(score.values()).sort()
-        print(score)
+        sorted_result_value = sorted(list(score.values()))
+        for index, value in enumerate(s)
