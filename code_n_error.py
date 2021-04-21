@@ -207,38 +207,44 @@ sentences = [
     """
 ]
 
-# sentences = ["This is python ", "I m replacing the sentances here bro", "Actually my python list was very big but i was just taking many time and also it was just a orgazixed python list", "This is one of the anotehr list here "]
-import time
 
-
-def matching_words(sentance1, sentance2):
-    """This functions is just checking the number of matched word between bot sentance"""
-    words1 = sentance1.strip().split()
-    words2 = sentance2.strip().split()
-    score = 0
-    for word1 in words1:
-        for word2 in words2:
-            # print(f"Matching {word1} with {word2}")
-            if word1.lower() == word2.lower():
-                score += 1
-    return score
+def search_Engine(str, lis):
+    result = list()
+    lis.sort(key=len)
+    for i in lis:
+        if str.lower() in i.lower():
+            result.append(i)
+    return result
 
 
 if __name__ == "__main__":
-    # frozenset
-    query = input("Please enter a query string : \t")
+    search_str = input("Please Enter your query string : \n")
 
-    if query == "":
+    if search_str == "":
         print("Plz Enter Something like string to find it\n")
         exit()
-    
-    startup_time = time.time()
-    scores = [matching_words(query, sentence) for sentence in sentences]
+    else:
+        startup_time = time.time()
+        query = search_Engine(search_str, sentences)
+        print(f"About {len(query)} results in just ({time.time() - startup_time}) sec.\n")
+        for index, value in enumerate(query):
+            print(f"{index+1}. \t{value}\n\n\n")
 
-    sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True) if sentScore[0] != 0]
-    print(f"\nAbout {len(sortedSentScore)} Results found in ({time.time() - startup_time}) Sec.\n\n\n")
-    for score, item in sortedSentScore:
-        print(f"\"{item}\": With a score of {score}\n\n")
+    # this part is optional as it is added just by Abhinav
+    url = input("This is optional You can Enter a url and we can file checked that is Your string is present or not Or you can simply press Enter to skip this :\n")
 
-    
-    
+    if url == "":
+        print("All right Thank you!")
+        exit()
+    else:
+        search_str = input("Enter the string you want to check whether it is present in the webpage or not : \n")
+        try:
+            response = requests.get(url)
+        except requests.exceptions.ConnectionError:
+            print("Sorry! You are offline, We can't connect with the internet")
+        else:
+            if search_str.lower() in str(response.content).lower():
+                print(f"Yes your string {search_str} is present in this webpage : {url}")
+            else:
+                print(f"Sorry! We didn't get {search_str} in {url} webpage")
+
