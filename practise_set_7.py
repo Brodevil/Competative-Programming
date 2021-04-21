@@ -1,4 +1,4 @@
-# Python Practise Set 7 (Medium, 10 points) -  Search Engine
+# Python Practise Set 7 (Medium, 20 points) -  Search Engine
 """
 Search Engine:
 
