@@ -27,7 +27,7 @@ About 3 result (00.89 sec.):
 """
 
 sentences = [
-        """Python Insider
+    """Python Insider
     Python core development news and information.
 
     Tuesday, April 6, 2021
@@ -81,8 +81,7 @@ sentences = [
     Your friendly release team,
     Pablo Galindo Salgado @pablogsal
     Ned Deily @nad
-    Steve Dower @steve.dower""", 
-
+    Steve Dower @steve.dower""",
 
     """
     Python Insider
@@ -128,7 +127,7 @@ sentences = [
     Steve Dower @steve.dower
     
 
-    Posted by Łukasz Langa at 3:19 PM """, 
+    Posted by Łukasz Langa at 3:19 PM """,
 
     """
     Optimize Windows for better performance
@@ -232,10 +231,12 @@ sentences = [
 
 ]
 
+
 def search_Engine(search_str, list):
-    pass
+    for i in list:
+        if search_str.lower() in list.lower():
+            print()
+
 
 if __name__ == "__main__":
     search_str = input("Please Enter your query string : \n")
-
-    
