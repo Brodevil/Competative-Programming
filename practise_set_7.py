@@ -233,7 +233,7 @@ sentences = [
 
 
 import time
-
+import requests
 
 # Author = Abhinav
 # Date = 21 April 2021
@@ -241,20 +241,43 @@ import time
 
 
 def search_Engine(str, lis):
-
     result = list()
+    lis.sort(key=len)
     for i in lis:
         if str.lower() in i.lower():
             result.append(i)
-    print(len(result))
     return result
 
 
 if __name__ == "__main__":
     search_str = input("Please Enter your query string : \n")
-    startup_time = time.time()
-    query = search_Engine(search_str, sentences)
-    print(f"About {len(query)} results in just ({time.time() - startup_time}) sec.\n")
-    for index, value in enumerate(query):
-        print(f"{index+1}. \t{value}\n\n\n")
+
+    if search_str == "":
+        print("Plz Enter Something like string to find it\n")
+        exit()
+    else:
+        startup_time = time.time()
+        query = search_Engine(search_str, sentences)
+        print(f"About {len(query)} results in just ({time.time() - startup_time}) sec.\n")
+        for index, value in enumerate(query):
+            print(f"{index+1}. \t{value}\n\n\n")
+
+    # this part is optional as it is added just by Abhinav
+    url = input("This is optional You can Enter a url and we can file checked that is Your string is present or not Or you can simply press Enter to skip this :\n")
+
+    if url == "":
+        print("All right Thank you!")
+        exit()
+    else:
+        search_str = input("Enter the string you want to check whether it is present in the webpage or not : \n")
+        try:
+            response = requests.get(url)
+        except requests.exceptions.ConnectionError:
+            print("Sorry! You are offline, We can't connect with the internet")
+        else:
+            if search_str.lower() in str(response.content).lower():
+                print(f"Yes your string {search_str} is present in this webpage : {url}")
+            else:
+                print(f"Sorry! We didn't get {search_str} in {url} webpage")
+
 
