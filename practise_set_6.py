@@ -63,7 +63,7 @@ def num_checker(actual_num, check_num):
 
 def result(player_dict):
     player_dic = {player_dict[key]:key for key in player_dict}
-    return f"{player_dic[sorted(player_dict.values())[0]]} Won As He tooked only {sorted(player_dict.values())[0]} Guess to guess the number"
+    return f"\n{player_dic[sorted(player_dict.values())[0]]} Won As He/She tooked only {sorted(player_dict.values())[0]} Guess to guess the number\n\n"
 
 
 if __name__ == "__main__":
