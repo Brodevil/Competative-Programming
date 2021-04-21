@@ -210,29 +210,33 @@ sentences = [
 import time
 
 
-def matchingword(sentence1, sentence2):
-    sentence1 = sentence1.split()
+def matching_words(sentance1, sentance2):
+    """This functions is just checking the number of matched word between bot sentance"""
+    words1 = sentance1.split()
+    words2 = sentance2.split()
     score = 0
-    for i in sentence1:
-        if i.lower() == sentence2.lower():
-            score += 1
+    for word1 in words1:
+        for word2 in words2:
+            # print(f"Matching {word1} with {word2}")
+            if word1.lower() == word2.lower():
+                score += 1
     return score
 
 
 if __name__ == "__main__":
-    search_str = input("Please Enter your query string : \n")
+    # frozenset
+    query = input("Please enter a query string : \t")
 
-    score = dict()
-
-    if search_str == "":
+    if query == "":
         print("Plz Enter Something like string to find it\n")
         exit()
-    else:
-        startup_time = time.time()
-        for index, value in enumerate(sentences):
-            
-            score.update({index: matchingword(value, search_str)})
-        # frozenset
-        print(score)
-        sorted_result_value = sorted(list(score.values()))
-        for index, value in enumerate(s)
+    
+    startup_time = time.time()
+    scores = [matching_words(query, sentence) for sentence in sentences]
+
+    sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True)]
+    print(f"\nAbout {len(sortedSentScore)} Results found in ({time.time() - startup_time}) Sec.\n\n\n")
+    for score, item in sortedSentScore:
+        print(f"\"{item}\": With a score of {score}\n\n\n")
+    
+    
