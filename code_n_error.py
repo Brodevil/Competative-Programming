@@ -213,8 +213,8 @@ import time
 
 def matching_words(sentance1, sentance2):
     """This functions is just checking the number of matched word between bot sentance"""
-    words1 = sentance1.split()
-    words2 = sentance2.split()
+    words1 = sentance1.strip().split()
+    words2 = sentance2.strip().split()
     score = 0
     for word1 in words1:
         for word2 in words2:
