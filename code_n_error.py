@@ -214,18 +214,25 @@ def matchingword(sentence1, sentence2):
     sentence1 = sentence1.split()
     score = 0
     for i in sentence1:
-        if i.lower() == sentence2:
+        if i.lower() == sentence2.lower():
             score += 1
     return score
 
 
 if __name__ == "__main__":
     search_str = input("Please Enter your query string : \n")
+
+    score = dict()
+
     if search_str == "":
         print("Plz Enter Something like string to find it\n")
         exit()
     else:
         startup_time = time.time()
-        for i in sentences:
-            no_of_matches = matchingword(i, search_str)
-            
+        for index, value in enumerate(sentences):
+            score.update({index: matchingword(value, search_str)})
+        
+        # 
+        print(score)
+        list(score.values()).sort()
+        print(score)
