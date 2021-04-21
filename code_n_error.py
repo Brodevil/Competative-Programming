@@ -207,6 +207,7 @@ sentences = [
     """
 ]
 
+# sentences = ["This is python ", "I m replacing the sentances here bro", "Actually my python list was very big but i was just taking many time and also it was just a orgazixed python list", "This is one of the anotehr list here "]
 import time
 
 
@@ -234,9 +235,10 @@ if __name__ == "__main__":
     startup_time = time.time()
     scores = [matching_words(query, sentence) for sentence in sentences]
 
-    sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True)]
+    sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True) if sentScore[0] != 0]
     print(f"\nAbout {len(sortedSentScore)} Results found in ({time.time() - startup_time}) Sec.\n\n\n")
     for score, item in sortedSentScore:
-        print(f"\"{item}\": With a score of {score}\n\n\n")
+        print(f"\"{item}\": With a score of {score}\n\n")
+
     
     
