@@ -66,11 +66,12 @@ def result(player_dict):
     print(player_dic)
     print(sorted(player_dic.keys()))
     print(list(player_dic.keys()))
-    print(sorted(list(player_dict.keys())))
-    first = [player_dic.get(i, i) for i in sorted(list(player_dict.keys()))]
-    print(first)
+    # print(sorted(list(player_dict.keys())))
+    # first = [player_dic.get(i, i) for i in sorted(list(player_dict.keys()))]
+    # print(first)
     # return f"First rank = {player_dic.get(i, i) for i in list(sorted(player_dic.keys()))}"
-
+    a = list(player_dict.value())
+    print(a)
 
 if __name__ == "__main__":
     while True:
