@@ -1,7 +1,8 @@
 
 # practise set 7 solution 
 
-
+import time
+import requests
 
 sentences = [
     """Python Insider
