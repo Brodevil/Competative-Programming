@@ -24,28 +24,61 @@ Rohan Das's Function return this Output:
 [6, 12, 18, 26......, 60]
 
 
-You have to write a function isCorrect(table, number) and return  teh index where rohan's function is wrong 
+You have to write a function isCorrect(table, number) and return the index where rohan's function is wrong 
 and print it to screen! if the table is correct, Your funtion returns None.
 
 
 """
+
+# Author = Abhinav
+# Date = 22 April 2021
+# Pourpose = Just for the python practise here to become expert and get sucess by accheving my AIM
+
+
 import random
 
 def rohanMultiplications(number):
+    """Rohan's cheat function is this """
     wrong_place = random.randint(2, 9)
     table = list()
-    for i in range(1, 11):
-        if i== wrong_place:
-            table.append(i*number+random.randint(1, 8))
-        else:
-            table.append(i*number)
-    return table
+    chooise = random.randint(0, 1)  # this is randomly getting that we rohan will change the table or not
+    if chooise == 0:
+        for i in range(1, 11):
+            if i== wrong_place:
+                table.append(i*number+random.randint(1, 8))
+            else:
+                table.append(i*number)
+        return 
+    else:
+        return [i*number for i in range(1, 11)]
+
 
 def abhinavChecker(table, number):
     correctTable = [i*number for i in range(1, 11)]
-    return correctTable == table
+    wrongIndex = list()
+    for index, table in enumerate(zip(correctTable, table)):
+        if table[0] == table[1]:
+            pass
+        else:
+            wrongIndex.append(index+1)
+    if len(wrongIndex) == 0:
+        return None
+    else:
+        return wrongIndex
+
 
 
 if __name__ == "__main__":
-    rohans_table = rohanMultiplications(5)
-    print(abhinavChecker(rohans_table, 5))
+    tableNum = int(input("Enter the number of which table you want from the Rohan's Functions :\t"))
+    rohans_table = rohanMultiplications(tableNum)
+    print("\nNow This is the Rohan's Functions Answer \n")
+    for index, value in enumerate(rohans_table):
+        print(f"{tableNum} X {index+1} = {value}")
+
+    print("\nWait!, Now checking the table from the Abhinav's checker function \n")
+    checkerTable = abhinavChecker(rohans_table, tableNum)
+    if checkerTable == None:
+        print(f"Everyting was right\n")
+    else:
+        for i in checkerTable:
+            print(f"{tableNum} X {i} = {tableNum*i} \t Rohan For Cheating you guys! Abhinav ne baccha liya tumhe shuker manao bhai\n")
