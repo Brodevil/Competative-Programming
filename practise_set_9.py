@@ -33,28 +33,22 @@ Sibam Bhagat
 # Author = Abhinav
 # Date = 22 April 2021
 # Pourpose = Just for the python practise here to become expert and get sucess by accheving my AIM
+
+
 from random import choice
 
-
-
-def jumpble(first_names, last_names):
-    jumpbledNames = list()
-    for i in first_names:
-        print(f"{i} {choice(last_names)[0]}")
+def jumpble(firstNames, lastNames):
+    for index, firstName in enumerate(firstNames):
+        for lastName in lastNames:
 
 
 
 if __name__ == "__main__":
-    no_of_friends = int(input("Enter a total number of your friends :\t"))
-    first_names = list()
-    last_names = list()
-
-    print("Enter your friends name one by one :\n")
-    for i in range(no_of_friends):
-        name = input().split()
-        first_names.append(name[0])
-        last_names.append(name[1:])
+    noOfFriends = int(input("Enter the total number or friends : \t"))
+    firstNames = list()
+    lastNames = list()
+    for i in range(noOfFriends):
+        name = input("Enter the full name of your friend :\t").split()
+        firstNames.append(name[0]), lastNames.append(name[1:])
     
-    print("Following Are the Funny jumpbled name; Lol :\n")
-    jumpble(first_names, last_names)
     
