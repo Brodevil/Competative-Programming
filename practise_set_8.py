@@ -40,7 +40,7 @@ import random
 def rohanMultiplications(number):
     """Rohan's cheat function is this """
     wrong_place = random.randint(2, 9)
-    table = list()
+    table = list()  
     chooise = random.randint(0, 1)  # this is randomly getting that we rohan will change the table or not
     if chooise == 0:
         for i in range(1, 11):
@@ -54,8 +54,9 @@ def rohanMultiplications(number):
 
 
 def abhinavChecker(table, number):
+    """Abhinav's Checker function for the rohan's functions """
     correctTable = [i*number for i in range(1, 11)]
-    wrongIndex = list()
+    wrongIndex = list() # I did this because if we want then we can make more then one mistake okay otherwise You can jsut return this value directly
     for index, table in enumerate(zip(correctTable, table)):
         if table[0] == table[1]:
             pass
