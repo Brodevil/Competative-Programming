@@ -36,11 +36,19 @@ Sibam Bhagat
 
 
 from random import choice
+import pyttsx3
+
+
+def speak(str):
+    engine = pyttsx3.init()
+    engine.say(str)
+    engine.runAndWait()
+
 
 def jumpble(firstNames, lastNames):
     for index, firstName in enumerate(firstNames):
-        for lastName in lastNames:
-
+        print(f"{firstName.capitalize()} {choice(lastNames)[0]}")
+        speak(f"{firstName.capitalize()} {choice(lastNames)[0]}")
 
 
 if __name__ == "__main__":
@@ -51,4 +59,4 @@ if __name__ == "__main__":
         name = input("Enter the full name of your friend :\t").split()
         firstNames.append(name[0]), lastNames.append(name[1:])
     
-    
+    jumpble(firstNames, lastNames)
