@@ -3,7 +3,7 @@
 """
 Jumpbled funny names:
 
-Its result day at school and not everyone is happy. You decided to make y our friedn laught by jumbling their 
+Its result day at school and not everyone is happy. You decided to make your friend laught by jumbling their 
 names to come up with some funny names.
 
 You program should take the number of the names and the names separated by spaces as input. Output
@@ -29,3 +29,32 @@ Sibam Bhagat
 
 
 """
+
+# Author = Abhinav
+# Date = 22 April 2021
+# Pourpose = Just for the python practise here to become expert and get sucess by accheving my AIM
+from random import choice
+
+
+
+def jumpble(first_names, last_names):
+    jumpbledNames = list()
+    for i in first_names:
+        print(f"{i} {choice(last_names)[0]}")
+
+
+
+if __name__ == "__main__":
+    no_of_friends = int(input("Enter a total number of your friends :\t"))
+    first_names = list()
+    last_names = list()
+
+    print("Enter your friends name one by one :\n")
+    for i in range(no_of_friends):
+        name = input().split()
+        first_names.append(name[0])
+        last_names.append(name[1:])
+    
+    print("Following Are the Funny jumpbled name; Lol :\n")
+    jumpble(first_names, last_names)
+    
