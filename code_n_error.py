@@ -250,13 +250,51 @@
 #                 print(f"Sorry! We didn't get {search_str} in {url} webpage")
 
 
-import pyttsx3
-def textToSpeach(str):
-    engine = pyttsx3.init()
-    engine.say(str)
-    engine.runAndWait()
+# import pyttsx3
+# def textToSpeach(str):
+#     engine = pyttsx3.init()
+#     engine.say(str)
+#     engine.runAndWait()
+
+# if __name__ == "__main__":
+#     while True:
+#             kuch = input()
+#             textToSpeach(kuch)
+
+import random
+'''
+Author : jayesh kaushik
+program : Jumble words
+Code for : CodeWithHarry(Practice problem 9)
+This function is used for to jumble the words
+'''
+def jumble_word(first_name, lastt_name, number):
+    for i in range(0, number):
+        # Changing the last name
+        joumbled_name = first_name[i]+" "+lastt_name[random.randint(0, number-1)]
+        print(joumbled_name)
 
 if __name__ == "__main__":
-    while True:
-            kuch = input()
-            textToSpeach(kuch)
+    # Length of the name list
+    number = int(input("Enter the number of names:\n"))
+
+    nameList   = []
+    first_name = []
+    lastt_name = []
+
+    # Asking the name of the friends
+    for i in range(1,number+1):
+        name = input("Enter the name:")
+        # append to the name list
+        nameList.append(name)
+    
+    # Spliting the elements of the name list
+    for ele in nameList:
+        split_name = ele.split(" ")
+        # For the first name
+        first_name.append(split_name[0])
+        # For the second name
+        lastt_name.append(split_name[1])
+
+    jumble_word(first_name, lastt_name, number)
+
