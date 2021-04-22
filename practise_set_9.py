@@ -46,10 +46,11 @@ def speak(str):
 
 
 def jumpble(firstNames, lastNames):
+    jumpbledNames = list()
     for index, firstName in enumerate(firstNames):
         name = f'{firstName.capitalize()} {choice(lastNames)[0]}'
-        print(name)
-        speak(name)
+        jumpbledNames.append(name)
+    return jumpbledNames
 
 
 if __name__ == "__main__":
@@ -69,4 +70,7 @@ if __name__ == "__main__":
             print("Enter the Full name \n")
             exit()
 
-    jumpble(firstNames, lastNames)
+    jumpbledNames = jumpble(firstNames, lastNames)
+    for name in jumpbledNames:
+        print(name)
+        speak(name)
