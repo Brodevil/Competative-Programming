@@ -48,7 +48,7 @@ def rohanMultiplications(number):
                 table.append(i*number+random.randint(1, 8))
             else:
                 table.append(i*number)
-        return 
+        return table
     else:
         return [i*number for i in range(1, 11)]
 
@@ -69,13 +69,21 @@ def abhinavChecker(table, number):
 
 
 if __name__ == "__main__":
-    tableNum = int(input("Enter the number of which table you want from the Rohan's Functions :\t"))
+    try:
+        tableNum = int(input("Enter the number of which table you want from the Rohan's Functions :\t"))
+    except ValueError:
+        print("\nEnter a league input that will a number so that we will find its table by Rohans functions and check through Abhinav's Checker functions \n")
+        exit()
+    # got the responce from the rohan's functions it might be wrong or write
     rohans_table = rohanMultiplications(tableNum)
     print("\nNow This is the Rohan's Functions Answer \n")
+
+    # print in the readable form for best UI
     for index, value in enumerate(rohans_table):
         print(f"{tableNum} X {index+1} = {value}")
 
     print("\nWait!, Now checking the table from the Abhinav's checker function \n")
+
     checkerTable = abhinavChecker(rohans_table, tableNum)
     if checkerTable == None:
         print(f"Everyting was right\n")
