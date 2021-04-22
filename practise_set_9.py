@@ -47,16 +47,26 @@ def speak(str):
 
 def jumpble(firstNames, lastNames):
     for index, firstName in enumerate(firstNames):
-        print(f"{firstName.capitalize()} {choice(lastNames)[0]}")
-        speak(f"{firstName.capitalize()} {choice(lastNames)[0]}")
+        name = f'{firstName.capitalize()} {choice(lastNames)[0]}'
+        print(name)
+        speak(name)
 
 
 if __name__ == "__main__":
-    noOfFriends = int(input("Enter the total number or friends : \t"))
+    try:
+        noOfFriends = int(input("Enter the total numbers of friends : \t"))
+    except ValueError:
+        print("Enter the league input that will a integer\n")
+        exit()
+
     firstNames = list()
     lastNames = list()
     for i in range(noOfFriends):
-        name = input("Enter the full name of your friend :\t").split()
-        firstNames.append(name[0]), lastNames.append(name[1:])
-    
+        try:
+            name = input("Enter the full name of your friend :\t").split()
+            firstNames.append(name[0]), lastNames.append(name[1:])
+        except IndexError:
+            print("Enter the Full name \n")
+            exit()
+
     jumpble(firstNames, lastNames)
