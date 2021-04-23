@@ -13,6 +13,11 @@ Note : Use functions
 
 """
 
+# Author = Abhinav
+# Date = 23 April 2021
+# Pourpose = From the hacker rank picked the question for python practise
+
+
 def factorial(number):
     """A function to just create a list of factorial and return it, I contain in both way that is iterative and recursive"""
    

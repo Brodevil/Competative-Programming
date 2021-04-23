@@ -16,6 +16,11 @@ Shree Ram Kirana:
 And then totale
 """
 
+# Author = Abhinav
+# Date = 23 April 2021
+# Pourpose = From the hacker rank picked the question for python practise
+
+
 if __name__ == "__main__":
     print("Welcome to the Indian Kirana shop keeper's Calculator python program \nKeep Entering your value you wants to add, And to stop the program and get result press 'q'")
     totalSum = list()
