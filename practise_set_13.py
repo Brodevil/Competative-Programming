@@ -37,6 +37,7 @@ def factorial(number):
 
 
 def trailingZero(factorialList):
+    """This functions trailing Zeros form the factorils list and returning the list of factorils containging zeros"""
     Zeros = list()
     for i in factorialList:
         if '0' in str(i):
@@ -52,14 +53,17 @@ if __name__ == "__main__":
         print("Enter a league input that will a number ")
         exit()
     
+    # Factorial caculation part 1
     print(f"\nFollowing are the factorials of {number} :")
     numberFactorial = factorial(number)
     numberFactorial.reverse()
     for i in numberFactorial:
         print(i)
 
+    # trailing Zeros, part 2
     trailedZero = trailingZero(numberFactorial)
     print(f"\nFollowing are the trailing zeros number :")
     for i in trailedZero:
         print(i)
     print(f"\nTotal {len(trailedZero)} number are trailing Zeros")
+
