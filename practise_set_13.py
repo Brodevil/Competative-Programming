@@ -22,7 +22,7 @@ def factorial(number):
     """A function to just create a list of factorial and return it, I contain in both way that is iterative and recursive"""
    
     # recursive
-    # if number == 1:
+    # if number == 1 or number == 0:
     #     return 1
     # else:
     #     return number*factorial(number-1)
