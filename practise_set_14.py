@@ -12,4 +12,10 @@ Using those data You have to create the python program to convert any Currency t
 
 
 if __name__ == '__main__':
-    pass
+    with open("currency.txt", "rt") as f:
+        lines = f.readlines()
+    currencyDict = dict()
+    for line in lines:
+        parsed = line.split("\t")
+        currencyDict[parsed[0]] = parsed[1]
+    print(currencyDict)
