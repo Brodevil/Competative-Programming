@@ -14,14 +14,31 @@ Note : Use functions
 """
 
 def factorial(number):
+    """A function to just create a list of factorial and return it, I contain in both way that is iterative and recursive"""
+   
+    # recursive
     # if number == 1:
     #     return 1
     # else:
     #     return number*factorial(number-1)
-    while number <= 1:
-        result = number * number-1
-        number -= 1
-    return result
+
+    # iterative- returning a list so that we can trailing zero's
+    factorials = [1]
+    for i in range(1, number+1):
+        factorials.append(factorials[i-1]*i)
+    return factorials
+
+
+
+def trailingZero(factorialLis):
+    pass
+
 
 if __name__ == "__main__":
-    print(factorial(5))
+    try:
+        number = int(input("Enter a number which you want to generate factorial :\t"))
+    except ValueError:
+        print("Enter a league input that will a number ")
+        exit()
+    
+    numberFactorial = factorial(number)
