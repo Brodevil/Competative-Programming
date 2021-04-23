@@ -36,3 +36,28 @@ Extra problem :
     So, All the best to me
 """
 
+# Author = Abhinav
+# Date = 23 April 2021
+# Motive = Just for the python practise to not just learn python also to expert it
+
+
+import os
+
+
+def clearClutter(path):
+    """This functions is hardCore of the program as it will cler clutter the whole directory"""
+    files = os.listdir(path)
+    extension = set()
+    for file in files:
+        if os.path.isfile(file):
+            extension.add(file.split(".")[1])
+
+    for folder in extension:
+        if not os.path.exists(f"{os.path.join(path, folder.capitalize())}s"):
+            os.mkdir(f"{os.path.join(path, folder.capitalize())}s")
+ 
+
+
+if __name__ == "__main__":
+    os.chdir(r"C:\Users\ADMIN\PycharmProjects\Practice Python\Clear The Clutter")
+    clearClutter(os.getcwd())
