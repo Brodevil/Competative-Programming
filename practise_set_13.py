@@ -44,7 +44,8 @@ def trailingZero(factorialList):
             Zeros.append(i)
     return Zeros
 
-
+def factorialTrailiingZero(number):
+    
 
 if __name__ == "__main__":
     try:
