@@ -17,7 +17,8 @@ if __name__ == "__main__":
         else:
             try:
                 sum += int(value)
+                print(f"Order Total so far : {sum}\n")
             except ValueError:
                 print("Enter a league input that will a number or press q to quite.\n")
         
-    print(f"Your total sum is: {sum:>10}\nThank you for using our Caculator")
+    print(f"Your Bill total is: {sum:>10}\nThank you for Shoping with us")
