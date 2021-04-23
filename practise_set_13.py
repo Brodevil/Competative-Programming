@@ -14,10 +14,14 @@ Note : Use functions
 """
 
 def factorial(number):
-    if number == 1:
-        return 1
-    else:
-        return number*factorial(number-1)
+    # if number == 1:
+    #     return 1
+    # else:
+    #     return number*factorial(number-1)
+    while number <= 1:
+        result = number * number-1
+        number -= 1
+    return result
 
 if __name__ == "__main__":
     print(factorial(5))
