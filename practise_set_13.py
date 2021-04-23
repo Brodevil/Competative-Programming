@@ -26,12 +26,18 @@ def factorial(number):
     factorials = [1]
     for i in range(1, number+1):
         factorials.append(factorials[i-1]*i)
+    del factorials[0]
     return factorials
 
 
 
-def trailingZero(factorialLis):
-    pass
+def trailingZero(factorialList):
+    Zeros = list()
+    for i in factorialList:
+        if '0' in str(i):
+            Zeros.append(i)
+    return Zeros
+
 
 
 if __name__ == "__main__":
@@ -41,4 +47,14 @@ if __name__ == "__main__":
         print("Enter a league input that will a number ")
         exit()
     
+    print(f"\nFollowing are the factorials of {number} :")
     numberFactorial = factorial(number)
+    numberFactorial.reverse()
+    for i in numberFactorial:
+        print(i)
+
+    trailedZero = trailingZero(numberFactorial)
+    print(f"\nFollowing are the trailing zeros number :")
+    for i in trailedZero:
+        print(i)
+    print(f"\nTotal {len(trailedZero)} number are trailing Zeros")
