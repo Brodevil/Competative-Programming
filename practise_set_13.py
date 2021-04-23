@@ -45,7 +45,13 @@ def trailingZero(factorialList):
     return Zeros
 
 def factorialTrailiingZero(number):
-    
+    """This is another solution for the haary bhai and this is finding the 5 as 5 will come to 10 multiple containing 0"""
+    count = 0
+    i = 5
+    while(number/i != 0):
+        count += int(number/i)
+        i += 5
+    return count
 
 if __name__ == "__main__":
     try:
