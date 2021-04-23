@@ -57,6 +57,20 @@ def clearClutter(path):
             os.mkdir(f"{os.path.join(path, folder.capitalize())}s")
  
 
+ def isPathExistsToMakeFile(path):
+     """Checking that a file or a path is exiting or not if not that it will be created """
+     if not os.path.exists(path):
+         os.mkdir(path)
+
+
+def clearClutter2(path):
+    """This is the 2nd function that will just created Media, Images and Docs file and additionally I will make seperate code for few selected extensions"""
+    isPathExistsToMakeFile("Images")
+    isPathExistsToMakeFile("Docs")
+    isPathExistsToMakeFile("Media")
+    isPathExistsToMakeFile("Code")
+    
+
 
 if __name__ == "__main__":
     os.chdir(r"C:\Users\ADMIN\PycharmProjects\Practice Python\Clear The Clutter")
