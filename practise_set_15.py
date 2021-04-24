@@ -100,6 +100,7 @@ def clearClutter2(path):
                     print(a)
 
 
+
 if __name__ == "__main__":
     os.chdir(r"C:\Users\ADMIN\PycharmProjects\Practice Python\Clear The Clutter")
     # clearClutter(os.getcwd()) 
