@@ -66,5 +66,10 @@ so we order their names alphabetically and print each name on a new line.
 # Date = 24 April 2021
 # Motive = Just for the python practise to not just learn python also to expert it
 
+
 if __name__ == '__main__':
-	pass
+    records = list()
+    for i in range(int(input())):
+        name = input()
+        score = float(input())
+        records.append([name, score])
