@@ -69,7 +69,16 @@ def clearClutter2(path):
     isPathExistsToMakeFile("Docs")
     isPathExistsToMakeFile("Media")
     isPathExistsToMakeFile("Code")
-    
+
+    images = [".jpg", ".png", ".jpeg", ".gif"]
+    code = [".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
+    media = [".mp3", ".mp4"]
+    docs = [".pptx", ".dot", ".docx", ".pdf", ".docm", ".dotx", ".rtf", ".txt", ".wps", ".xps", ".csv", ".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xlam", ".xla", ".xlw", ".xlr"]
+
+    files = os.listdir(path)
+    for file in files:
+        if os.path.splitext(file)[1] in images:
+            os.replace()
 
 
 if __name__ == "__main__":
