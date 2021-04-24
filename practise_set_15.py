@@ -60,7 +60,7 @@ def clearClutter(path):
 
 
 def isPathExistsToMakeFile(path):
-    """Checking that a file or a path is exiting or not if not that it will be created """
+    """Checking that a file or a path is exiting or not if not that it will be created."""
     if not os.path.exists(path):
         os.mkdir(path)
 
