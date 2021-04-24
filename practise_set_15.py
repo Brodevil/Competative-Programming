@@ -40,12 +40,11 @@ Extra problem :
 # Date = 23 April 2021
 # Motive = Just for the python practise to not just learn python also to expert it
 
-
 import os
 
 
 def clearClutter(path):
-    """This functions is hardCore of the program as it will cler clutter the whole directory"""
+    """This functions is hardCore of the program as it will clear clutter the whole directory while it just created the folder on the name of its extension"""
     files = os.listdir(path)
     extension = set()
     for file in files:
@@ -53,14 +52,17 @@ def clearClutter(path):
             extension.add(file.split(".")[1])
 
     for folder in extension:
-        if not os.path.exists(f"{os.path.join(path, folder.capitalize())}s"):
-            os.mkdir(f"{os.path.join(path, folder.capitalize())}s")
- 
+        if not os.path.exists(f"{os.path.join(path, folder.capitalize())}"):
+            os.mkdir(f"{os.path.join(path, folder.capitalize())}")
+        for file in files:
+            os.replace(os.path.join(path, file), f"{os.path.join(path, folder.capitalize(), file)}")
+            
 
- def isPathExistsToMakeFile(path):
-     """Checking that a file or a path is exiting or not if not that it will be created """
-     if not os.path.exists(path):
-         os.mkdir(path)
+
+def isPathExistsToMakeFile(path):
+    """Checking that a file or a path is exiting or not if not that it will be created """
+    if not os.path.exists(path):
+        os.mkdir(path)
 
 
 def clearClutter2(path):
@@ -69,18 +71,37 @@ def clearClutter2(path):
     isPathExistsToMakeFile("Docs")
     isPathExistsToMakeFile("Media")
     isPathExistsToMakeFile("Code")
+    isPathExistsToMakeFile("UnKnownFiles")
 
-    images = [".jpg", ".png", ".jpeg", ".gif"]
-    code = [".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
-    media = [".mp3", ".mp4"]
-    docs = [".pptx", ".dot", ".docx", ".pdf", ".docm", ".dotx", ".rtf", ".txt", ".wps", ".xps", ".csv", ".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xlam", ".xla", ".xlw", ".xlr"]
+
+    images = ["Images",".jpg", ".png", ".jpeg", ".gif"]
+    code = ["Code", ".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
+    media = ["Media", ".mp3", ".mp4"]
+    docs = ["Docs", ".pptx", ".dot", ".docx", ".pdf", ".docm", ".dotx", ".rtf", ".txt", ".wps", ".xps", ".csv", ".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xlam", ".xla", ".xlw", ".xlr"]
+    typeFile = [images, code, media, docs]
 
     files = os.listdir(path)
     for file in files:
-        if os.path.splitext(file)[1] in images:
-            os.replace()
+        if file != "main.py":
+            if os.path.isfile(file):
+                print(file)
+                for i in typeFile:
+                    print(i)
+                    print(os.path.splitext(file)[1])
+                    if os.path.splitext(file)[1] in i:
+                        print("Condition satisfied")
+                        os.replace(os.path.join(path, file), os.path.join(path, i[0], file))
+                        break
+
+                try:
+                    os.replace(os.path.join(path, file), os.path.join(path, "UnknownFiles", file))
+                except Exception as a:
+                    print("Condition not satisfied")
+                    print(a)
 
 
 if __name__ == "__main__":
     os.chdir(r"C:\Users\ADMIN\PycharmProjects\Practice Python\Clear The Clutter")
-    clearClutter(os.getcwd())
+    # clearClutter(os.getcwd()) 
+    clearClutter2(os.getcwd())
+
