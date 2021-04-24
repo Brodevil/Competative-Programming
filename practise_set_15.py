@@ -82,7 +82,7 @@ def clearClutter2(path):
 
     files = os.listdir(path)
     for file in files:
-        if file != "main.py":
+        if file != "main.py":   # You can enter the name of this file so that this file will be no replaced and it will in that directory only
             if os.path.isfile(file):
                 print(file)
                 for i in typeFile:
