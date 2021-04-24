@@ -19,7 +19,7 @@ if __name__ == '__main__':
         notification.notify(
             title = "Attept 20-20-20 Eyes Exercise",
             message="After every 20 minutes to give rest to your eyes see 20 meter long from your original distance in nature for 20 sec. Which defenatly safe the your eyes",
-            app_icon = r"E:\ADMIN\Pictures\Saved Pictures\abhinav.jpg",
+            app_icon = r"E:\ADMIN\Pictures\Saved Pictures\abhinav.ico",
             timeout= 12
         )
         time.sleep(20)
