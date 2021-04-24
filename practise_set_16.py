@@ -24,11 +24,18 @@ Sample Output
 """
 
 
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-X = int(input())
-Y = int(input())
-Z = int(input())
-N = int(input())
+# Author = Abhinav
+# Date = 24 April 2021
+# Motive = Just for the python practise to not just learn python also to expert it
 
-lis = [[i, j, k] for i in range(X + 1) for j in range(Y + 1) for k in range(Z + 1) if i + j + k != N]
-print(lis)
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+if __name__ == "__main__":
+    X = int(input())
+    Y = int(input())
+    Z = int(input())
+    N = int(input())
+
+    lis = [[i, j, k] for i in range(X + 1) for j in range(Y + 1) for k in range(Z + 1) if i + j + k != N]
+    print(lis)

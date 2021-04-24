@@ -31,5 +31,12 @@ Given list is[2, 3, 6, 6, 5] . The maximum score is 6, second maximum is 5. Henc
 
 """
 
-if __name__ == "__main__":
-    
+# Author = Abhinav
+# Date = 24 April 2021
+# Motive = Just for the python practise to not just learn python also to expert it
+
+
+if __name__ == '__main__':
+    n = int(input())
+    arr = set(map(int, input().split()))
+    print(sorted(arr)[-2])
