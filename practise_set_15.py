@@ -69,17 +69,16 @@ def clearClutter2(path):
     """This is the 2nd function that will just created Media, Images and Docs file and additionally I will make seperate code for few selected extensions"""
     isPathExistsToMakeFile("Images")
     isPathExistsToMakeFile("Docs")
-    isPathExistsToMakeFile("Media")
-    isPathExistsToMakeFile("Code")
-    isPathExistsToMakeFile("UnKnownFiles")
+    isPathExistsToMakeFile("Medias")
+    isPathExistsToMakeFile("Codes")
+    isPathExistsToMakeFile("Others")
 
 
     images = ["Images",".jpg", ".png", ".jpeg", ".gif"]
-    code = ["Code", ".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
-    media = ["Media", ".mp3", ".mp4"]
+    code = ["Codes", ".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
+    media = ["Medias", ".mp3", ".mp4"]
     docs = ["Docs", ".pptx", ".dot", ".docx", ".pdf", ".docm", ".dotx", ".rtf", ".txt", ".wps", ".xps", ".csv", ".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xlam", ".xla", ".xlw", ".xlr"]
     typeFile = [images, code, media, docs]
-
     files = os.listdir(path)
     for file in files:
         if file != "main.py":   # You can enter the name of this file so that this file will be no replaced and it will in that directory only
@@ -94,7 +93,7 @@ def clearClutter2(path):
                         break
 
                 try:
-                    os.replace(os.path.join(path, file), os.path.join(path, "UnknownFiles", file))
+                    os.replace(os.path.join(path, file), os.path.join(path, "Others", file))
                 except Exception as a:
                     print("Condition not satisfied")
                     print(a)
