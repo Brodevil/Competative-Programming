@@ -66,6 +66,11 @@ so we order their names alphabetically and print each name on a new line.
 # Date = 24 April 2021
 # Motive = Just for the python practise to not just learn python also to expert it
 
+def sorting(lis):
+    score = list() 
+    for value in lis:
+        score.append(value[1])
+    return score
 
 if __name__ == '__main__':
     records = list()
@@ -73,4 +78,6 @@ if __name__ == '__main__':
         name = input()
         score = float(input())
         records.append([name, score])
+    
+    records.sort(key=sorting)
     print(records)
