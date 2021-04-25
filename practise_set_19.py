@@ -66,18 +66,11 @@ so we order their names alphabetically and print each name on a new line.
 # Date = 24 April 2021
 # Motive = Just for the python practise to not just learn python also to expert it
 
-def sorting(lis):
-    score = list() 
-    for value in lis:
-        score.append(value[1])
-    return score
+
 
 if __name__ == '__main__':
-    records = list()
-    for i in range(int(input())):
-        name = input()
-        score = float(input())
-        records.append([name, score])
-    
-    records.sort(key=sorting)
-    print(records)
+    n = int(input())
+    marks = [[input(), float(input())] for _ in range(n)]
+        
+    second_highest_score = sorted(list(set([mark for name, mark in marks])))[-2]
+    print("\n".join(a for a, b in sorted(marks) if b == second_highest_score))
