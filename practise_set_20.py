@@ -62,3 +62,15 @@ Sample Output 1 :
 26.50
 
 """
+
+# Author = Abhinav
+# Date = 24 April 2021
+# Motive = Just for the python practise to not just learn python also to expert it
+
+if __name__ == '__main__':
+    student_marks = dict()
+    for _ in range(int(input())):
+        name, *line = input().split()
+        student_marks[name] = list(map(float, line))
+    query_name = input()
+    print(format(sum(student_marks[query_name])/len(student_marks[query_name]), ".2f"))
