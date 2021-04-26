@@ -108,3 +108,15 @@ if __name__ == '__main__':
             commands.remove(num[0])
 
 
+# One more effective way to do this problem / More pythontonic way
+n = input()
+l = list()
+for _ in range(n):
+    s = input().split()
+    cmd = s[0]
+    args = s[1:]
+    if cmd !="print":
+        cmd += "("+ ",".join(args) +")"
+        eval("l."+cmd)
+    else:
+        print(l)
