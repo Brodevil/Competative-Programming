@@ -46,10 +46,9 @@ hACKERrANK.COM PRESENTS "pYTHONIST 2".
 # Motive = Just for the python practise to not just learn python also to expert it
 
 def swap_case(s):
-    return
+    return s.swapcase()
 
 
 if __name__ == '__main__':
-    s = input()
-    result = swap_case(s)
+    result = swap_case(input())
     print(result)
