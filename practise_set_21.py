@@ -83,4 +83,28 @@ Sample Output 0 :
 
 
 if __name__ == '__main__':
-    N = int(input())
+    commands = [input() for i in range(int(input()))]
+    lst = list()
+    for i in commands:
+        function, *num = i.split()
+        num = list(map(int, num))
+        lst.append([function, num])
+        
+    commands = list()
+    for command, num in lst:
+        if command == "print":
+            print(commands)
+        elif command == "insert":
+            commands.insert(num[0], num[1])
+        elif command == "append":
+            commands.append(num[0])
+        elif command == "sort":
+            commands.sort()
+        elif command == "pop":
+            commands.pop()
+        elif command == "reverse":
+            commands.reverse()
+        elif command == "remove":
+            commands.remove(num[0])
+
+
