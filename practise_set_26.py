@@ -87,8 +87,9 @@ abrackdabra
 
 
 def mutate_string(string, position, character):
-    return
-
+    string = list(string)
+    string.insert(position, character)
+    return "".join(string)
 
 if __name__ == '__main__':
     s = input()
