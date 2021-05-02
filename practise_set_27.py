@@ -62,10 +62,14 @@ In the fourth test case, since d=0 so each packet should contain the same number
 
 
 def distribute(r, b, d):
-    pass
+    for i in range(1, r+1):
+        for b in range(1, b+1):
+            if i - b <= d:
+                print(i, b, d)
 
 
 if __name__ == "__main__":
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
+        distribute(r, b, d)
         
