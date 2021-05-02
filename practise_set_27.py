@@ -69,14 +69,12 @@ if __name__ == '__main__':
             min, max = b, r
         elif r<b:
             min, max = r, b
-        for i in range(1, min+1):
-            for j in range(1, max+1):
-                if j-i <= d:
-                    max -= j
-                    min -= i
-
-        if max == 0 and min == 0:
-            print("Yes")      
+        d *= min
+        mod = max - min
+        if mod <= d:
+            result.append("Yes")
         else:
-            print(max, min)      
+            result.append("No")
+    for i in result:
+        print(i)
         
