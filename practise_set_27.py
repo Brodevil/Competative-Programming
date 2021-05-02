@@ -59,3 +59,13 @@ In the fourth test case, since d=0 so each packet should contain the same number
 # Author = Abhinav
 # Date = 2 May 2021
 # Motive = Just for the python practise to not just learn python also to expert it
+
+
+def distribute(r, b, d):
+    pass
+
+
+if __name__ == "__main__":
+    for i in range(int(input())):
+        r, b, d = list(map(int, input().split()))
+        
