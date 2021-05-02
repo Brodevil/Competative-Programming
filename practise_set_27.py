@@ -72,4 +72,6 @@ if __name__ == "__main__":
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
         distribute(r, b, d)
-        
+
+
+    
