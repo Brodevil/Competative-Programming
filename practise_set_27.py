@@ -58,7 +58,7 @@ In the fourth test case, since d=0 so each packet should contain the same number
 
 # Author = Abhinav
 # Date = 2 May 2021
-# Motive = Just for the python practise to not just learn python also to expert it
+# Motive = This is to learn competative programming and practise 2 to 3 problem daily
 
 
 
@@ -81,9 +81,4 @@ for i in range(int(input())):
         lst.append("No")
 for i in lst:
     print(i)
-    
-
-
-
-
     
