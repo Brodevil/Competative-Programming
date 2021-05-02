@@ -1,4 +1,4 @@
-# Python practise - Compitative Programming (From codefroces) = The Cake Is a Lie
+# Python practise - Compitative Programming (From codefroces 1519B) = The Cake Is a Lie
 """
 The Cake Is a Lie :
 
