@@ -61,24 +61,7 @@ In the fourth test case, since d=0 so each packet should contain the same number
 # Motive = This is to learn competative programming and practise 2 to 3 problem daily
 
 
-
 if __name__ == '__main__':    
-    lst = list()
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
-        if r<=b:
-            min = r
-            max = b
-        elif r>b:
-            min = b
-            max = r
-        
-        x = min*d
-        modulus = min*max
-        if modulus >=x:
-            lst.append("Yes")
-        elif modulus < x:
-            lst.append("No")
-    for i in lst:
-        print(i)
         
