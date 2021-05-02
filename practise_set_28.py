@@ -60,6 +60,18 @@ Note :
 # Date = 2 May 2021
 # Motive = This is to get famalier with competative programming and practise 2 to 3 problem daily
 
+def stepsChecker(n, m, k):
+    steps = 0
+    for i in range(1, n+1):
+        steps += 1
+    for i in range(1, m+1):
+        steps += 1
+    if steps == k:
+        return True
+    return False
+
 
 if __name__ == "__main__":
-    pass
+    for i in range(int(input())):
+        n, m, k = list(map(int, input().split()))
+        print(stepsChecker(n, m, k))
