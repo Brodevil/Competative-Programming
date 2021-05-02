@@ -61,17 +61,29 @@ In the fourth test case, since d=0 so each packet should contain the same number
 # Motive = Just for the python practise to not just learn python also to expert it
 
 
-def distribute(r, b, d):
-    for i in range(1, r+1):
-        for b in range(1, b+1):
-            if i - b <= d:
-                print(i, b, d)
 
 
-if __name__ == "__main__":
-    for i in range(int(input())):
-        r, b, d = list(map(int, input().split()))
-        distribute(r, b, d)
+lst = list()
+for i in range(int(input())):
+    r, b, d = list(map(int, input().split()))
+    if r<=b:
+        min = r
+        max = b
+    elif r>b:
+        min = b
+        max = r
+    
+    x = min*d
+    modulus = min*max
+    if modulus >=x:
+        lst.append("Yes")
+    elif modulus < x:
+        lst.append("No")
+for i in lst:
+    print(i)
+    
+
+
 
 
     
