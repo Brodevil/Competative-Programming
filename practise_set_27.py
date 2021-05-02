@@ -58,10 +58,10 @@ In the fourth test case, since d=0 so each packet should contain the same number
 
 # Author = Abhinav
 # Date = 2 May 2021
-# Motive = This is to learn competative programming and practise 2 to 3 problem daily
+# Motive = This is to get famalier with competative programming and practise 2 to 3 problem daily
 
 
 if __name__ == '__main__':    
+    result = list()
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
-        
