@@ -65,3 +65,8 @@ if __name__ == '__main__':
     result = list()
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
+        if r>=b:
+            min, max = b, r
+        elif r<b:
+            min, max = r, b
+        
