@@ -61,25 +61,31 @@ Note :
 # Motive = This is to get famalier with competative programming and practise 2 to 3 problem daily
 
 
-def stepsChecker(n, m, k):
-    steps = 0
-    for i in range(1, n):
-        steps += 1
-    for i in range(1, m):
-        steps += 1
-    if steps == k:
-        return True
-    return False
+# def stepsChecker(n, m, k):
+#     steps = 0
+#     for i in range(1, n):
+#         steps += 1
+#     for i in range(1, m):
+#         steps += 1
+#     if steps == k:
+#         return True
+#     return False
 
 
 if __name__ == "__main__":
     lis = list()
     for i in range(int(input())):
         n, m, k = list(map(int, input().split()))
-        result = stepsChecker(n, m, k)
-        if result is True:
+    #     result = stepsChecker(n, m, k)
+    #     if result is True:
+    #         lis.append("Yes")
+    #     elif result is False:
+    #         lis.append("No")
+    # for i in lis:
+    #     print(i)
+        if n*m-1 > k:
             lis.append("Yes")
-        elif result is False:
+        else:
             lis.append("No")
     for i in lis:
-        print(i)
+        print(i) 
