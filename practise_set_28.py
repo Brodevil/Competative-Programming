@@ -76,14 +76,7 @@ if __name__ == "__main__":
     lis = list()
     for i in range(int(input())):
         n, m, k = list(map(int, input().split()))
-    #     result = stepsChecker(n, m, k)
-    #     if result is True:
-    #         lis.append("Yes")
-    #     elif result is False:
-    #         lis.append("No")
-    # for i in lis:
-    #     print(i)
-        if n*m-1 > k:
+        if n*m-1 == k:
             lis.append("Yes")
         else:
             lis.append("No")
