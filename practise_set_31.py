@@ -1,4 +1,4 @@
-# Python practise 31 (From hackerrank) = Find a string
+# Python practise 31 (From hackerrank) = Find a string = (https://www.hackerrank.com/challenges/find-a-string/problem)
 
 """
 Find a string :
@@ -55,7 +55,7 @@ Here, the range loops over 0  to 4.5  is excluded.
 
 
 def count_substring(string, sub_string):
-    return
+    pass
 
 
 if __name__ == '__main__':
