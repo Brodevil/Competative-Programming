@@ -1035,17 +1035,35 @@ data = """2-5 z: zzztvz
 
 if __name__ == "__main__":
     data = data.split("\n")
-    validPasswords = 0
+    validPasswords = 0  # part 1
+    validPassword2 = 0
     for i in data:
         charctors, password = i.split(": ")
         lowerrang, upperrang = map(int, charctors.split()[0].split("-"))
         charctors = charctors.split()[1]
-        numCharactors = 0
-        for i in list(password):
-            if i == charctors:
+        numCharactors = 0   # part 1
+        numAplhabet = 0
+        for i in enumerate(list(password)):
+            # part 1 condition 
+            if i[1] == charctors:
                 numCharactors += 1
+            
+            # part 2 condition
+            if i[0]+1 == lowerrang or i[0]+1 == upperrang:
+                if i[1] == charctors:
+                    numAplhabet += 1
+
+        # part 1 conditions
         if numCharactors >= lowerrang and numCharactors <= upperrang:
             validPasswords += 1
+    
+        # part 2 conditoins
+        if numAplhabet == 1:
+            validPassword2 += 1
+        
     # part 1 answer
     print(validPasswords)
+
+    # part 2 answer
+    print(validPassword2)
 
