@@ -62,8 +62,8 @@ False
 
 Task : 
 
-You are given a string .
-Your task is to find out if the string  contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
+You are given a string S.
+Your task is to find out if the string S contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
 
 
 Input Format :
@@ -105,3 +105,51 @@ True
 
 if __name__ == '__main__':
     s = input()
+
+    # a long way
+    for i in s:
+        if i.isalnum() :
+            print(True)
+            break
+    else:
+        print(False)
+
+
+    for i in s:
+        if i.isalpha():
+            print(True)
+            break
+    else:
+        print(False)
+
+
+    for i in s:
+        if i.isdigit():
+            print(True)
+            break
+    else:
+        print(False)
+
+
+    for i in s:
+        if i.islower():
+            print(True)
+            break
+    else:
+        print(False)
+
+
+    for i in s:
+        if i.isupper():
+            print(True)
+            break
+    else:
+        print(False)
+  
+  
+    # more pythonic way
+    print(any(c.isalnum()  for c in s))
+    print(any(c.isalpha() for c in s))
+    print(any(c.isdigit() for c in s))
+    print(any(c.islower() for c in s))
+    print(any(c.isupper() for c in s))
