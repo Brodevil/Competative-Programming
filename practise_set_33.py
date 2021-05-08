@@ -85,7 +85,9 @@ HHHHHHHHH
                        HHH    
                         H 
 
+
 """
+
 
 # Author = Abhinav
 # Date = 7 May 2021
@@ -116,4 +118,5 @@ for i in range(thickness+1):
 #Bottom Cone
 for i in range(thickness):
     print(((c*(thickness-i-1)).______(thickness)+c+(c*(thickness-i-1)).______(thickness)).______(thickness*6))
+
 
