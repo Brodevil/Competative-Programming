@@ -12,7 +12,7 @@ This method returns a left aligned string of length width.
 
 
 >>> width = 20
->>> print 'HackerRank'.ljust(width,'-')
+>>> print('HackerRank'.ljust(width,'-'))
 HackerRank----------  
 
 
