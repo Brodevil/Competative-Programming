@@ -88,35 +88,33 @@ HHHHHHHHH
 
 """
 
-
 # Author = Abhinav
 # Date = 7 May 2021
-# Pourpose = Just for the python practise to not just learn python also to expert it
+# Purpose = Just for the python practise to not just learn python also to expert it
 
 
-#Replace all ______ with rjust, ljust or center. 
+# Replace all ______ with rjust, ljust or center.
 
-thickness = int(input()) #This must be an odd number
+thickness = int(input())  # This must be an odd number
 c = 'H'
 
-#Top Cone
+# Top Cone
 for i in range(thickness):
-    print((c*i).______(thickness-1)+c+(c*i).______(thickness-1))
+    print((c * i).______(thickness - 1) + c + (c * i).______(thickness - 1))
 
-#Top Pillars
-for i in range(thickness+1):
-    print((c*thickness).______(thickness*2)+(c*thickness).______(thickness*6))
+# Top Pillars
+for i in range(thickness + 1):
+    print((c * thickness).______(thickness * 2) + (c * thickness).______(thickness * 6))
 
-#Middle Belt
-for i in range((thickness+1)//2):
-    print((c*thickness*5).______(thickness*6))    
+# Middle Belt
+for i in range((thickness + 1) // 2):
+    print((c * thickness * 5).______(thickness * 6))
 
-#Bottom Pillars
-for i in range(thickness+1):
-    print((c*thickness).______(thickness*2)+(c*thickness).______(thickness*6))    
+# Bottom Pillars
+for i in range(thickness + 1):
+    print((c * thickness).______(thickness * 2) + (c * thickness).______(thickness * 6))
 
-#Bottom Cone
+# Bottom Cone
 for i in range(thickness):
-    print(((c*(thickness-i-1)).______(thickness)+c+(c*(thickness-i-1)).______(thickness)).______(thickness*6))
-
-
+    print(((c * (thickness - i - 1)).______(thickness) + c + (c * (thickness - i - 1)).______(thickness)).______(
+        thickness * 6))
