@@ -40,7 +40,7 @@ import pyttsx3
 
 
 def speak(str):
-    engine = pyttsx3.init()
+    engine = pyttsx3.init('sapi5')
     engine.say(str)
     engine.runAndWait()
 
