@@ -107,7 +107,7 @@ for i in range(thickness + 1):
     print((c * thickness).ljust(thickness * 2) + (c * thickness).rjust(thickness * 6))
 
 # # Middle Belt
-# for i in range((thickness + 1) // 2):
+# for i in range((thickness + 1)    // 2):
 #     print((c * thickness * 5).______(thickness * 6))
 #
 # # Bottom Pillars
