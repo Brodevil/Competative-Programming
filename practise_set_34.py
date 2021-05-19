@@ -50,14 +50,11 @@ YZ
 
 """
 
-
 # Author = Abhinav
 # Date = 18 May 2021
 # Purpose = Just for the python practise to not just learn python also to expert it
 
 import textwrap
-
-
 
 if __name__ == '__main__':
     pass
