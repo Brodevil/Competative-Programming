@@ -69,6 +69,13 @@ Sample Output :
 
 """
 
+# Author = Abhinav
+# Date = 23 May 2021
+# Purpose = Just for the python practise to not just learn python also to expert it
+
 
 if __name__ == '__main__':
-    pass
+    n, m = map(int, input().split())
+    pattern = [('.|.' * (2 * i + 1)).center(m, '-') for i in range(n // 2)]
+    print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
+
