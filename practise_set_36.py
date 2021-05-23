@@ -68,9 +68,18 @@ Sample Output :
 
 
 def print_formatted(number):
-    # your code goes here
-    pass
+    for i in range(1, number+1):
+        print(f"{i:>2}{oct(i).replace('0o', ''):>3}{hex(i).replace('0x', ''):>3}{bin(i).replace('0b', ''):>3}")
+
+
+
 
 if __name__ == '__main__':
     n = int(input())
     print_formatted(n)
+
+
+"""
+ 1  1  1  1
+ 2  2  2 10
+"""
