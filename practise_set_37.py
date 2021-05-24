@@ -46,10 +46,14 @@ Chris Alan
 
 # Complete the solve function below.
 def solve(s):
-    pass
+    # return " ".join(map(lambda x: x.capitalize(), s.split()))
+    # for x in s.split():
+    #     s = s.replace(x, x.capitalize())
+    # return s
+    return " ".join(map(lambda x:x.capitalize(), s.split()))
 
 
 if __name__ == '__main__':
     s = input()
-    result = solve(s)
-    print(result)
+    print(solve(s))
+
