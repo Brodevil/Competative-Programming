@@ -68,15 +68,16 @@ Sample Output :
 
 
 def print_formatted(number):
-    for i in range(1, number+1):
-        octal, hexa, binary = oct(i).replace("0o", ""), hex(i).replace('0x', ''), bin(i).replace('0b', '')
-        print(f"{i:>{len(str(i))}}{octal: >{len(str(octal))}}{hexa:>{len(str(hexa))}}{binary:>{len(str(binary))}}")
+    width = len("{0:b}".format(number))
+    for i in range(1, n + 1):
+        print("{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width))
 
 
 
 
 if __name__ == '__main__':
     n = int(input())
-    print_formatted(n)
+    print_formatted()
+
 
 
