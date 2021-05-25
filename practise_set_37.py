@@ -50,7 +50,9 @@ def solve(s):
     # for x in s.split():
     #     s = s.replace(x, x.capitalize())
     # return s
-    return " ".join(map(lambda x:x.capitalize(), s.split()))
+    for x in s[:].split():
+        s = s.replace(x, x.capitalize())
+    return s
 
 
 if __name__ == '__main__':
