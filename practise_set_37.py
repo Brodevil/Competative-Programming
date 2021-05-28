@@ -44,12 +44,8 @@ Chris Alan
 # Purpose = Just for the python practise to not just learn python also to expert it
 
 
-# Complete the solve function below.
+
 def solve(s):
-    # return " ".join(map(lambda x: x.capitalize(), s.split()))
-    # for x in s.split():
-    #     s = s.replace(x, x.capitalize())
-    # return s
     for x in s[:].split():
         s = s.replace(x, x.capitalize())
     return s
