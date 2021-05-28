@@ -77,11 +77,16 @@ Vowels are only defined as AEIOU. In this problem, Y is not considered a vowel.
 # Purpose = Just for the python practise to not just learn python also to expert it
 
 
+
+
+
 def minion_game(string):
-    # your code goes here
-    pass
+    for _ in range(len(string)):
+        result = string[0:_+1]
+        print(result)
 
 
 if __name__ == '__main__':
     s = input()
     minion_game(s)
+
