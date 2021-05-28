@@ -81,9 +81,16 @@ Vowels are only defined as AEIOU. In this problem, Y is not considered a vowel.
 
 
 def minion_game(string):
+    results = list()
+
+    vowels = ["A", "E", "I", "O", "U"]
     for _ in range(len(string)):
-        result = string[0:_+1]
-        print(result)
+        for i in string[0:_+1]:
+            if i in vowels:
+                if string[string.index(i):_+1] not in results:
+                    results.append(string[string.index(i):_+1])
+    print(results)
+
 
 
 if __name__ == '__main__':
