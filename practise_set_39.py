@@ -93,17 +93,18 @@ e-d-c-b-a-b-c-d-e
 
 """
 
-
 # Author = Abhinav
 # Date = 5th of June 2021
 # Pourpose = Just for python practise
 
+import string
+
 
 def print_rangoli(size):
-    pass
+    letters = string.ascii_lowercase[0:size + 1]
+    pattern = [i.center(size*2-1+size*2-2, "-") for i in letters[::-1]]
 
 
 if __name__ == '__main__':
     n = int(input())
     print_rangoli(n)
-
