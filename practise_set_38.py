@@ -79,26 +79,20 @@ Vowels are only defined as AEIOU. In this problem, Y is not considered a vowel.
 
 
 def minion_game(string):
-    KevinResults = 0
-    StuartResults = 0
-    vowels = ["A", "E", "I", "O", "U"]
-    results = list()
-    for _ in range(len(string)):
-        for i in range(1, len(string)+1):
-            if _ < i:
-                queary = string[_:i]
-                if queary not in results:
-                    results.append(queary)
-                    if string[_] in vowels:
-                        KevinResults += string.count(queary)
-                    else:
-                        StuartResults += string.count(queary)
-
-    if KevinResults > StuartResults:
-        print(f"Kevin {KevinResults}")
+    vowel = ['A', 'E', 'I', 'O', 'U']
+    S = 0
+    K = 0
+    for i in range(len(string)):
+        if string[i] in vowel:
+            K += len(string) - i
+        else:
+            S += len(string) - i
+    if S > K:
+        print("Stuart" + " " + "%d" % S)
+    elif K > S:
+        print("Kevin" + " " + '%d' % K)
     else:
-        print(f"Stuart {StuartResults}")
-
+        print("Draw")
 
 
 if __name__ == '__main__':
