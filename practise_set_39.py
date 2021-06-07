@@ -101,8 +101,7 @@ import string
 
 
 def print_rangoli(size):
-    letters = string.ascii_lowercase[0:size + 1]
-    pattern = [i.center(size*2-1+size*2-2, "-") for i in letters[::-1]]
+    pass
 
 
 if __name__ == '__main__':
