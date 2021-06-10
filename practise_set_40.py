@@ -79,12 +79,11 @@ Explanation :
 Split  into  equal parts of length . Convert each  to  by removing any subsequent occurrences of non-distinct characters in :
 
 
-(here many thigs are ther just read it out by the given link) (https://www.hackerrank.com/challenges/merge-the-tools/problem)
+(here many things are there just read it out by the given link) (https://www.hackerrank.com/challenges/merge-the-tools/problem)
 
 Print each  on a new line.
 
 """
-
 
 
 # Author = Abhinav
@@ -95,6 +94,8 @@ Print each  on a new line.
 def merge_the_tools(string, k):
     pass
 
+
 if __name__ == '__main__':
     string, k = input(), int(input())
     merge_the_tools(string, k)
+
