@@ -92,7 +92,9 @@ Print each  on a new line.
 
 
 def merge_the_tools(string, k):
-    pass
+    n = len(string)
+    u = [string[i:i+k] for i in range(0, len(string), k) ]
+    print(u)
 
 
 if __name__ == '__main__':
