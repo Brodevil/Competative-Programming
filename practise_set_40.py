@@ -92,9 +92,15 @@ Print each  on a new line.
 
 
 def merge_the_tools(string, k):
-    n = len(string)
-    u = [string[i:i+k] for i in range(0, len(string), k) ]
-    print(u)
+    u = [string[i:i+k] for i in range(0, len(string), k)]
+    t = ""
+    s = list()
+    for i in u:
+        for j in i:
+            if j not in t:
+                t += j
+        print(t)
+        t = ""
 
 
 if __name__ == '__main__':
