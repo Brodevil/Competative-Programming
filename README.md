@@ -2,7 +2,7 @@
 [![Image](https://media.geeksforgeeks.org/wp-content/uploads/20210105234135/PythonPracticeExercisesQuestionsandSolutionsmin.png)](https://github.com/Brodevil/Python-practice)
 <br><br>
 
-**👉 I suppose to solve few questions and do python practice in free time.**
+**👉 I suppose to solve few questions and do python practice in spare time.**
 <br><br>
 - In this repo I just dump my sloved python problem as a practise set
 - Nothing special but every file contain the question as well as solution
