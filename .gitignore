@@ -2,12 +2,17 @@
 .idea/
 
 # vscode files
+.vscode/
 
-
-# rought file for to run few code
-code_n_error.py 
 
 # Clear the clutter is a python practise 15 and its actaully Clearing the clutter and all the stuff, But the problem is working with few file 
 # So, we want to make everything organized so we will working with file in the new directory which contain mp3 and mp4 files also so that's why we will 
 # add that folder to ignore it so that the git it going to ignore it and not start to track it 
 Clear The clutter/
+
+
+#cached files 
+__pycached__/
+*.pyc 
+*io 
+*.log
