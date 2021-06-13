@@ -5,8 +5,7 @@
 No Idea! 
 
 
-
-There is an array of N integers. There are also 2 disjoint sets, A and B, each containing M integers. 
+There is an array of N integers. There are also 2 disjoint sets, A and B, each containing M integers.
 You like all the integers in set A and dislike all the integers in set B. Your initial happiness is 0.
 For each i integer in the array, if i belongs to A, you add 1 to your happiness. 
 If i belongs to b, you add -1 to your happiness.
@@ -18,7 +17,7 @@ Note: Since  and  are sets, they have no repeated elements. However, the array m
 Constraints :
 1 <= n <= 10**5
 1 <= m <= 10**5
-1 <=  any integar as a input  <=  10**5
+1 <=  any integer as a input  <=  10**5
 
 
 
@@ -62,9 +61,22 @@ Hence, the total happiness is 2-1 = 1.
 
 # Author = Abhinav
 # Date = June 13 2021
-# Source = (https://www.hackerrank.com/challenges/symmetric-difference/problem)
+# Source = (https://www.hackerrank.com/challenges/no-idea/problem)
 # Pourpose = Just for python practicing will lots of dedications
 
 
 if __name__ == "__main__":
-    pass
+    _ = input()
+    array = list(map(int, input().split()))
+    A = set(map(int, input().split()))
+    B = set(map(int, input().split()))
+    happiness = 0
+
+    for _ in array:
+        if _ in A:
+            happiness += 1
+        elif _ in B:
+            happiness -= 1
+
+    print(happiness)
+
