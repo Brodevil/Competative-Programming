@@ -112,8 +112,10 @@ False
 
 
 
+
 Task :-
-Given  sets of integers,  and , print their symmetric difference in ascending order. The term symmetric difference indicates those values that exist in either  or  but do not exist in both.
+Given  sets of integers, M and N, print their symmetric difference in ascending order. 
+The term symmetric difference indicates those values that exist in either M or N but do not exist in both.
 
 
 Input Format :
@@ -124,7 +126,8 @@ The fourth line contains  space-separated integers.
 
 
 Output Format :
-Output the symmetric difference integers in ascending order, one per line.
+
+ - Output the symmetric difference integers in ascending order, one per line.
 
 
 
@@ -147,13 +150,12 @@ Sample Output :
 12
 
 
-
-(https://www.hackerrank.com/challenges/symmetric-difference/problem)
 """
 
 
 # Author = Abhinav
 # Date = June 12 2021
+# Source = (https://www.hackerrank.com/challenges/symmetric-difference/problem)
 # Pourpose = Just for python practicing will lots of dedications
 
 
