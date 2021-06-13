@@ -159,8 +159,15 @@ Sample Output :
 # Pourpose = Just for python practicing will lots of dedications
 
 
-if __name__ == '__main__':
-    pass
+if __name__ == "__main__":
+	_ = input()
+	a = set(map(int, input().split()))
+	_ = input()
+	b = set(map(int, input().split()))
+	results = sorted([*a.difference(b), *b.difference(a)])
+	for _ in results:
+		print(_)
+
 
 
 
