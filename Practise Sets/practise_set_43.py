@@ -96,4 +96,21 @@ Total money earned =  55 + 45 + 40 + 60 = $200
 # Source = https://www.hackerrank.com/challenges/collections-counter/problem
 
 
+# Solution
+
+from collections import Counter
+
+
+if __name__ == "__main__":
+    _ = input()
+    x = list(map(int, input().split()))
+    money = 0
+
+    for _ in int(input()):
+        shoe_num, rate = map(int, input().split())
+        if shoe_num in x:
+            money += rate
+        
+    print(money)
+        
 
