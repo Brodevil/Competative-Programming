@@ -103,13 +103,14 @@ from collections import Counter
 
 if __name__ == "__main__":
     _ = input()
-    x = list(map(int, input().split()))
+    x = Counter(list(map(int, input().split())))
     money = 0
 
-    for _ in int(input()):
+    for _ in range(int(input())):
         shoe_num, rate = map(int, input().split())
-        if shoe_num in x:
+        if shoe_num in x and x[shoe_num]:
             money += rate
+            x[shoe_num] -= 1
         
     print(money)
         
