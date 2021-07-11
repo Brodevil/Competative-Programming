@@ -5,6 +5,20 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": false,
-    "python.testing.promptToConfigure": false,
-    "python.pythonPath": "C:\\Python 38\\python.exe"
+    "python.pythonPath": "C:\\Python 38\\python.exe",
+    "editor.minimap.enabled": true,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "python.linting.<linter>Enabled": true,
+    "python.linting.prospectorArgs": [
+        "-s",
+        "veryhigh"
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.promptToConfigure": false
 }
