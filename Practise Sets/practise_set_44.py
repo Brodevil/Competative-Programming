@@ -112,7 +112,22 @@ import sys
 
 def plusMinus(arr):
     # Write your code here
-    pass
+    lenght = len(arr)
+    negative = 0
+    positive = 0
+    zero = 0
+
+    for _ in arr:
+        if _ > 0:
+            positive += 1
+        elif _ < 0:
+            negative += 1
+        elif _ == 0:
+            zero += 1
+
+    print(f"{positive/lenght:.6f}")
+    print(f"{negative/lenght:.6f}")
+    print(f"{zero/lenght:.6f}")
 
 
 if __name__ == '__main__':
