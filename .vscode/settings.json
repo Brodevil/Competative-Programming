@@ -20,5 +20,27 @@
         "-p",
         "*test.py"
     ],
-    "python.testing.promptToConfigure": false
+    "python.testing.promptToConfigure": false,
+    "editor.mouseWheelZoom": true,
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.editor.enablePreview": false,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Microsoft",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "tabnine.experimentalAutoImports": true,
+    "terminal.integrated.shellArgs.windows": [],
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.colorTheme": "Monokai",
+    "terminal.integrated.tabs.enabled": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "window.title": " ${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} (Brodevil)",
+    "python.defaultInterpreterPath": "C:\\Python 38\\python.exe",
+    "files.autoSave": "afterDelay",
+    "python.jediEnabled": true
 }
