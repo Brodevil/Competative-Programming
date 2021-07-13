@@ -94,8 +94,8 @@ import sys
 
 def staircase(n):
     # Write your code here
-    pass
-
+    [print(f"{' '*(n-_)}{'#'*_}") for _ in range(1, n+1)]
+        
 
 if __name__ == '__main__':
     n = int(input().strip())
