@@ -20,7 +20,6 @@
         "-p",
         "*test.py"
     ],
-    "python.testing.promptToConfigure": false,
     "editor.mouseWheelZoom": true,
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
     "workbench.editor.enablePreview": false,
