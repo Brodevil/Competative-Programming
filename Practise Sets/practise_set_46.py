@@ -99,9 +99,11 @@ import sys
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
-def miniMaxSum(arr):
+def miniMaxSum(arr: list):
     # Write your code here
-    pass
+    arr.sort()
+    smallest, biggest = sum(arr[:-1]), sum(arr[1:])
+    print(smallest, biggest)
 
 
 if __name__ == '__main__':
