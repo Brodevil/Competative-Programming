@@ -83,7 +83,7 @@ import sys
 
 def birthdayCakeCandles(candles):
     # Write your code here
-    pass
+    return
 
 
 if __name__ == '__main__':
