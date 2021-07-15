@@ -81,20 +81,16 @@ import sys
 # The function accepts INTEGER_ARRAY candles as parameter.
 #
 
-def birthdayCakeCandles(candles):
+def birthdayCakeCandles(candles: list):
     # Write your code here
-    return
+    return candles.count(sorted(candles)[-1])
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
     candles_count = int(input().strip())
 
     candles = list(map(int, input().rstrip().split()))
 
     result = birthdayCakeCandles(candles)
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+    print(result)
