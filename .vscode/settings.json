@@ -23,18 +23,18 @@
     "editor.mouseWheelZoom": true,
     "workbench.preferredDarkColorTheme": "Visual Studio Dark",
     "workbench.editor.enablePreview": false,
-    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "workbench.colorCustomizations" : {
+        "activityBar.foreground": "#00FFFF",
+        "activityBarBadge.background": "#00FF88",
+        "activityBarBadge.foreground": "#FF00"
+    },
+
     "explorer.confirmDragAndDrop": false,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "python.languageServer": "Jedi",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "tabnine.experimentalAutoImports": true,
-    "terminal.integrated.shellArgs.windows": [],
-    "editor.minimap.enabled": false,
-    "liveServer.settings.donotVerifyTags": true,
     "workbench.colorTheme": "Monokai",
     "terminal.integrated.tabs.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
