@@ -76,6 +76,7 @@ import random
 import re
 import sys
 
+
 #
 # Complete the 'timeConversion' function below.
 #
@@ -85,12 +86,27 @@ import sys
 
 def timeConversion(s):
     # Write your code here
-    return 0
+    meridium = s[-2:]
+    s = s.replace(s[-2:], "")
+    times = list(map(int, s.split(":")))
+    
+    if meridium == "PM":
+        times[0] += 12
+    
+    elif meridium == "AM" and times[0] == 12:
+        times[0] = 0
+    
+    for _ in range(len(times)):
+        if len(str(times[_])) == 1:
+            times[_] = f"0{times[_]}"
+        else:
+            times[_] = str(times[_])
+        
+    return ":".join(times)         
+    
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
     s = input()
 
     result = timeConversion(s)
