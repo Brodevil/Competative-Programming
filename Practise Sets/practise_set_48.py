@@ -90,7 +90,7 @@ def timeConversion(s):
     s = s.replace(s[-2:], "")
     times = list(map(int, s.split(":")))
     
-    if meridium == "PM":
+    if meridium == "PM" and not times[0] == 12:
         times[0] += 12
     
     elif meridium == "AM" and times[0] == 12:
