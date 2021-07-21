@@ -1,94 +1,77 @@
-# Python practise 49 = Chocolate Game (From hackerrank) = (https://www.hackerrank.com/challenges/chocolate-game/problem)
+# Python Practise 49 = Grading Student (From hackerank) = (https://www.hackerrank.com/challenges/grading/problem)
 
 """
-Chocolate Game | Problem Statement :
+Grading Student | Problem Statement :
 
-    Laurel and Hardy have n piles of chocolates with each pile containing some number of chocolates. 
-    The piles are arranged from left to right in a non decreasing order based on the number of chocolates in each pile. 
-    They play the following game.
-
-
-For every continuous subsequence of chocolate piles (at least 2 piles form a subsequence), 
-Laurel and Hardy will play game on this subsequence of chocolate piles, Laurel plays first, and they play in turn. 
-In one move, the player can choose one of the piles and remove at least one chocolate from it, 
-but the non-decreasing order of the chocolate piles must be maintained. The last person to make a valid move wins.
+HackerLand University has the following grading policy:
+ - Every student receives a grade in the inclusive range from 0 to 100.
+ - Any  less than  is a failing grade.
 
 
-How many continuous subsequences of chocolate piles will Laurel win if both of them play optimally?
-The number of chocolates of each pile will be recovered after the game ends for each subsequences.
+Sam is a professor at the university and likes to round each student's grade according to these rules:
+    - If the difference between the  and the next multiple of 5 is less than 3, round grade up to the next multiple of 5.
+    - If the value of grade is less than 38, no rounding occurs as the result will still be a failing grade.
 
+
+Examples :
+
+    - grade = 84 round to 85 (85 - 84 is less than 3)
+    - grade = 29 do not round (result is less than 40)
+    - grade = 57 do not round (60 - 57 is 3 or higher)
+
+Given the initial value of grade for each of Sam's n students, 
+write code to automate the rounding process.
+
+
+Function Description :
+
+    Complete the function gradingStudents in the editor below.
+
+    gradingStudents has the following parameter(s):
+
+    - int grades[n]: the grades before rounding
+
+
+Returns :
+
+    int[n]: the grades after rounding as appropriate
 
 
 Input Format :
 
-    The first line contains an integer n denoting the number of piles.
-    The second line contains the number of chocolates in each pile, arranged from left to right and separated by a single space between them.
+The first line contains a single integer, n, the number of students.
+Each line i of the n subsequent lines contains a single integer, grades[i].
 
 
 Constraints :
 
- 2 ≤ n ≤ 100000
- 1 ≤ chocolate in each pile ≤ 10^9
-
-
-Output Format :
-
-    A single integer denoting the number of continuous subsequences of chocolate piles in which Laurel will win.
+    - i < n < 60
+    - 0 < grade[i] < 100
 
 
 
-Sample Input :
-    5
-    1 1 2 2 3
+Sample Input 0 :
+    4
+    73
+    67
+    38
+    33
 
 
-Sample Output :
-    5
+Sample Output 0 :
+    75
+    67
+    40
+    33
 
 
-Explanation :
+Explanation 0 :
 
-    Of the 10 continuous-sub-sequence of chocolate piles,
+![image](https://s3.amazonaws.com/hr-challenge-images/0/1484768684-54439977a1-curving2.png)
 
-    Laurel loses in [1,1], [1,1,2], [1,1,2,2], [1,2,2,3], [2,2] and
-    wins in [1,1,2,2,3], [1,2], [1,2,2], [2,2,3] and [2,3] and hence 5.
+Student 1 received a 73, and the next multiple of 5 from 73 is 73. Since 75-73 < 3, the student's grade is rounded to 75.
+Student 2 received a 67, and the next multiple of 5 from 67 is 70. Since 70-67 = 3, the grade will not be modified and the student's final grade is 67.
+Student 3 received a 38, and the next multiple of 5 from 38 is 40. Since 40-38 < 3, the student's grade will be rounded to 40.
+Student 4 received a grade below 33, so the grade will not be modified and the student's final grade is 33.
 
 """
-
-
-# Author = Abhinav
-# Date = 16 July 2021
-# Pourpose = Now I am getting very less time to touch my laptop, so in few time lets Practise some new thing in Python
-# Source = https://www.hackerrank.com/challenges/chocolate-game/problem
-
-
-# Soluction :
-
-
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-#
-# Complete the 'chocolateGame' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
-
-def chocolateGame(arr):
-    # Write your code here
-    return 0
-
-if __name__ == '__main__':
-    arr_count = int(input().strip())
-
-    arr = list(map(int, input().rstrip().split()))
-
-    result = chocolateGame(arr)
-
-    print(result)
