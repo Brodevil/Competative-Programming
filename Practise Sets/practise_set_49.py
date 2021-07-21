@@ -75,3 +75,46 @@ Student 3 received a 38, and the next multiple of 5 from 38 is 40. Since 40-38 <
 Student 4 received a grade below 33, so the grade will not be modified and the student's final grade is 33.
 
 """
+
+
+
+# Author = Abhinav
+# Date = 21 July 2021
+# Pourpose = Now I am getting very less time to touch my laptop, so in few time lets Practise some new thing in Python
+# Source = https://www.hackerrank.com/challenges/grading/problem
+
+
+# Soluction :
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'gradingStudents' function below.
+#
+# The function is expected to return an INTEGER_ARRAY.
+# The function accepts INTEGER_ARRAY grades as parameter.
+#
+
+def gradingStudents(grades):
+    # Write your code here
+    return 0
+
+
+if __name__ == '__main__':
+    grades_count = int(input().strip())
+
+    grades = []
+
+    for _ in range(grades_count):
+        grades_item = int(input().strip())
+        grades.append(grades_item)
+
+    result = gradingStudents(grades)
+
+    print(result)
