@@ -108,12 +108,13 @@ def next_five_factor(num: int):
 
 def gradingStudents(grades: list):
     # Write your code here
-    for _ in grades:
+    for index, _ in enumerate(grades):
         if _ >= 38:
-            next_five_factor(_)
-
-        
-
+            next_five = next_five_factor(_)
+            if not next_five - _ >= 3:
+                grades[index] = next_five
+            
+    return grades
 
 
 if __name__ == '__main__':
@@ -125,6 +126,7 @@ if __name__ == '__main__':
         grades_item = int(input().strip())
         grades.append(grades_item)
 
-    result = gradingStudents(grades)
+    for _ in gradingStudents(grades):
+        print(_)
 
-    print(result)
+    
