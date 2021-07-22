@@ -99,12 +99,14 @@ import sys
 #
 # The function is expected to return an INTEGER_ARRAY.
 # The function accepts INTEGER_ARRAY grades as parameter.
-#
+
+
 
 def next_five_factor(num: int):
     for _ in range(1, 6):
         if (num + _) % 5 == 0:
             return num+_
+
 
 def gradingStudents(grades: list):
     # Write your code here
@@ -128,5 +130,3 @@ if __name__ == '__main__':
 
     for _ in gradingStudents(grades):
         print(_)
-
-    
