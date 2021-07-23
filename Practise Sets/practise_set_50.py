@@ -38,8 +38,19 @@ import sys
 
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Write your code here
-    return 0
+    apples_cross = 0
+    oranges_cross = 0
+
+    for _ in apples:
+        if a + _ <= s:
+            apples_cross += 1
     
+    for _ in oranges:
+        if b + _ >= b:
+            oranges_cross += 1
+    
+    print(apples_cross, oranges_cross, sep="\n")   
+
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
