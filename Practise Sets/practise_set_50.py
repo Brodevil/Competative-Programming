@@ -38,18 +38,8 @@ import sys
 
 def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Write your code here
-    apples_cross = 0
-    oranges_cross = 0
-
-    for _ in apples:
-        if a + _ >= s:
-            apples_cross += 1
-    
-    for _ in oranges:
-        if b + _ <= b:
-            oranges_cross += 1
-    
-    print(apples_cross, oranges_cross, sep="\n")   
+    print(sum([1 for x in apples if (x + a) >= s and (x + a) <= t]))
+    print(sum([1 for x in oranges if (x + b) >= s and (x + b) <= t]))
 
 
 if __name__ == '__main__':
