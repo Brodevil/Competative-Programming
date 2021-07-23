@@ -42,11 +42,11 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     oranges_cross = 0
 
     for _ in apples:
-        if a + _ <= s:
+        if a + _ >= s:
             apples_cross += 1
     
     for _ in oranges:
-        if b + _ >= b:
+        if b + _ <= b:
             oranges_cross += 1
     
     print(apples_cross, oranges_cross, sep="\n")   
