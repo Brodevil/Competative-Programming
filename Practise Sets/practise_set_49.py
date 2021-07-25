@@ -88,13 +88,6 @@ Student 4 received a grade below 33, so the grade will not be modified and the s
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'gradingStudents' function below.
 #
 # The function is expected to return an INTEGER_ARRAY.

@@ -66,15 +66,7 @@ Candle heights are [3, 2, 1, 3]. The tallest candles are 3 units, and there are 
 
 # Soluction :
 
-#!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'birthdayCakeCandles' function below.
 #
 # The function is expected to return an INTEGER.

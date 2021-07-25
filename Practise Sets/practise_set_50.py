@@ -18,13 +18,6 @@ Get the Problem set here : https://www.hackerrank.com/challenges/apple-and-orang
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'countApplesAndOranges' function below.
 #
 # The function accepts following parameters:

@@ -98,13 +98,6 @@ The proportions of occurrence are positive: 3/6 = 0.5000000, negative: 2/6 = 0.3
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'plusMinus' function below.
 #
 # The function accepts INTEGER_ARRAY arr as parameter.

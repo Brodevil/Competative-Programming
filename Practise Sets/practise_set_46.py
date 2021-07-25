@@ -87,13 +87,6 @@ Sum everything except 5, the sum is 1 + 2 + 3 + 4 = 10.
 
 #!/bin/python3
 
-import math
-import os
-import random
-import re
-import sys
-
-#
 # Complete the 'miniMaxSum' function below.
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
