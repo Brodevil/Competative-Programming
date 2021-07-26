@@ -68,5 +68,3 @@ if __name__ == '__main__':
     result = surfaceArea(A)
 
     print(result)
-
-# Little bit hard question but will solve it soon
