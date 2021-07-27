@@ -47,5 +47,3 @@ if __name__ == '__main__':
         result = absolutePermutation(n, k)
 
         print(result)
-
-# Little bit hard question but will solve it soon
