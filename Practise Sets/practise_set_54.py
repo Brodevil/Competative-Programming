@@ -24,10 +24,17 @@ And the Solution here |
 #  1. INTEGER_ARRAY a
 #  2. INTEGER_ARRAY b
 
+import sys
+from functools import reduce
+from fractions import gcd
 
-def getTotalX(a, b):
+
+
+def getTotalX(a: list, b: list):
     # Write your code here
-    return 0
+    lcm_a = reduce(lambda x,y: x*y//gcd(x,y), a)
+    gcd_b = reduce(gcd, b)
+    return (sum(1 for x in range(lcm_a,gcd_b+1,lcm_a) if gcd_b%x==0))
 
 
 if __name__ == '__main__':
