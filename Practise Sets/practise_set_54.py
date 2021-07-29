@@ -24,11 +24,8 @@ And the Solution here |
 #  1. INTEGER_ARRAY a
 #  2. INTEGER_ARRAY b
 
-import sys
 from functools import reduce
-from fractions import gcd
-
-
+from math import gcd
 
 def getTotalX(a: list, b: list):
     # Write your code here
