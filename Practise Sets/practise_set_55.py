@@ -39,7 +39,7 @@ def breakingRecords(scores: list):
             elif scores[_] > highest[-1]:
                 highest.append(scores[_])
             
-    return [len(lowest)-1, len(highest)-1]
+    return [len(highest)-1, len(lowest)-1, ]
 
 
 if __name__ == '__main__':
