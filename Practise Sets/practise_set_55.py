@@ -24,9 +24,22 @@ And the soluction here :|
 # The function accepts INTEGER_ARRAY scores as parameter.
 
 
-def breakingRecords(scores):
+def breakingRecords(scores: list):
     # Write your code here
-    return 0
+    lowest = list()
+    highest = list()
+
+    for _ in range(len(scores)):
+        if _ == 0:
+            lowest.append(scores[_])
+            highest.append(scores[_])
+        else:
+            if scores[_] < lowest[-1]:
+                lowest.append(scores[_])
+            elif scores[_] > highest[-1]:
+                highest.append(scores[_])
+            
+    return [len(lowest)-1, len(highest)-1]
 
 
 if __name__ == '__main__':
