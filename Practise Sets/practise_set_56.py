@@ -27,9 +27,9 @@ And the solution here : |
 #  3. INTEGER m
 
 
-def birthday(s, d, m):
+def birthday(s: list, d: int, m: int):
     # Write your code here
-    return 0
+    return sum([1 for _ in range(len(s)) if sum(s[_:_+m]) == d])
 
 
 if __name__ == '__main__':
