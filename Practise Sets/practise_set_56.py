@@ -1,4 +1,4 @@
-# Python Practise 54 = Subarray Division (From hackerrank)
+# Python Practise 56 = Subarray Division (From hackerrank)
 
 """
 Subarray Division | Problem Statment :
