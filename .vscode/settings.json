@@ -35,7 +35,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "workbench.colorTheme": "Darcula Pycharm with Dark GUI",
+    "workbench.colorTheme": "Monokai",
     "terminal.integrated.tabs.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
     "window.title": " ${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} (Brodevil)",
