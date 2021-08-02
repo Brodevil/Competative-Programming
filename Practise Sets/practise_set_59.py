@@ -17,3 +17,23 @@ And Get the solved solution in python here :
 # Source =  https://www.hackerrank.com/challenges/day-of-the-programmer/problem
 
 # Solution :
+
+#!/bin/python3
+
+# Complete the 'dayOfProgrammer' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts INTEGER year as parameter.
+
+
+def dayOfProgrammer(year):
+    return 0
+
+
+if __name__ == '__main__':
+    year = int(input().strip())
+
+    result = dayOfProgrammer(year)
+
+    print(result)
+    
