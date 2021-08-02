@@ -28,9 +28,11 @@ And get the Solved solution here :|
 # The function accepts INTEGER_ARRAY arr as parameter.
 
 
-def migratoryBirds(arr):
+def migratoryBirds(arr: list):
     # Write your code here
-    return 0
+    arr2 = [[arr.count(_), _] for _ in set(arr)]
+    highest = sorted(arr2)[-1][0]
+    return sorted([_[1] for _ in arr2 if _[0] == highest])[0]
 
 
 if __name__ == '__main__':
