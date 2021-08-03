@@ -36,4 +36,3 @@ if __name__ == '__main__':
     result = dayOfProgrammer(year)
 
     print(result)
-    
