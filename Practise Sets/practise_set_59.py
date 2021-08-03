@@ -1,4 +1,4 @@
-# Python Practise 58 = Day of the Programmer  (From hackerrank)
+# Python Practise 59 = Day of the Programmer  (From hackerrank)
 
 """
 Day of the Programmer | Problem Statment 
