@@ -32,15 +32,7 @@ Bill Division | Problem Statment :
 
 
 def bonAppetit(bill: list, k: int, b: int):
-    total = sum(bill)//2
-    del bill[k]
-    anna = sum(bill)
-
-    if anna == total:
-        print("Bon Appetit")
-    else:
-        print(abs(total-anna))
-    return 0
+    print('Bon Appetit' if (sum(bill) - bill[k]) // 2 == b else bill[k] // 2)
 
 
 if __name__ == '__main__':
