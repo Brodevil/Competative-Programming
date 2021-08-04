@@ -31,8 +31,15 @@ Bill Division | Problem Statment :
 #  3. INTEGER b
 
 
-def bonAppetit(bill, k, b):
-    # Write your code here
+def bonAppetit(bill: list, k: int, b: int):
+    total = sum(bill)//2
+    del bill[k]
+    anna = sum(bill)
+
+    if anna == total:
+        print("Bon Appetit")
+    else:
+        print(abs(total-anna))
     return 0
 
 
