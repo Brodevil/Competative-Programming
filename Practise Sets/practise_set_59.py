@@ -4,7 +4,7 @@
 Day of the Programmer | Problem Statment 
 
 
-Get the Problem Statment online on hackerrank : https://www.hackerrank.com/challenges/bon-appetit/problem
+Get the Problem Statment online on hackerrank : https://www.hackerrank.com/challenges/day-of-the-programmer/problem
 And Get the solved solution in python here :
 
 
@@ -14,7 +14,7 @@ And Get the solved solution in python here :
 # Author = Abhinav
 # Date = 2 April 2021
 # Pourpose = Just for practise and imporving skills
-# Source =  https://www.hackerrank.com/challenges/bon-appetit/problem
+# Source =  https://www.hackerrank.com/challenges/day-of-the-programmer/problem
 
 # Solution :
 
@@ -25,29 +25,19 @@ And Get the solved solution in python here :
 # The function is expected to return a STRING.
 # The function accepts INTEGER year as parameter.
 
-#!/bin/python3
 
-# Complete the 'bonAppetit' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER_ARRAY bill
-#  2. INTEGER k
-#  3. INTEGER b
+def dayOfProgrammer(year: int):
+    if year == 1918:
+        return '26.09.1918'
+    elif ((year <= 1917) & (year%4 == 0)) or ((year > 1918) & (year%400 == 0 or ((year%4 == 0) & (year%100 != 0)))):
+        return '12.09.%s' % year
+    else:
+        return '13.09.%s' % year
 
-
-def bonAppetit(bill, k, b):
-    # Write your code here
-    return 0
 
 if __name__ == '__main__':
-    first_multiple_input = input().rstrip().split()
+    year = int(input().strip())
 
-    n = int(first_multiple_input[0])
+    result = dayOfProgrammer(year)
 
-    k = int(first_multiple_input[1])
-
-    bill = list(map(int, input().rstrip().split()))
-
-    b = int(input().strip())
-
-    bonAppetit(bill, k, b)
+    print(result)
