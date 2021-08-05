@@ -31,9 +31,14 @@ And get the solved solution in python here : |
 #  2. INTEGER_ARRAY ar
 
 
-def sockMerchant(n, ar):
-    # Write your code here
-    return 0
+def sockMerchant(n: int, ar: list) -> int:
+    paires = 0
+    for _ in set(ar):
+        count = ar.count(_)
+        if count >= 2:
+            paires += (count//2)
+
+    return paires
 
 
 if __name__ == '__main__':
