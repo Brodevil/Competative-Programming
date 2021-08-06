@@ -20,3 +20,27 @@ And get the solved solution in Python3 here :|
 
 
 # Solution :
+
+#!/bin/python3
+
+# Complete the 'countingValleys' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER steps
+#  2. STRING path
+
+
+def countingValleys(steps, path):
+    # Write your code here
+    return 0
+
+
+if __name__ == '__main__':
+    steps = int(input().strip())
+
+    path = input()
+
+    result = countingValleys(steps, path)
+
+    print(result)
