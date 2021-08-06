@@ -29,9 +29,9 @@ And get the solved solution in python here :|
 #  2. INTEGER p
 
 
-def pageCount(n, p):
+def pageCount(n: int, p: int):
     # Write your code here
-    return 0
+    return int(min(p/2, n/2-p/2))
 
 
 if __name__ == '__main__':
