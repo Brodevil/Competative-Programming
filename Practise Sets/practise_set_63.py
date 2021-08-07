@@ -31,9 +31,15 @@ And get the solved solution in Python3 here :|
 #  2. STRING path
 
 
-def countingValleys(steps, path):
-    # Write your code here
-    return 0
+def countingValleys(steps: int, path: str):
+    position = 1
+    for _ in path.split():
+        if _ == "U":
+            position += 1
+        elif _ == "D":
+            position -= 1
+    
+    return position
 
 
 if __name__ == '__main__':
