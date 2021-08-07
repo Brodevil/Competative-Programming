@@ -32,14 +32,19 @@ And get the solved solution in Python3 here :|
 
 
 def countingValleys(steps: int, path: str):
-    position = 1
-    for _ in path.split():
-        if _ == "U":
-            position += 1
-        elif _ == "D":
-            position -= 1
+    seaLevel = 0 
+    valley = 0
+
+    for step in path:
+        if step == 'U':
+            seaLevel += 1
+        else:
+            seaLevel -= 1
+        
+        if step == 'U' and seaLevel == 0:
+            valley += 1
     
-    return position
+    return valley
 
 
 if __name__ == '__main__':
