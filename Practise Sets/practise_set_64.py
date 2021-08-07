@@ -23,8 +23,18 @@ And Get the solved solution in python here :|
 # Complete the getMoneySpent function below.
 
 
-def getMoneySpent(keyboards, drives, b):
-    return 0
+def getMoneySpent(keyboards: list, drives: list, b: int):
+    under_budget = -1
+
+    for board in keyboards:
+        if board > b:
+            continue
+        for _ in drives:
+            cost = board + _ 
+            if cost <= b and cost > under_budget:
+                under_budget = cost
+
+    return under_budget
 
 
 if __name__ == '__main__':
