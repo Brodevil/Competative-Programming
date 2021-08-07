@@ -13,7 +13,7 @@ And get the solved solution in python here : |
 
 
 # Author = Abhinav
-# Date = 4 April 2021
+# Date = 4 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  https://www.hackerrank.com/challenges/sock-merchant/problem
 

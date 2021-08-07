@@ -12,7 +12,7 @@ And get the solved solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 7 April 2021
+# Date = 7 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =   https://www.hackerrank.com/challenges/cats-and-a-mouse/problem
 

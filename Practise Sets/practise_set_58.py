@@ -13,7 +13,7 @@ And get the Solved solution here :|
 
 
 # Author = Abhinav
-# Date = 1 April 2021
+# Date = 1 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  https://www.hackerrank.com/challenges/migratory-birds/problem
 

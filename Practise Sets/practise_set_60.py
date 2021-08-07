@@ -12,7 +12,7 @@ Bill Division | Problem Statment :
 
 
 # Author = Abhinav
-# Date = 3 April 2021
+# Date = 3 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  https://www.hackerrank.com/challenges/bon-appetit/problem
 

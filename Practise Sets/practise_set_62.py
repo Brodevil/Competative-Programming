@@ -12,7 +12,7 @@ And get the solved solution in python here :|
 
 
 # Author = Abhinav
-# Date = 5 April 2021
+# Date = 5 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  https://www.hackerrank.com/challenges/drawing-book/problem
 
