@@ -12,7 +12,7 @@ And Get the solved solution in python here :|
 
 
 # Author = Abhinav
-# Date = 6 April 2021
+# Date = 7 April 2021
 # Pourpose = Just for practise and imporving skills
 # Source =   https://www.hackerrank.com/challenges/electronics-shop/problem
 
