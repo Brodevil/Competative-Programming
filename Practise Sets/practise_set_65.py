@@ -21,8 +21,18 @@ And get the solved solution in python by Brodevil here :|
 # Complete the catAndMouse function below.
 
 
-def catAndMouse(x, y, z):
-    return 0
+def catAndMouse(x: int, y: int, z: int):
+    catA = abs(x-z)
+    catB = abs(y-z)
+    print(catA, catB)
+
+    if catA < catB:
+        print("Cat A")
+    elif catA > catB:
+        print("Cat B")
+    elif catA == catB:
+        print("Mouse C")
+    
 
 
 if __name__ == '__main__':
@@ -38,5 +48,3 @@ if __name__ == '__main__':
         z = int(xyz[2])
 
         result = catAndMouse(x, y, z)
-
-        print(result)
