@@ -19,3 +19,25 @@ And get the solved solution in python by Brodevil here :|
 
 # Solution :
 
+#!/bin/python3
+
+# Complete the 'formingMagicSquare' function below.
+
+# The function is expected to return an INTEGER.
+# The function accepts 2D_INTEGER_ARRAY s as parameter.
+
+
+def formingMagicSquare(s: int) -> int:
+    # Write your code here
+    return 0
+
+
+if __name__ == '__main__':
+    s = list()
+
+    for _ in range(3):
+        s.append(list(map(int, input().rstrip().split())))
+
+    result = formingMagicSquare(s)
+
+    print(result)
