@@ -19,3 +19,17 @@ And get the sovled solution in python by Brodevil here :|
 
 # Solution :
 
+
+def pickingNumbers(a: list):
+    # Write your code here\
+    return 0
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    a = list(map(int, input().rstrip().split()))
+
+    result = pickingNumbers(a)
+
+    print(result)
