@@ -21,30 +21,31 @@ And get the solved solution in python by Brodevil here :|
 
 #!/bin/python3
 
-from itertools import permutations
+if __name__ == "__main__":
+    import itertools
+    s = []
+    for i in range(3):
+        s.extend(list(map(int, input().split(" "))))
 
-# Complete the 'formingMagicSquare' function below.
+    min_cost = 1000
+    best = None
+    def is_magic(s):
+        for i in range(3):
+            if sum(s[i*3:i*3+3]) != 15:
+                return False
+            if sum(s[i::3]) != 15:
+                return False
+        if s[0] + s[4] + s[8] != 15:
+            return False
+        if s[2] + s[4] + s[6] != 15:
+            return False
+        return True
 
-# The function is expected to return an INTEGER.
-# The function accepts 2D_INTEGER_ARRAY s as parameter.
-
-
-def formingMagicSquare(s: list) -> int:
-    # Write your code here
-    ans = 18
-    for _ in permutations(range(1, 10)):
-        if sum(_[0:3]) == 15 and sum(_[3:6]) == 15 and sum(_[0::3]) == 15 and sum(_[1::3]) == 15 and _[0] + _[4] + _[8] == 15 and (_[2] + _[4] + _[6] == 15):
-            ans = min(ans, sum(abs(_[i] - s[i]) for i in range(0,9)))
-
-    return ans
-
-
-if __name__ == '__main__':
-    s = list()
-
-    for _ in range(3):
-        s.append(list(map(int, input().rstrip().split())))
-
-    result = formingMagicSquare(s)
-
-    print(result)
+    best = None
+    for p in itertools.permutations(range(1,10)):
+        cost = sum([abs(p[i] - s[i]) for i in range(len(s))])
+        if cost < min_cost and is_magic(p):
+            min_cost = cost
+            best = p
+            
+    print(min_cost)
