@@ -21,7 +21,7 @@ And get the solved solution in python by Brodevil here :|
 
 #!/bin/python3
 
-from itertools import *
+from itertools import permutations
 
 # Complete the 'formingMagicSquare' function below.
 
@@ -31,8 +31,10 @@ from itertools import *
 
 def formingMagicSquare(s: list) -> int:
     # Write your code here
+    for _ in permutations(range(9))
+
     return 0
-    
+
 
 if __name__ == '__main__':
     s = list()
