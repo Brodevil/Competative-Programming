@@ -31,10 +31,12 @@ from itertools import permutations
 
 def formingMagicSquare(s: list) -> int:
     # Write your code here
-    for _ in permutations(range(9)):
-        pass
+    ans = 18
+    for _ in permutations(range(1, 10)):
+        if sum(_[0:3]) == 15 and sum(_[3:6]) == 15 and sum(_[0::3]) == 15 and sum(_[1::3]) == 15 and _[0] + _[4] + _[8] == 15 and (_[2] + _[4] + _[6] == 15):
+            ans = min(ans, sum(abs(_[i] - s[i]) for i in range(0,9)))
 
-    return 0
+    return ans
 
 
 if __name__ == '__main__':
