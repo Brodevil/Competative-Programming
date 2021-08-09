@@ -21,16 +21,18 @@ And get the solved solution in python by Brodevil here :|
 
 #!/bin/python3
 
+from itertools import *
+
 # Complete the 'formingMagicSquare' function below.
 
 # The function is expected to return an INTEGER.
 # The function accepts 2D_INTEGER_ARRAY s as parameter.
 
 
-def formingMagicSquare(s: int) -> int:
+def formingMagicSquare(s: list) -> int:
     # Write your code here
     return 0
-
+    
 
 if __name__ == '__main__':
     s = list()
