@@ -31,7 +31,8 @@ from itertools import permutations
 
 def formingMagicSquare(s: list) -> int:
     # Write your code here
-    for _ in permutations(range(9))
+    for _ in permutations(range(9)):
+        pass
 
     return 0
 
