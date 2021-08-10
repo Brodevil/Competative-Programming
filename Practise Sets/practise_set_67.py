@@ -22,8 +22,15 @@ And get the sovled solution in python by Brodevil here :|
 
 def pickingNumbers(a: list):
     # Write your code here
-    
-    return 0
+    maximum=0
+    for i in a:
+        c = a.count(i)
+        d = a.count(i-1)
+        c = c + d
+        if c > maximum:
+            maximum=c
+
+    return maximum
 
 
 if __name__ == '__main__':
