@@ -21,7 +21,8 @@ And get the sovled solution in python by Brodevil here :|
 
 
 def pickingNumbers(a: list):
-    # Write your code here\
+    # Write your code here
+    
     return 0
 
 
