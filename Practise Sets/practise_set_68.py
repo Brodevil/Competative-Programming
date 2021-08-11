@@ -28,10 +28,13 @@ def solve(array: list):
         currect_array = array.copy()
         currect_array.remove(array[_])
         ans = array[_] + (sum(currect_array) / len(currect_array))
+
         if ans > largest:
             largest = ans
+        elif _ == 0:
+            largest = ans
     
-    return largest
+    return f"{largest:.9f}"
 
 
 if __name__ == "__main__":
