@@ -19,10 +19,8 @@ And get the solved solution in python here :|
 
 # Solution :
 
-from itertools import permutations
 
-
-def solve(array: list):
+def solve(array: list) -> str:
     largest = 0
     for _ in range(len(array)):
         currect_array = array.copy()
