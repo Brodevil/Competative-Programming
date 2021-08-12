@@ -28,10 +28,20 @@ And get the solved solution in python by Brodevil here :|
 #  1. INTEGER_ARRAY ranked
 #  2. INTEGER_ARRAY player
 
+def index(iterator, element):
+    for index, value in enumerate(iterator):
+        if value == element:
+            return len(iterator) - (index)
+    
 
 def climbingLeaderboard(ranked: list, player: list) -> int:
-    # Write your code here
-    return 0
+    ranks = list()
+    for _ in ranked:
+        ranks.append(index(set(sorted(ranked)), _))
+
+    for _ in player:
+        pass
+
 
 
 if __name__ == '__main__':
