@@ -36,6 +36,7 @@ def index(iterator, element):
 
 def climbingLeaderboard(ranked: list, player: list) -> int:
     ranks = {index(set(sorted(ranked)), _) : _ for _ in ranked}
+
     result = list()
     for _ in range(len(player)):
         temp = index(set(sorted([*ranked, player[_]])[::-1]), player[_])
