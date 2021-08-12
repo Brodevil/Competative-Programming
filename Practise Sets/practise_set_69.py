@@ -35,14 +35,13 @@ def index(iterator, element):
     
 
 def climbingLeaderboard(ranked: list, player: list) -> int:
-    ranks = list()
-    for _ in ranked:
-        ranks.append(index(set(sorted(ranked)), _))
+    ranks = {index(set(sorted(ranked)), _) : _ for _ in ranked}
+    result = list()
+    for _ in range(len(player)):
+        temp = index(set(sorted([*ranked, player[_]])[::-1]), player[_])
+        result.append(temp+1)
 
-    for _ in player:
-        pass
-
-
+    return result
 
 if __name__ == '__main__':
     ranked_count = int(input().strip())
@@ -56,3 +55,11 @@ if __name__ == '__main__':
     result = climbingLeaderboard(ranked, player)
 
     print(result)
+
+
+"""
+4
+100 90 90 80
+3
+70 80 105
+"""
