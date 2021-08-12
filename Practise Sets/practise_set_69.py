@@ -39,8 +39,10 @@ def climbingLeaderboard(ranked: list, player: list) -> int:
 
     result = list()
     for _ in range(len(player)):
-        temp = index(set(sorted([*ranked, player[_]])[::-1]), player[_])
-        result.append(temp+1)
+        new = set(sorted([*ranked, player[_]]))
+        temp = index(new, player[_])
+        print(temp, player[_])
+        result.append(len(new)-temp)
 
     return result
 
