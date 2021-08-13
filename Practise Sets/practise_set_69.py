@@ -28,12 +28,6 @@ And get the solved solution in python by Brodevil here :|
 #  1. INTEGER_ARRAY ranked
 #  2. INTEGER_ARRAY player
 
-def index(iterator, element) -> int:
-    for index, value in enumerate(iterator):
-        if value == element:
-            return len(iterator) - (index)
-
-
 def diff(iterator) -> list:
     uniqe = list()
     for _ in iterator:
@@ -44,11 +38,12 @@ def diff(iterator) -> list:
 
 
 def climbingLeaderboard(ranked: list, player: list) -> list:
-    ranked_uniq = sorted(diff(ranked))
-    ranks = [len(ranked_uniq)-ranked_uniq.index(_) for _ in ranked]
-    
-    print(ranks)
-    return list
+    ranks = list()
+    for _ in player:
+        ranked_uniq = sorted(diff([*ranked, _]))[::-1]
+        ranks.append(ranked_uniq.index(_)+1)
+
+    return ranks
 
 
 if __name__ == '__main__':
@@ -62,12 +57,5 @@ if __name__ == '__main__':
 
     result = climbingLeaderboard(ranked, player)
 
-    print(result)
-
-
-"""
-4
-100 90 90 80
-3
-70 80 105
-"""
+    for _ in result:
+        print(_)
