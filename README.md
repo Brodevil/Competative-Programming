@@ -8,7 +8,7 @@
 - Nothing special but every file contain the question as well as solution
 - This Python-practise repository was started at `18th of April 2021` 
 - In this repository I had also did few competative Programming question for more practise
-- Most of the questions will be from the [HacckerRank](https://www.hackerrank.com/), [CodeForces](https://codeforces.com/), [Advent of Code](https://adventofcode.com/), and some random questions.<br><br>
+- Most of the questions will be from the [HackerRank](https://www.hackerrank.com/), [CodeForces](https://codeforces.com/), [Advent of Code](https://adventofcode.com/), [CodeChef](https://www.codechef.com/), and some random questions.<br><br>
 
 **Let us see How much Problem I can solve 🤔**
 <br><br>
