@@ -44,14 +44,11 @@ def diff(iterator) -> list:
 
 
 def climbingLeaderboard(ranked: list, player: list) -> list:
-    ranks = {index(diff(sorted(ranked)), _) : _ for _ in ranked}
-    result = list()
-
-    # for _ in player:
-    #     ranked.append(_)
+    ranked_uniq = sorted(diff(ranked))
+    ranks = [len(ranked_uniq)-ranked_uniq.index(_) for _ in ranked]
+    
     print(ranks)
-
-    return result
+    return list
 
 
 if __name__ == '__main__':
