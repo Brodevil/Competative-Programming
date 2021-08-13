@@ -1,4 +1,4 @@
-# Practise set 70 = Climbing the Leaderboard (From Hackerrank) 
+# Practise set 69 = Climbing the Leaderboard (From Hackerrank) 
 
 """
 Climbing the Leaderboard | Problem Set :
@@ -34,7 +34,7 @@ def climbingLeaderboard(ranked: list, player: list) -> list:
     for _ in player:
         ranked_uniq = sorted(set([*ranked, _]))[::-1]
         ranks.append(ranked_uniq.index(_)+1)
-        
+
     return ranks
 
 
