@@ -28,24 +28,20 @@ And get the solved solution in python by Brodevil here :|
 #  1. INTEGER_ARRAY ranked
 #  2. INTEGER_ARRAY player
 
-def index(iterator, element, result=True):
+def index(iterator, element):
     for index, value in enumerate(iterator):
         if value == element:
-            if result:
-                return len(iterator) - (index)
-            else:
-                return index+1
+            return len(iterator) - (index)
 
-def climbingLeaderboard(ranked: list, player: list) -> int:
+def climbingLeaderboard(ranked: list, player: list) -> list:
     ranks = {index(set(sorted(ranked)), _) : _ for _ in ranked}
-
     result = list()
-    for _ in range(len(player)):
-        new = set(sorted([*ranked, player[_]]))
-        print(new)
-        temp = index(new, player[_], result=False)
-        print(temp, player[_])
-        result.append(temp)
+
+    for _ in player:
+        ranked.appne(_)
+
+
+
 
     return result
 
