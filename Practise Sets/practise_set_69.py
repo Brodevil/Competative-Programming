@@ -28,21 +28,13 @@ And get the solved solution in python by Brodevil here :|
 #  1. INTEGER_ARRAY ranked
 #  2. INTEGER_ARRAY player
 
-def diff(iterator) -> list:
-    uniqe = list()
-    for _ in iterator:
-        if _ not in uniqe:
-            uniqe.append(_)
-    
-    return uniqe
-
 
 def climbingLeaderboard(ranked: list, player: list) -> list:
     ranks = list()
     for _ in player:
-        ranked_uniq = sorted(diff([*ranked, _]))[::-1]
+        ranked_uniq = sorted(set([*ranked, _]))[::-1]
         ranks.append(ranked_uniq.index(_)+1)
-
+        
     return ranks
 
 
