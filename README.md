@@ -1,4 +1,4 @@
-# Python-practise 😎
+# Python-Algorithms 😎
 [![Image](https://1.cms.s81c.com/sites/default/files/2018-10-15/digital_binary_data_0.jpg)](https://github.com/Brodevil/Python-practice)
 <br><br>
 
