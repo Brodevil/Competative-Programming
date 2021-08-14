@@ -18,3 +18,19 @@ And get the solved solution in python by brodevil here :|
 
 
 # Solution :
+
+
+def utopianTree(n: int) -> int:
+    # Write your code here
+    return 0
+
+
+if __name__ == '__main__':
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+
+        result = utopianTree(n)
+
+        print(result)
