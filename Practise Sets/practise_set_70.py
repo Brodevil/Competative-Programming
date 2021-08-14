@@ -26,9 +26,12 @@ And get the solution in python here :|
 #  2. INTEGER_ARRAY height
 
 
-def hurdleRace(k, height):
-    # Write your code here
-    return 0
+def hurdleRace(k: int, height: list) -> int:
+    dose = sorted(height)[-1]
+    if dose > k:
+        return dose - k
+    return 0 
+
 
 
 if __name__ == '__main__':
