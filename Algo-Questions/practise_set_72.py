@@ -18,3 +18,9 @@ And get the solved solution in python by brodevil here :|
 
 
 # Solution :
+
+
+if __name__ == "__main__":
+    for _ in range(int(input())):
+        friends = int(input())
+        # will solve it another day
