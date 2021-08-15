@@ -14,23 +14,29 @@ And get the solved solution in python by brodevil here :|
 # Author = Abhinav
 # Date = 14 August 2021
 # Pourpose = Just for practise and imporving python skills
-# Source =  https://www.hackerrank.com/challenges/utopian-tree/problem
+# Source = [HackerRank](https://www.hackerrank.com/challenges/utopian-tree/problem)
 
 
 # Solution :
 
 
 def utopianTree(n: int) -> int:
-    # Write your code here
-    return 0
+    height = 1
+    for _ in range(n):
+        if _ % 2 == 0:
+            height = height * 2
+        else:
+            height += 1
+    
+    return height
 
 
 if __name__ == '__main__':
-    t = int(input().strip())
+    # t = int(input().strip())
 
-    for t_itr in range(t):
-        n = int(input().strip())
+    # for t_itr in range(t):
+    n = int(input().strip())
 
-        result = utopianTree(n)
+    result = utopianTree(n)
 
-        print(result)
+    print(result)
