@@ -19,8 +19,12 @@ And get the solved solution in python by brodevil here :|
 
 # Solution :
 
+def solve(n: int) -> int:
+    return 0
+
 
 if __name__ == "__main__":
     for _ in range(int(input())):
         friends = int(input())
-        # will solve it another day
+        minutes = solve(friends)
+        print(minutes)
