@@ -31,8 +31,13 @@ import os
 #
 
 def angryProfessor(k: int, a: list) -> str:
+    c = sum([1 for _ in a if _ <= 0])
+
+    if c >= k:
+        return "NO"
+    else:
+        return "YES"
     
-    return "YES"
 
 if __name__ == '__main__':
     t = int(input().strip())
