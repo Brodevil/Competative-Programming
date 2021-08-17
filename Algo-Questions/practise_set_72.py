@@ -1,30 +1,19 @@
-# Python Practise 72 = A. PizzaForces (From CodeForces)
+# Python Practise 72 = Angry Professor (From hackerrank)
 
 """
-A. PizzaForces | Problem Statement :
+Angry Professor | Problem Statement :
 
 
-Get the Problem Statement on CodeForces : https://codeforces.com/problemset/problem/1555/A
+Get the Problem Statement on HackerRank : https://www.hackerrank.com/challenges/angry-professor/problem
 
-And get the solved solution in python by brodevil here :|
+And get the solved solution in python By Brodevil here :|
 
 """
-
 
 # Author = Abhinav
-# Date = 14 August 2021
+# Date = 15 August 2021 (Independence day)
 # Pourpose = Just for practise and imporving python skills
-# Source =  [CodeForces](https://codeforces.com/problemset/problem/1555/A)
+# Source =  [Hackerrnak](https://www.hackerrank.com/challenges/angry-professor/problem)
 
 
 # Solution :
-
-def solve(n: int) -> int:
-    return 0
-
-
-if __name__ == "__main__":
-    for _ in range(int(input())):
-        friends = int(input())
-        minutes = solve(friends)
-        print(minutes)
