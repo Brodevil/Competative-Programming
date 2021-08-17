@@ -1,7 +1,0 @@
-# Python practise 73 = 
-
-"""
-
-
-
-"""
