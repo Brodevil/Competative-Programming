@@ -20,15 +20,13 @@ And get the solved solution in python By Brodevil here :|
 
 #!/bin/python3
 
-import os
-#
 # Complete the 'angryProfessor' function below.
-#
+
 # The function is expected to return a STRING.
 # The function accepts following parameters:
 #  1. INTEGER k
 #  2. INTEGER_ARRAY a
-#
+
 
 def angryProfessor(k: int, a: list) -> str:
     c = sum([1 for _ in a if _ <= 0])
@@ -37,7 +35,7 @@ def angryProfessor(k: int, a: list) -> str:
         return "NO"
     else:
         return "YES"
-    
+
 
 if __name__ == '__main__':
     t = int(input().strip())
