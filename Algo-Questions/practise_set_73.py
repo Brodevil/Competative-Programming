@@ -30,8 +30,13 @@ And get he solved solution in python by brodevil here :|
 #  3. INTEGER k
 
 
-def beautifulDays(i, j, k):
-    return 0
+def beautifulDays(i: int, j: int, k: int) -> int:
+    results = 0
+    diff = j-1
+    for _ in range(diff):
+        pass
+
+
 
 
 if __name__ == '__main__':
