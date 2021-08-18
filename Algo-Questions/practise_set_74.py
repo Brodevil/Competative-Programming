@@ -17,3 +17,21 @@ And get the solved solution in python by Brodevil here :|
 
 
 # Solution :
+
+# Complete the 'viralAdvertising' function below.
+
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER n as parameter.
+
+
+def viralAdvertising(n: int) -> int:
+    # Write your code here
+    return 0
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+
+    result = viralAdvertising(n)
+
+    print(result)
