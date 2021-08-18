@@ -40,7 +40,6 @@ def beautifulDays(i: int, j: int, k: int) -> int:
     return results
 
 
-
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
 
