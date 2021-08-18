@@ -32,10 +32,12 @@ And get he solved solution in python by brodevil here :|
 
 def beautifulDays(i: int, j: int, k: int) -> int:
     results = 0
-    diff = j-1
-    for _ in range(diff):
-        pass
-
+    for _ in range(i, j):
+        num = (_ - int(str(_)[::-1]))/k
+        if num % 1 == 0 and num >= 0:
+            results += 1
+    
+    return results
 
 
 
