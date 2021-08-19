@@ -27,7 +27,6 @@ And get the solved solution in python by Brodevil here :|
 
 
 def viralAdvertising(n: int) -> int:
-    # Write your code here
     return 0
 
 
