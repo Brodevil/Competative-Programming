@@ -27,15 +27,11 @@ And get the solved solution in python by Brodevil here :|
 
 
 def viralAdvertising(n: int) -> int:
-    liked = 0
-    shared = n
-
-    for _ in range(n):
-        shared = shared//2*3
-        liked += shared//2
-        print(shared//2)
-
-    return liked
+    shared = [2]
+    for i in range(n-1):
+        shared.append(int(3*shared[i]/2))
+    
+    return sum(shared)
 
 
 if __name__ == '__main__':
