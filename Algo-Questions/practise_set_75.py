@@ -27,13 +27,16 @@ And get the solved solution in python by Brodevil here :|
 
 
 def saveThePrisoner(prisoners: int, candy: int, chair: int) -> int:
-    for _ in range(candy):
-        if _ != 0:
-            chair += 1
-        if chair > prisoners:
-            chair = 1
+    # for _ in range(candy):
+    #     if _ != 0:
+    #         chair += 1
+    #     if chair > prisoners:
+    #         chair = 1
         
-    return chair
+    # return chair
+
+    # another quick solution :
+    return ((chair - 1 + candy - 1) % prisoners) + 1
 
 
 if __name__ == '__main__':
