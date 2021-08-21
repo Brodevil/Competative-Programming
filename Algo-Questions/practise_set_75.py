@@ -26,8 +26,14 @@ And get the solved solution in python by Brodevil here :|
 #  3. INTEGER s
 
 
-def saveThePrisoner(n: int, m: int, s: int) -> int:
-    return 0
+def saveThePrisoner(prisoners: int, candy: int, chair: int) -> int:
+    for _ in range(candy):
+        if _ != 0:
+            chair += 1
+        if chair > prisoners:
+            chair = 1
+        
+    return chair
 
 
 if __name__ == '__main__':
