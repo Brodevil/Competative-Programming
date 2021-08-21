@@ -18,3 +18,28 @@ And get the solved solution in python by Brodevil here :|
 
 
 # Solution :
+
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER n
+#  2. INTEGER m
+#  3. INTEGER s
+
+
+def saveThePrisoner(n: int, m: int, s: int) -> int:
+    return 0
+
+
+if __name__ == '__main__':
+    for t_itr in range(int(input())):
+        first_multiple_input = input().rstrip().split()
+
+        n = int(first_multiple_input[0])
+
+        m = int(first_multiple_input[1])
+
+        s = int(first_multiple_input[2])
+
+        result = saveThePrisoner(n, m, s)
+
+        print(result)
