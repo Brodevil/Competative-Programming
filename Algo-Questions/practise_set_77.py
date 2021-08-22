@@ -26,17 +26,11 @@ And get the solution in python by Brodevil here :|
 
 
 def permutationEquation(p: list) -> list:
-    result = list()
-    for _ in p:
-        print(_)
-        result.append(p.index(p.index(_)+1)+1)
-
-    return result
+    return [p.index(p.index(_)+1)+1 for _ in sorted(p)]
 
 
 if __name__ == '__main__':
-    n = int(input().strip())
-
+    input()
     p = list(map(int, input().rstrip().split()))
 
     for _ in permutationEquation(p):
