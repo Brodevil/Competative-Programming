@@ -13,7 +13,7 @@ And get the solved solution in python by Brodevil here :|
 # Author = Abhinav
 # Date = 21 August 2021 
 # Pourpose = Just for practise and imporving skills
-# Source =  [Hackerrnak](https://www.hackerrank.com/challenges/circular-array-rotation/problem)
+# Source =  [Hackerrank](https://www.hackerrank.com/challenges/circular-array-rotation/problem)
 
 
 # Solution :
