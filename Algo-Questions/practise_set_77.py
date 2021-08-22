@@ -26,8 +26,12 @@ And get the solution in python by Brodevil here :|
 
 
 def permutationEquation(p: list) -> list:
-    # Write your code here
-    return 0
+    result = list()
+    for _ in p:
+        print(_)
+        result.append(p.index(p.index(_)+1)+1)
+
+    return result
 
 
 if __name__ == '__main__':
@@ -35,6 +39,5 @@ if __name__ == '__main__':
 
     p = list(map(int, input().rstrip().split()))
 
-    result = permutationEquation(p)
-
-    print(result)
+    for _ in permutationEquation(p):
+        print(_)
