@@ -25,9 +25,14 @@ And get the solved solution in python by Brodevil here :|
 #  3. INTEGER_ARRAY queries
 
 
-def circularArrayRotation(a: list, k: int, queries: list):
-    # Write your code here
-    return 0
+def circularArrayRotation(a: list, k: int, queries: list) -> list:
+    n = len(a)
+    k = k % n
+    result = list()
+    for _ in queries:
+        result.append(a[_-k])
+    
+    return result
 
 
 if __name__ == '__main__':
@@ -49,4 +54,5 @@ if __name__ == '__main__':
 
     result = circularArrayRotation(a, k, queries)
 
-    print(result)
+    for _ in result:
+        print(_)
