@@ -20,12 +20,13 @@ And get the solved solution in python By Brodevil here :|
 
 def jumpingOnClouds(c: list, k: int) -> int:
     e = 100
-    for _ in range(len(c)):
-        if _ % k == 0:
-            if c[_] == 0:
-                e -= 1
-            elif c[_] == 1:
-                e -= 3
+    i = k % len(c)
+
+    e -= c[i] * 2 + 1 #initial energy loss
+    while i != 0:
+        i = (i + k) % n
+        e -= c[i] * 2 + 1
+        
     return e
 
 
@@ -41,3 +42,14 @@ if __name__ == '__main__':
     result = jumpingOnClouds(c, k)
 
     print(result)
+
+"""
+energy = 100 #initial energy
+i = k % n #initial jump from 0
+energy -= c[i] * 2 + 1 #initial energy loss
+while i != 0:
+    i = (i + k) % n
+    energy -= c[i] * 2 + 1
+    
+print energy
+"""
