@@ -18,8 +18,15 @@ And get the solved solution in python By Brodevil here :|
 # Solution :
 
 
-def jumpingOnClouds(c, k):
-    return 0
+def jumpingOnClouds(c: list, k: int) -> int:
+    e = 100
+    for _ in range(len(c)):
+        if _ % k == 0:
+            if c[_] == 0:
+                e -= 1
+            elif c[_] == 1:
+                e -= 3
+    return e
 
 
 if __name__ == '__main__':
