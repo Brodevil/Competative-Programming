@@ -27,7 +27,6 @@ def findDigits(n: int) -> int:
     return sum([1 for _ in str(n) if _ != '0' and n % int(_) == 0])
 
 
-
 if __name__ == '__main__':
     t = int(input().strip())
 
