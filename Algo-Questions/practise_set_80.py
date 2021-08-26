@@ -22,10 +22,12 @@ And get the Solution in python By Brodevil, here :|
 
 
 def extraLongFactorials(n: int) -> int:
-    if n == 1:
-        return 1
-    else:
-        return extraLongFactorials(n-1)*n
+    result = 1
+    for _ in range(1, n+1):
+        result = result * _
+
+    return result
+
 
 if __name__ == '__main__':
     n = int(input().strip())
