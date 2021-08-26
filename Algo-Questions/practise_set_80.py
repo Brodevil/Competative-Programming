@@ -22,8 +22,13 @@ And get the Solution in python By Brodevil, here :|
 
 
 def extraLongFactorials(n: int) -> int:
-    # Write your code here
-    return 0
+    result = n
+    while n > 0:
+        n -= 1
+        result = result * n
+        
+    return result
+
 
 
 if __name__ == '__main__':
