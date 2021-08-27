@@ -30,16 +30,17 @@ And get the solved solution in python By Brodevil here :|
 def appendAndDelete(s: str, t: str, k: int) -> str:
     same = ""
     for _, __ in zip(s, t):
-        print(_, __)
         if _ == __:
             same += _
-    # print(same)
-    # print(((s.replace(same, "")), (t.replace(same, ""))))
-    # if (len(s.replace(same, "")) + len(t.replace(same, ""))) <= k:
-    #     return "YES"
-    # else:
-    #     return 'NO'
-
+        else:
+            break
+    
+    if len(s.replace(same, "")) == 0:
+        return 'NO'
+    elif (len(s.replace(same, "")) + len(t.replace(same, ""))) <= k:
+        return "Yes"
+    else:
+        return 'No'
 
 
 if __name__ == '__main__':
