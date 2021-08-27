@@ -28,6 +28,16 @@ And get the solved solution in python By Brodevil here :|
 
 
 def appendAndDelete(s: str, t: str, k: int) -> str:
+    # 1st solution :
+    for ops_left in reversed(range(1, k + 1)):
+        if s == t[:len(s)] and len(t) - len(s) == ops_left or len(s) == 0:
+            break
+        s = s[:-1]
+    return ("Yes" if len(t) - len(s) <= ops_left else "No")
+
+
+    # another solution
+    """
     same = ""
     for _, __ in zip(s, t):
         if _ == __:
@@ -35,13 +45,11 @@ def appendAndDelete(s: str, t: str, k: int) -> str:
         else:
             break
     
-    if len(s.replace(same, "")) == 0:
-        return 'NO'
-    elif (len(s.replace(same, "")) + len(t.replace(same, ""))) <= k:
+    if (len(s.replace(same, "")) + len(t.replace(same, ""))) <= k:
         return "Yes"
     else:
         return 'No'
-
+    """
 
 if __name__ == '__main__':
     s = input()
