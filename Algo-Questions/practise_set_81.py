@@ -51,6 +51,7 @@ def appendAndDelete(s: str, t: str, k: int) -> str:
         return 'No'
     """
 
+
 if __name__ == '__main__':
     s = input()
 
