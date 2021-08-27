@@ -28,8 +28,18 @@ And get the solved solution in python By Brodevil here :|
 
 
 def appendAndDelete(s: str, t: str, k: int) -> str:
-    # Write your code here
-    return "YES"
+    same = ""
+    for _, __ in zip(s, t):
+        print(_, __)
+        if _ == __:
+            same += _
+    # print(same)
+    # print(((s.replace(same, "")), (t.replace(same, ""))))
+    # if (len(s.replace(same, "")) + len(t.replace(same, ""))) <= k:
+    #     return "YES"
+    # else:
+    #     return 'NO'
+
 
 
 if __name__ == '__main__':
