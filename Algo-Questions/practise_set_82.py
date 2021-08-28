@@ -17,7 +17,7 @@ And get the solved solution in python by Brodevil here :|
 
 # Solution :
 
-from math import sqrt
+from math import sqrt, ceil, floor
 
 # Complete the 'squares' function below.
 
@@ -28,7 +28,10 @@ from math import sqrt
 
 
 def squares(a: int, b: int) -> int:
-    return sum([1 for _ in range(a, b+1) if sqrt(_) % 1 == 0])
+    sqrtA = ceil(sqrt(a))
+    sqrtB = floor(sqrt(b))
+    
+    return (sqrtB - sqrtA + 1)
 
 
 if __name__ == '__main__':
