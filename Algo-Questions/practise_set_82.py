@@ -17,6 +17,8 @@ And get the solved solution in python by Brodevil here :|
 
 # Solution :
 
+from math import sqrt
+
 # Complete the 'squares' function below.
 
 # The function is expected to return an INTEGER.
@@ -26,8 +28,7 @@ And get the solved solution in python by Brodevil here :|
 
 
 def squares(a: int, b: int) -> int:
-    # Write your code here
-    return 0
+    return sum([1 for _ in range(a, b+1) if sqrt(_) % 1 == 0])
 
 
 if __name__ == '__main__':
