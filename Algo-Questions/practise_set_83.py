@@ -30,7 +30,16 @@ And get the solved solutiog in python by Brodevil, here :|
 
 
 def libraryFine(d1: int, m1: int, y1: int, d2: int, m2: int, y2: int) -> int:
-    return 0 
+    fine = 0
+    if d1 - d2 > 0 :
+        fine += (d1 - d2)*15
+    if m1 - m2 > 0:
+        fine += (m1 - m2)*500
+    if y1 - y2 > 0:
+        fine += (y1 - y2)*10000
+    
+    return fine    
+
 
 
 if __name__ == '__main__':
