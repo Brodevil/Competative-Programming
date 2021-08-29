@@ -31,15 +31,14 @@ And get the solved solutiog in python by Brodevil, here :|
 
 def libraryFine(d1: int, m1: int, y1: int, d2: int, m2: int, y2: int) -> int:
     fine = 0
-    if d1 - d2 > 0 :
+    if d1 - d2 > 0 and m1 == m2 and y1 == y2:
         fine += (d1 - d2)*15
-    if m1 - m2 > 0:
+    if m1 - m2 > 0 and y1 == y2:
         fine += (m1 - m2)*500
-    if y1 - y2 > 0:
+    if y1 - y2 > 0 :
         fine += (y1 - y2)*10000
     
-    return fine    
-
+    return fine
 
 
 if __name__ == '__main__':
