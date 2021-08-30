@@ -30,14 +30,12 @@ def cutTheSticks(arr: list) -> list:
     while len(arr) != 0:
         result.append(len(arr)) 
         smallest = sorted(arr)[0]
-        largest = sorted(arr)[-1]
         arr = list(filter((smallest).__ne__, arr))
         for _ in range(len(arr)):
             diff = arr[_] - smallest
             arr[_] = diff
 
     return result        
-
 
 
 if __name__ == '__main__':
