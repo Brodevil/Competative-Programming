@@ -25,8 +25,22 @@ And get the solved solution in python By Brodevil, here :|
 
 
 def cutTheSticks(arr: list) -> list:
-    # Write your code here
-    return list
+    result = list()
+    arr = arr
+    while len(arr) != 0:
+        smallest = sorted(arr)[0]
+        arr.remove(smallest)
+        
+        for _ in range(len(arr)):
+            print(arr[_+1])
+            diff = arr[_] - smallest
+            if diff == 0:
+                del arr[_]
+            else:
+                arr[_] = diff
+        
+    return result        
+
 
 
 if __name__ == '__main__':
@@ -37,3 +51,14 @@ if __name__ == '__main__':
     result = cutTheSticks(arr)
 
     print(result)
+
+"""
+for _ in range(len(arr)):
+    diff = arr[_] - smallest
+    if diff == 0:
+        del arr[_]
+    else:
+        arr[_] = diff
+"""
+# 6
+# 5 4 4 2 2 8
