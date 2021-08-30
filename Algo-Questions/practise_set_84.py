@@ -30,7 +30,7 @@ def cutTheSticks(arr: list) -> list:
     while len(arr) != 0:
         smallest = sorted(arr)[0]
         largest = sorted(arr)[-1]
-        arr.remove(smallest)
+        arr = list(filter((smallest).__ne__, arr))
         
         for _ in range(len(arr)):
             diff = arr[_] - smallest
@@ -39,7 +39,7 @@ def cutTheSticks(arr: list) -> list:
                 result.append(diff)
             else:
                 arr[_] = diff
-        arr.removeal
+        
         print(arr, result)
     return result        
 
