@@ -30,7 +30,7 @@ def repeatedString(s: str, n: int) -> int:
     if n % len(s) == 0:
         return s.count("a")*n
     else:
-        return (s[: (n % len(s))].count("a") + (s.count("a")*(10//3)))
+        return (s[: (n % len(s))].count("a") + (s.count("a")*(n // len(s))))
 
 
 if __name__ == '__main__':
