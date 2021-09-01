@@ -27,8 +27,10 @@ And get the solved solution in python By Brodevil here :|
 
 
 def repeatedString(s: str, n: int) -> int:
-    # Write your code here
-    return 0
+    if n % len(s) == 0:
+        return s.count("a")*n
+    else:
+        return (s[: (n % len(s))].count("a") + (s.count("a")*(10//3)))
 
 
 if __name__ == '__main__':
