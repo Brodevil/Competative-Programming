@@ -13,7 +13,7 @@ And get the solved solution in python By Brodevil, here :|
 # Author = Abhinav
 # Date = 1 September 2021 
 # Pourpose = Just for practise and imporving skills
-# Source =  [Hackerrank](https://www.hackerrank.com/challenges/repeated-string/problem)
+# Source =  [Hackerrank](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)
 
 
 # Solution :
@@ -25,8 +25,13 @@ And get the solved solution in python By Brodevil, here :|
 
 
 def jumpingOnClouds(c: list) -> int:
-    # Write your code here
-    return 0 
+    x,y = 0,0
+    while x < len(c)-2:
+        x = x + 1 if c[x+2] else x + 2
+        y += 1
+    if x < len(c)-1:
+        y += 1
+    return y
 
 
 if __name__ == '__main__':
