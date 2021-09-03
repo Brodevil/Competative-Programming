@@ -26,7 +26,12 @@ And get the solved solution in python by Brodevil, here :
 
 def equalizeArray(arr: list) -> int:
     # Write your code here
-    return 0
+    largest = 0
+    for _ in arr:
+        num = arr.count(_)
+        if num > largest :
+            largest = num
+    return len(arr)- largest
 
 
 if __name__ == '__main__':
