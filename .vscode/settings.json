@@ -2,7 +2,7 @@
     "python.testing.pytestArgs": [
         "__pycache__"
     ],
-    "python.pythonPath": "M:\\ADMIN\\Critical Data\\Critical Lerning\\Discord Bot\\venv\\Scripts\\python.exe",
+    "python.pythonPath": "c:\\Python39\\python.exe",
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,

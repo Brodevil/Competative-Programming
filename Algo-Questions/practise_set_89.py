@@ -13,7 +13,7 @@ And get the solved solution in python By Brodevil, here :|
 # Author = Abhinav
 # Date = 2 September 2021 
 # Pourpose = Just for practise and imporving skills
-# Source =  [Hackerrank](https://www.hackerrank.com/challenges/equality-in-a-array/problem)
+# Source =  [Hackerrank](https://www.hackerrank.com/challenges/queens-attack-2/problem)
 
 
 # Solution :
@@ -33,7 +33,11 @@ def queensAttack(n: int, k: int,
                  r_q: int, c_q: int, 
                  obstacles: list) -> int:
     # Write your code here
-    return 0
+    attack = 0
+    for _ in range(1, n+1):
+        if []
+    
+    return attack
 
 
 if __name__ == '__main__':
