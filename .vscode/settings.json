@@ -2,10 +2,10 @@
     "python.testing.pytestArgs": [
         "__pycache__"
     ],
+    "python.pythonPath": "M:\\ADMIN\\Critical Data\\Critical Lerning\\Discord Bot\\venv\\Scripts\\python.exe",
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": false,
-    "python.pythonPath": "C:\\Python 38\\python.exe",
+    "python.testing.pytestEnabled": true,
     "editor.minimap.enabled": true,
     "workbench.activityBar.iconClickBehavior": "focus",
     "python.linting.<linter>Enabled": true,
@@ -41,5 +41,8 @@
     "window.title": " ${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} (Brodevil)",
     "python.defaultInterpreterPath": "C:\\Python 38\\python.exe",
     "files.autoSave": "afterDelay",
-    "python.jediEnabled": true
+    "python.jediEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+    
 }
