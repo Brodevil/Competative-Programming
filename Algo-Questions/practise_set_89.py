@@ -48,10 +48,42 @@ def queensAttack(n: int, k: int,
             attack += 1
         else:
             break
+    
+    # Columns Downwards 
+    for _ in range(c_q-1, 0, -1):
+        if [r_q, _] not in obstacles and _ != 0:
+            attack += 1
+        else:
+            break
+    
+    # Columns Upwards 
+    for _ in range(c_q, n):
+        if [r_q, _] not in obstacles and _ != 0:
+            attack += 1
+        else:
+            break
+
+
+    # Horizontally Right - dowwards
+    position = [r_q, c_q]
+    while position not in obstacles:
+        position = [position[0]-1, position[1]-1]
+        if 1 in position:
+            break
+        attack += 1
+        
+
+    # Horizontally Right - upwards
+    position = [r_q, c_q]
+    while position not in obstacles:
+        position = [position[0]+1, position[1]+1]
+        if n in position:
+            break
+        attack += 1
+
+
 
     return attack
-
-    
 
 
 if __name__ == '__main__':
