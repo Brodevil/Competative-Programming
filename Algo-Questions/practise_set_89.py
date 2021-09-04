@@ -67,21 +67,34 @@ def queensAttack(n: int, k: int,
     position = [r_q, c_q]
     while position not in obstacles:
         position = [position[0]-1, position[1]-1]
-        if 1 in position:
-            break
         attack += 1
+        if 1 in position or n in position:
+            break
 
     # Horizontally Right - upwards
     position = [r_q, c_q]
     while position not in obstacles:
-        print(position)
         position = [position[0]+1, position[1]+1]
-        print(position)
-        if n in position:
-            break
         attack += 1
+        if 1 in position or n in position:
+            break
 
 
+    # Horizontally Left - dowwards
+    position = [r_q, c_q]
+    while position not in obstacles:
+        position = [position[0]+1, position[1]-1]
+        attack += 1
+        if 1 in position or n in position:
+            break
+
+    # Horizontally Left - upwards
+    position = [r_q, c_q]
+    while position not in obstacles:
+        position = [position[0]-1, position[1]+1]
+        attack += 1
+        if 1 in position or n in position:
+            break
 
     return attack
 
