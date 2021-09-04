@@ -34,10 +34,24 @@ def queensAttack(n: int, k: int,
                  obstacles: list) -> int:
     # Write your code here
     attack = 0
-    for _ in range(1, n+1):
-        if []
+
+    # Rows Downwards 
+    for _ in range(r_q-1, 0, -1):
+        if [_, c_q] not in obstacles and _ != 0:
+            attack += 1
+        else:
+            break
     
+    # Rows Upwards 
+    for _ in range(r_q, n):
+        if [_, c_q] not in obstacles and _ != 0:
+            attack += 1
+        else:
+            break
+
     return attack
+
+    
 
 
 if __name__ == '__main__':
