@@ -42,5 +42,5 @@ if __name__ == '__main__':
         topic_item = input()
         topic.append(topic_item)
 
-    for _ in acmTeam(topic)
-        print(_)
+    result = acmTeam(topic)
+    print(result)
