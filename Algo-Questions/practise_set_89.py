@@ -11,7 +11,7 @@ And get the solved solution in python By Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 2 September 2021 
+# Date = 3 September 2021 
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/queens-attack-2/problem)
 
