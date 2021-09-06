@@ -18,29 +18,26 @@ And get the solved solution in python by Brodevil, here :|
 
 # Solution :
 
-# Complete the 'acmTeam' function below.
+line = input().split()
+n = int(line[0])
+m = int(line[1])
 
-# The function is expected to return an INTEGER_ARRAY.
-# The function accepts STRING_ARRAY topic as parameter.
+people = [input() for i  in range(n)]
+skills = []
+max_skills = 0
 
+for i in range(len(people)):
+    j = i
+    while j < n:
+        first_person = people[i]
+        second_person = people[j]
+        
+        skill = bin(int(first_person, 2) | int(second_person, 2))[2:].count('1')
+        if (skill > max_skills):
+            max_skills = skill
+        skills.append(str(skill))
+        
+        j += 1
 
-def acmTeam(topic: list) -> list:
-    # Write your code here
-    return 0
-
-
-if __name__ == '__main__':
-    first_multiple_input = input().rstrip().split()
-
-    n = int(first_multiple_input[0])
-
-    m = int(first_multiple_input[1])
-
-    topic = []
-
-    for _ in range(n):
-        topic_item = input()
-        topic.append(topic_item)
-
-    result = acmTeam(topic)
-    print(result)
+print(max_skills)
+print(skills.count(str(max_skills)))
