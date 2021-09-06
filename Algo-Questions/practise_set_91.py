@@ -32,7 +32,14 @@ And get the Solved solution in python by Brodevil, here :|
 
 def taumBday(b: int, w: int, bc: int, wc: int, z: int) -> int:
     # Write your code here
-    return 0
+    if bc > wc + z:
+        return (b+w)*(wc) + b*z
+    
+    elif wc > bc + z:
+        return (b+w)*(bc)+ w*z
+    
+    else:
+        return (b*bc) + (w * wc)
 
 
 if __name__ == '__main__':
