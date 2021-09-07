@@ -15,26 +15,29 @@ And get the solved solution in python by Brodevil, here :|
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem)
 
-
 # Solution :
-q = int(input().strip())
 
-for x in range(q):
-    
+q = int(input().strip())
+for _ in range(q):
     n = int(input().strip())
-    m = []
-    rowsum = [0]*n
-    colsum = [0]*n
+    M = list()
+    for M_i in range(n):
+       M_t = [int(M_temp) for M_temp in input().strip().split(' ')]
+       M.append(M_t)
     
+    var1 = list()
+    var2 = list()
+
     for i in range(n):
-        m.append(map(int, input().strip().split(' ')))
-        rowsum[i] = sum(m[-1])
-        colsum = map(lambda a, b: a+b, colsum, m[-1])
-        
-    rowsum.sort()
-    colsum.sort()
+        var1.append(0)
+        var2.append(sum(M[i]))
+        for j in range(n):
+            var1[i] += M[j][i]
     
-    if rowsum == colsum:
-        print('Possible')
+    var1.sort()
+    var2.sort()
+
+    if var1 == var2:
+        print("Possible")
     else:
-        print('Impossible')
+        print("Impossible")
