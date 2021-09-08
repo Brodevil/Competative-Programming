@@ -20,4 +20,13 @@ And get the solved solution in python by Brodevil, here :|
 for _ in range(int(input())):
     n = int(input())
     s = input()
+    result = ""
     
+    for _ in s:
+        if _ == "U":
+            result += "D"
+        elif _ == "D":
+            result += "U"
+        else:
+            result += _
+    print(result)
