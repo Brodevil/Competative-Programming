@@ -17,6 +17,21 @@ And get the solved solution in python by Brodevil, here :|
 
 # Solution :
 
+def minOpeartions(arr: list, n, x: int) -> int:
+    k = x
+    i = 0
+    n = len(arr) -1
+    while (n>-1) :
+         
+        if (arr[n] < x) :
+            k -= 1
+        if (arr[n] == x) :
+            k += 1
+        n -= 1
+    return k
+ 
+
+
 for _ in range(int(input())):
     a, b = map(int, input().split())
     
