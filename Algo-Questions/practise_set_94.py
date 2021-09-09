@@ -16,3 +16,7 @@ And get the solved solution in python by Brodevil, here :|
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1567/B)
 
 # Solution :
+
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    
