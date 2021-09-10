@@ -17,6 +17,7 @@ And get the solved solution in python by Brodevil, here :|
 
 # Solution :
 
-for _ in range(int(input())):
-    a, b = map(int, input().split())
-    
+for s in[*open(0)][1:]:
+    a, b = map(int, s.split())
+    x = (0, a-1, 1, a)[a%4]
+    print(a + (b != x) + (b^x == a))
