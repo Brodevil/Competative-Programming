@@ -17,3 +17,8 @@ And get the solved solution in python by Brodevil, here :|
 
 # Solution :
 
+
+for _ in range(int(input())):
+    a, b = map(int, input().split())
+    print(b % max(a, b//2+1))
+    
