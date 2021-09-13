@@ -16,3 +16,8 @@ And get the solved solution in python by Brodevil, here :|
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1569/A)
 
 # Solution :
+
+
+for _ in range(int(input())):
+    s = input()
+    print(i:=s.find('ab'[s[0]<'b']), i+(i>0))
