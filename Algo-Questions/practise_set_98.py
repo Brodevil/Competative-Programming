@@ -18,6 +18,5 @@ And get the solved solution in python by Brodevil, here :|
 # Solution :
 
 
-for _ in range(int(input())):
-    s = input()
-    print(i:=s.find('ab'[s[0]<'b']), i+(i>0))
+for s in[*open(0)][2::2]:
+    print(i := s.find('ab'[s[0]<'b']) ,i+(i>0))
