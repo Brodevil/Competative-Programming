@@ -16,3 +16,9 @@ And get the solved solution in python by Brodevil, here :|
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1559/A)
 
 # Solution :
+
+
+for _ in range(int(input())):
+    n = int(input())
+    s = input()
+    print(eval(s.replace(' ','&')))
