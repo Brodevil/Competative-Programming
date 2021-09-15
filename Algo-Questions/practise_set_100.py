@@ -17,13 +17,7 @@ And get the solved solution in python by Brodevil, here :|
 
 # Solution :
 
-# Complete the 'encryption' function below.
-
-# The function is expected to return a STRING.
-# The function accepts STRING s as parameter.
-
 from math import sqrt, floor, ceil
-
 
 if __name__ == '__main__':
     s = input()
