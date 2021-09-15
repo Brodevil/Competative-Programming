@@ -22,23 +22,13 @@ And get the solved solution in python by Brodevil, here :|
 # The function is expected to return a STRING.
 # The function accepts STRING s as parameter.
 
-from math import sqrt
-
-
-def encryption(s: str) -> str:
-    l = int(sqrt(len(s)))
-    new = ''
-    for _ in range(l):
-        for i in range(_, len(s), l+1):
-            new += s[i]
-
-        new += " "
-    for _ in range(l, len(s), l+1):
-        new += s[_]
-    return new
+from math import sqrt, floor, ceil
 
 
 if __name__ == '__main__':
     s = input()
-    result = encryption(s)
-    print(result)
+    s = s.replace(" ","")
+    r = floor(sqrt(len(s)))
+    c = ceil(sqrt(len(s)))
+    for i in range(c):
+        print(s[i::c],end=" ")
