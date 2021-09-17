@@ -34,5 +34,8 @@ if __name__ == "__main__":
         
         if l + r == _:
             results.append(_)
-        
-    print(*results)
+    
+    if not len(results):
+        print("INVALID RANGE")
+    else:
+        print(*results)
