@@ -17,3 +17,17 @@ And get the solved solution in python here :|
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/beautiful-triplets/problem)
 
 # Solution :
+
+from itertools import permutations
+
+
+if __name__ == "__main__":
+    n, d = map(int, input().split())
+    arr = list(map(int, input().split()))
+    results = list()
+
+    for _ in permutations(arr, 3):
+        if _[1] - _[0] == d and _[2] - _[1] == d:
+            results.append(_)
+
+    print(len(results))
