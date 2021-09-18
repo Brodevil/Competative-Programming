@@ -18,16 +18,14 @@ And get the solved solution in python here :|
 
 # Solution :
 
-from itertools import permutations
-
 
 if __name__ == "__main__":
     n, d = map(int, input().split())
     arr = list(map(int, input().split()))
-    results = list()
+    results = 0
 
-    for _ in permutations(arr, 3):
-        if _[1] - _[0] == d and _[2] - _[1] == d:
-            results.append(_)
+    for i in range(n):
+        if arr[i] + d in arr and arr[i]+2*d in arr:
+            results += 1
 
-    print(len(results))
+    print(results)
