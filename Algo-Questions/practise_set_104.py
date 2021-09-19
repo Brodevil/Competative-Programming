@@ -32,4 +32,7 @@ if __name__ == "__main__":
             if gap > minimum:
                 minimum = gap
     
-    print(minimum)
+    if minimum != 0:
+        print(minimum)
+    else:
+        print(-1)
