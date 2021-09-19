@@ -16,3 +16,20 @@ And get the solved solution in python, here:|
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/minimum-distances/problem)
 
 # Solution :
+
+
+if __name__ == "__main__":
+    int(input())
+    arr = list(map(int, input().split()))
+    minimum = 0
+
+    for _ in range(len(arr)):
+        if arr.count(arr[_]) > 1:
+            ar = arr.copy()
+            ar.pop(_)
+            gap = (ar.index(arr[_])-1) - _
+
+            if gap > minimum:
+                minimum = gap
+    
+    print(minimum)
