@@ -18,21 +18,15 @@ And get the solved solution in python, here:|
 # Solution :
 
 
-if __name__ == "__main__":
-    int(input())
+def minimum_distance(n: int, arr: list) -> int:
+    for _ in range(1, n):
+        for i in range(n - _):
+            if arr[i] == arr[i+_]:
+                return _
+    return -1
+
+if __name__ ==  "__main__":
+    n = int(input())
     arr = list(map(int, input().split()))
-    minimum = 0
-
-    for _ in range(len(arr)):
-        if arr.count(arr[_]) > 1:
-            ar = arr.copy()
-            ar.pop(_)
-            gap = (ar.index(arr[_])-1) - _
-
-            if gap > minimum:
-                minimum = gap
-    
-    if minimum != 0:
-        print(minimum)
-    else:
-        print(-1)
+    result = minimum_distance(n, arr)
+    print(result)
