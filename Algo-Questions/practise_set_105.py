@@ -28,13 +28,13 @@ And get the solved solution in python, here :|
 
 
 def howManyGames(p: int, d: int, m: int, s: int) -> int:
-    n = (p-m)//d+1
+    n = (p-m) // d+1
     c = int(n/2*(2*p+(n-1)*-d))
-    if c<=s:
-        return n+(s-c)//m
+    if c <= s:
+        return n + (s-c) // m
     else:
-        while n/2*(2*p+(n-1)*-d)>s:
-            n-=1
+        while n/2 * (2*p+(n-1)* -d) >s:
+            n -= 1
         else:
             return n
 
