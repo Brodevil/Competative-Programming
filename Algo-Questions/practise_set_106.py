@@ -13,7 +13,7 @@ And get the solved soulution in python, here :|
 # Author = Abhinav
 # Date = 19 September 2021 
 # Pourpose = Just for practise and imporving skills
-# Source =  [HackerRank](https://www.hackerrank.com/challenges/halloween-sale/problem)
+# Source =  [HackerRank](https://www.hackerrank.com/challenges/the-time-in-words/problem)
 
 # Solution :
 
@@ -25,9 +25,9 @@ num2words = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', \
             50: 'Fifty', 60: 'Sixty', 70: 'Seventy', 80: 'Eighty', \
             90: 'Ninety', 0: 'Zero'}
 
-def n2w(n):
+def n2w(n: int) -> int:
     try:
-        return num2words[n]
+        return num2words[n].lower()
     except KeyError:
         try:
             return num2words[n-n%10] + num2words[n%10].lower()
@@ -36,7 +36,21 @@ def n2w(n):
 
 
 def timeInWords(h: int, m: int) -> int:
-    return 0
+    ho = n2w(h)
+    if m == 0:
+        return f"{ho} o' clock"
+    elif m == 15:
+        return f"quarter past {ho}"
+    elif m == 30:
+        return f"half past {ho}"
+    elif m == 45:
+        return f"quarter to {n2w(h+1)}"
+    elif m < 30:
+        m = n2w(m).lower()
+        return f"{m} minutes past {ho}"
+    elif m > 30:
+        m = n2w(60-m).lower()
+        return f"{m} minutes to {n2w(h+1)}"
 
 
 if __name__ == '__main__':
