@@ -11,7 +11,7 @@ And get the solved soulution in python, here :|
 """
 
 # Author = Abhinav
-# Date = 19 September 2021 
+# Date = 20 September 2021 
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/the-time-in-words/problem)
 
