@@ -30,7 +30,7 @@ def n2w(n: int) -> int:
         return num2words[n].lower()
     except KeyError:
         try:
-            return num2words[n-n%10] + num2words[n%10].lower()
+            return num2words[n-n%10] + " " + num2words[n%10].lower()
         except KeyError:
             pass
 
@@ -46,11 +46,20 @@ def timeInWords(h: int, m: int) -> int:
     elif m == 45:
         return f"quarter to {n2w(h+1)}"
     elif m < 30:
-        m = n2w(m).lower()
-        return f"{m} minutes past {ho}"
+        if m == 1:
+            m = n2w(m).lower()
+            return f"{m} minute past {ho}"
+        else:
+            m = n2w(m).lower()
+            return f"{m} minutes past {ho}"
+
     elif m > 30:
-        m = n2w(60-m).lower()
-        return f"{m} minutes to {n2w(h+1)}"
+        if m != 1:
+            m = n2w(60-m).lower()
+            return f"{m} minutes to {n2w(h+1)}"
+        else:
+            m = n2w(60-m).lower()
+            return f"{m} minute to {n2w(h+1)}"
 
 
 if __name__ == '__main__':
