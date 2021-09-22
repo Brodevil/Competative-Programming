@@ -19,22 +19,12 @@ And get the solved solution in python, here :|
 
 
 if __name__ == "__main__":
-    for _ in range(int(input())):
-        n, c, m = map(int, input().split())
-        wrapper = [n // c]
-        remains = list()
-        while wrapper[-1] > 1:
-            if (wrapper[-1] / m) % 1 == 0:
-                temp = ((wrapper[-1] + sum(remains)) % m) 
-                if temp == 0:
-                    del remains[:]
-                    wrapper.append(temp)
-                else:
-                    wrapper.append((wrapper[-1] )// m)
-                    
-            else:
-                remains.append(wrapper[-1] % m)
-                wrapper.append(wrapper[-1]//m) 
-        
-        print(wrapper, remains)
-
+    # for _ in range(int(input())):
+    n, c, m = map(int, input().split())
+    wrapper = [n // c]
+    remains = (wrapper[-1]) % m
+    while wrapper[-1] > 1 or remains > 0:
+        print(wrapper, wrapper[-1], remains, m)
+        remains = (wrapper[-1] + remains) % m
+        wrapper.append((wrapper[-1] + remains) // m)
+    print(wrapper)

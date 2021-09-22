@@ -35,7 +35,7 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "freeCodeCamp Dark Theme",
     "terminal.integrated.tabs.enabled": true,
     "workbench.iconTheme": "material-icon-theme",
     "window.title": " ${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName} (Brodevil)",
