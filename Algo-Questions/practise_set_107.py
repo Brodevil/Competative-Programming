@@ -25,6 +25,8 @@ if __name__ == "__main__":
     remains = (wrapper[-1]) % m
     while wrapper[-1] > 1 or remains > 0:
         print(wrapper, wrapper[-1], remains, m)
+
         remains = (wrapper[-1] + remains) % m
-        wrapper.append((wrapper[-1] + remains) // m)
-    print(wrapper)
+        wrapper.append((wrapper[-1] + remains) // m)        
+
+    print(wrapper, sum(wrapper))
