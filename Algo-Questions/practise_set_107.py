@@ -19,14 +19,12 @@ And get the solved solution in python, here :|
 
 
 if __name__ == "__main__":
-    # for _ in range(int(input())):
-    n, c, m = map(int, input().split())
-    wrapper = [n // c]
-    remains = (wrapper[-1]) % m
-    while wrapper[-1] > 1 or remains > 0:
-        print(wrapper, wrapper[-1], remains, m)
-
-        remains = (wrapper[-1] + remains) % m
-        wrapper.append((wrapper[-1] + remains) // m)        
-
-    print(wrapper, sum(wrapper))
+    for _ in range(int(input())):
+        n, c, m = map(int, input().split())
+        count = n//c
+        x = count
+        while x >= m:
+            a, b = divmod(x, m)
+            count += a
+            x = a+b
+        print(count)
