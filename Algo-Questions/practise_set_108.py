@@ -25,4 +25,3 @@ if __name__ == "__main__":
     for _ in range(t):
         i, j = map(int, input().split())
         print(min(arr[i: j+1]))
-
