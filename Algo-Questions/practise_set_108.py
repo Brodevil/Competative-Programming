@@ -17,12 +17,12 @@ And get the python solution, here :|
 
 # Solution :
 
-n, t = map(int, input().split())
-arr = list(map(int, input().split()))
 
+if __name__ == "__main__":
+    n, t = map(int, input().split())
+    arr = list(map(int, input().split()))
 
-for _ in range(t):
-    x, y = map(int,input().split())
-    for i in range(y-x-1):
-        mn = min(arr[x+i], arr[x+i+1])
-    print(mn)
+    for _ in range(t):
+        i, j = map(int, input().split())
+        print(min(arr[i: j+1]))
+
