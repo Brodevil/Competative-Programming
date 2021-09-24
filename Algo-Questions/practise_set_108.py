@@ -16,3 +16,13 @@ And get the python solution, here :|
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/service-lane/problem))
 
 # Solution :
+
+n, t = map(int, input().split())
+arr = list(map(int, input().split()))
+
+
+for _ in range(t):
+    x, y = map(int,input().split())
+    for i in range(y-x-1):
+        mn = min(arr[x+i], arr[x+i+1])
+    print(mn)
