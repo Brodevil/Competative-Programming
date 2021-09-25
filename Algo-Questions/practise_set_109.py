@@ -23,12 +23,14 @@ if __name__ == "__main__":
     special = 0
     page = 1
     
-    for i in arr:
-        for _ in range(1, i+1):
-            if page == _:
+    for _ in arr:
+        for i in range(1, _+1):
+            if i == page:
                 special += 1
-            if _ > k:
+            if i > k :
                 page += 1
+                i = 1
+            print(i, page, special, _)
         page += 1
-
+            
     print(special)
