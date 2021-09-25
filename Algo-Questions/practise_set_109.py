@@ -27,10 +27,14 @@ if __name__ == "__main__":
         for i in range(1, _+1):
             if i == page:
                 special += 1
-            if i > k :
+            if i > k:
+                print(f">>> {i}, {k}")
                 page += 1
                 i = 1
+                print(i, page, special, _)
+                continue
             print(i, page, special, _)
+
         page += 1
             
     print(special)
