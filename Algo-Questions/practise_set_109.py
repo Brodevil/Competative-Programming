@@ -17,16 +17,17 @@ And get the solved solution in python, here :|
 
 # Solution :
 
+
 def foo(n):
     global k, page, special
     i = 1
     for _ in range(1, int(n)+1):
-        print(_, page, special, _)
         if _ == page:
-            special += 2
-        if i % k == 0:
+            special += 1
+        if i-1 % k == 0:
             page += 1
             i = 1
+        print(_, page, special, i)
         i += 1
 
 
@@ -40,4 +41,3 @@ if __name__ == "__main__":
         page += 1
 
     print(special)
-        
