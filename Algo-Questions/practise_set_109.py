@@ -17,22 +17,27 @@ And get the solved solution in python, here :|
 
 # Solution :
 
+def foo(n):
+    global k, page, special
+    i = 1
+    for _ in range(1, int(n)+1):
+        print(_, page, special, _)
+        if _ == page:
+            special += 2
+        if i % k == 0:
+            page += 1
+            i = 1
+        i += 1
+
+
 if __name__ == "__main__":
     n, k = map(int, input().split())
     arr = list(map(int, input().split()))
-    special = 0
     page = 1
-
+    special = 0
     for _ in arr:
-        i = 1
-        ii = 1
-        while i < _+1:
-            if i == page:
-                special += 1
-            if ii - k > 0 and ii > k:
-                page += 1
-                ii = 1
-            i += 1
+        foo(_)
         page += 1
-    
+
     print(special)
+        
