@@ -27,19 +27,12 @@ if __name__ == "__main__":
         i = 1
         ii = 1
         while i < _+1:
-            print(i, page, special, _)
             if i == page:
                 special += 1
-            if i - k == 0:
-                page += 1
-            if ii - k == 0:
+            if ii - k > 0 and ii > k:
                 page += 1
                 ii = 1
-                i += 1
-                continue
-            
-            ii += 1
-
+            i += 1
         page += 1
     
     print(special)
