@@ -22,19 +22,24 @@ if __name__ == "__main__":
     arr = list(map(int, input().split()))
     special = 0
     page = 1
-    
+
     for _ in arr:
-        for i in range(1, _+1):
+        i = 1
+        ii = 1
+        while i < _+1:
+            print(i, page, special, _)
             if i == page:
                 special += 1
-            if i > k:
-                print(f">>> {i}, {k}")
+            if i - k == 0:
                 page += 1
-                i = 1
-                print(i, page, special, _)
+            if ii - k == 0:
+                page += 1
+                ii = 1
+                i += 1
                 continue
-            print(i, page, special, _)
+            
+            ii += 1
 
         page += 1
-            
+    
     print(special)
