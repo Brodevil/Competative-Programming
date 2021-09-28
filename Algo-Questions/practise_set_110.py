@@ -20,6 +20,9 @@ And get the solved solution in python, here :|
 if __name__ == '__main__':
     n, m = map(int, input().split())
     c = list(map(int, input().rstrip().split()))
+    # Shortest Solution :
+    # op = max([min([abs(i-_) for i in c]) for _ in range(n)])
+
     space = list()
     for _ in range(n):
         gaps = list()
