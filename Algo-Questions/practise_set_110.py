@@ -17,12 +17,15 @@ And get the solved solution in python, here :|
 # Solution :
 
 
-def flatlandSpaceStations(n, c):
-    return 0
-
-
 if __name__ == '__main__':
     n, m = map(int, input().split())
     c = list(map(int, input().rstrip().split()))
-    result = flatlandSpaceStations(n, c)
-    print(result)
+    space = list()
+    for _ in range(n):
+        gaps = list()
+        for i in c:
+            gaps.append(abs(_ - i))
+        space.append(min(gaps))
+    
+    print(max(space))
+
