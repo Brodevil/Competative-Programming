@@ -20,14 +20,7 @@ And get the solved solution in python, here :|
 if __name__ == '__main__':
     n, m = map(int, input().split())
     c = list(map(int, input().rstrip().split()))
-    # Shortest Solution :
-    # op = max([min([abs(i-_) for i in c]) for _ in range(n)])
+    spaces = list()
+    if len(c) == 1:
+        print(min([c[0] - n, c[0] - 0]))
 
-    space = list()
-    for _ in range(n):
-        gaps = list()
-        for i in c:
-            gaps.append(abs(_ - i))
-        space.append(min(gaps))
-    
-    print(max(space))
