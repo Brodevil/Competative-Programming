@@ -28,4 +28,3 @@ if __name__ == '__main__':
         space.append(min(gaps))
     
     print(max(space))
-
