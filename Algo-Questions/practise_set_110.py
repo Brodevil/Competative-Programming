@@ -17,10 +17,12 @@ And get the solved solution in python, here :|
 # Solution :
 
 
-if __name__ == '__main__':
-    n, m = map(int, input().split())
-    c = list(map(int, input().rstrip().split()))
-    spaces = list()
-    if len(c) == 1:
-        print(min([c[0] - n, c[0] - 0]))
-
+n, m = map(int, input().split())
+c = list(map(int, input().rstrip().split()))
+spaces = list()
+if len(c) == 1:
+    print(min([abs(c[0] - n), abs(c[0] - 0)]))
+else:
+    for _ in range(len(c)):
+        pass
+print(min(spaces))
