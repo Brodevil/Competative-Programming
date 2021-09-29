@@ -16,13 +16,11 @@ And get the solved solution in python, here :|
 
 # Solution :
 
-
 n, m = map(int, input().split())
-c = list(map(int, input().rstrip().split()))
-spaces = list()
-if len(c) == 1:
-    print(min([abs(c[0] - n), abs(c[0] - 0)]))
-else:
-    for _ in range(len(c)):
-        pass
-print(min(spaces))
+c = list(map(int, input().split()))
+c.sort()
+
+maxgap = max(a-b for a, b in zip(c[1:], c)) if len(c) > 1 else 0
+ans = max(maxgap//2, c[0], n-1-c[-1])
+
+print(ans)
