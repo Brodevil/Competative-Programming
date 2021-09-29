@@ -16,3 +16,15 @@ And get the solved solution in python, here :|
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1579/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    """AB and BC"""
+    s = input()
+    a, b, c = s.count('A'), s.count("B"), s.count("C")
+    
+
+    
+    if True:
+        print("YES")
+    else:
+        print("NO")
