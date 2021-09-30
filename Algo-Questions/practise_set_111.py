@@ -17,7 +17,5 @@ And get the solved solution in python, here :|
 
 # Solution :
 
-for s in[*open(0)][2::2]:
-    r=[];i=0
-    for x in sorted(a:=s.split(),key=int):j=a.index(x,i)+1;a[i:j]=a[j-1:j]+a[i:j-1];r+=[i:=i+1,j,j-i]*(j>i)
-    print(len(r)//3,*r)
+for s in[*open(0)][1:]:
+    print('YNEOS'[2*s.count('B')!=len(s)-1::2])
