@@ -16,3 +16,8 @@ And get solved solution, here :|
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1573/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
+    s = input()
+    
