@@ -17,14 +17,7 @@ And get the solved solution in python, here :|
 
 # Solution :
 
-for _ in range(int(input())):
-    """AB and BC"""
-    s = input()
-    a, b, c = s.count('A'), s.count("B"), s.count("C")
-    
-
-    
-    if True:
-        print("YES")
-    else:
-        print("NO")
+for s in[*open(0)][2::2]:
+    r=[];i=0
+    for x in sorted(a:=s.split(),key=int):j=a.index(x,i)+1;a[i:j]=a[j-1:j]+a[i:j-1];r+=[i:=i+1,j,j-i]*(j>i)
+    print(len(r)//3,*r)
