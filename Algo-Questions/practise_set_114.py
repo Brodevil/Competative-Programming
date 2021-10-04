@@ -19,4 +19,4 @@ And get the Solved solution in python, here :|
 
 for _ in range(int(input())):
     n, a, b = int(input()), int(input()), int(input())
-    
+    print(*range((n-1)*a, (n-1)*b+1, b-a or 1))
