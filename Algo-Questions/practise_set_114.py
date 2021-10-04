@@ -16,3 +16,7 @@ And get the Solved solution in python, here :|
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/manasa-and-stones/problem)
 
 # Solution :
+
+for _ in range(int(input())):
+    n, a, b = int(input()), int(input()), int(input())
+    
