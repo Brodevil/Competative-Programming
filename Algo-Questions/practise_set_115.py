@@ -29,7 +29,5 @@ for _ in range(int(input())):
                 print(a, _, a[_], CONDITION)
         if CONDITION:
             iterate += 1
-        
-
 
     print(iterate)
