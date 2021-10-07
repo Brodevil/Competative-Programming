@@ -21,13 +21,15 @@ for _ in range(int(input())):
     n, a = int(input()), list(map(int, input().split()))
     iterate = 0
     while a != sorted(a):
-        CONDITION = False
-        for _ in range(0, n, 2):
+        condition = False
+        for _ in range(n):
             if _ != n-1 and a[_] > a[_+1]:
+                if condition:
+                    condition = False
+                    continue
                 a[_], a[_+1] = a[_+1], a[_]
-                CONDITION = True
-                print(a, _, a[_], CONDITION)
-        if CONDITION:
-            iterate += 1
+                condition = True
+                iterate += 1
+                print(a, _, a[_], a[_+1])
 
     print(iterate)
