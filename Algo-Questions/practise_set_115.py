@@ -17,19 +17,11 @@ And get the solved solution in python, here :}
 
 # Solution :
 
-for _ in range(int(input())):
-    n, a = int(input()), list(map(int, input().split()))
-    iterate = 0
-    while a != sorted(a):
-        condition = False
-        for _ in range(n):
-            if _ != n-1 and a[_] > a[_+1]:
-                if condition:
-                    condition = False
-                    continue
-                a[_], a[_+1] = a[_+1], a[_]
-                condition = True
-                iterate += 1
-                print(a, _, a[_], a[_+1])
-
-    print(iterate)
+f=sorted
+for s in[*open(0)][2::2]:
+ *a,=map(int,s.split());i=c=0
+ while a>f(a):
+  j=i
+  while j<len(a)-1:a[j:j+2]=f(a[j:j+2]);j+=2
+  c+=1;i^=1
+ print(c)
