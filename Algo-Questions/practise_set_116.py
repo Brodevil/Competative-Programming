@@ -25,7 +25,6 @@ And get the solved solution in python, here :|
 
 
 def fairRations(B: list) -> int:
-    
     return 0
 
 
