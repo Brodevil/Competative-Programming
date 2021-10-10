@@ -25,11 +25,19 @@ And get the solved solution in python, here :|
 
 
 def fairRations(B: list) -> int:
-    return 0
+    print(all(map(lambda x: x % 2 == 0, B)))
+    breads = 0
+    for _ in range(N):
+        for _ in range(len(B)):
+            if B[_] % 2 != 0:
+                B[_] += 1
+                if _+1 != B-1 :
+                    pass
+
 
 
 if __name__ == '__main__':
-    N = int(input().strip())
-    B = list(map(int, input().rstrip().split()))
+    N = int(input())
+    B = list(map(int, input().split()))
     result = fairRations(B)
     print(result)
