@@ -23,17 +23,12 @@ And get the solved solution in python, here :|
 # The function accepts INTEGER_ARRAY B as parameter.
 
 
-
 def fairRations(B: list) -> int:
-    print(all(map(lambda x: x % 2 == 0, B)))
-    breads = 0
-    for _ in range(N):
-        for _ in range(len(B)):
-            if B[_] % 2 != 0:
-                B[_] += 1
-                if _+1 != B-1 :
-                    pass
-
+    num = [_ % 2 == 0 for _ in B].count(False)
+    if num % 2 != 0:
+        return "NO"
+    else:
+        return num*2
 
 
 if __name__ == '__main__':
