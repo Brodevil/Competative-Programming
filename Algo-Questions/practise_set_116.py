@@ -25,6 +25,7 @@ And get the solved solution in python, here :|
 
 def fairRations(B: list) -> int:
     num = [_ % 2 == 0 for _ in B].count(False)
+    print(num, num*2, num*3, num*4)
     if num % 2 != 0:
         return "NO"
     else:
