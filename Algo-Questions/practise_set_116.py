@@ -24,12 +24,12 @@ And get the solved solution in python, here :|
 
 
 def fairRations(B: list) -> int:
-    num = [_ % 2 == 0 for _ in B].count(False)
-    print(num, num*2, num*3, num*4)
-    if num % 2 != 0:
+    idx = [i for i, x in enumerate(B) if x % 2 == 1 ]
+    print(idx)
+    if len(idx) % 2 == 1:
         return "NO"
     else:
-        return num*2
+        return sum([ (idx[i+1]-idx[i])*2 for i in range(0, len(idx), 2)])
 
 
 if __name__ == '__main__':
