@@ -25,7 +25,6 @@ And get the solved solution in python, here :|
 
 def fairRations(B: list) -> int:
     idx = [i for i, x in enumerate(B) if x % 2 == 1 ]
-    print(idx)
     if len(idx) % 2 == 1:
         return "NO"
     else:
