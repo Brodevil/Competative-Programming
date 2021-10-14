@@ -17,19 +17,37 @@ And get the solved solution in python, here :|
 
 # Solution :
 
-from string import ascii_lowercase as lc
+#!/bin/python3
 
-if __name__ == "__main__":
-    s = input()
-    result = list()
 
-    for _ in s:
-        weight = lc.index(_)+1
-        for i in range(1, s.count(_)+1): result.append(weight*i)
-    
-    for _ in range(int(input())): 
-        queary = int(input())
-        if queary in result:
-            print("Yes")
+# Complete the 'weightedUniformStrings' function below.
+
+# The function is expected to return a STRING_ARRAY.
+# The function accepts following parameters:
+#  1. STRING s
+#  2. INTEGER_ARRAY queries
+
+
+def weightedUniformStrings(s: str, queries: list) -> list:
+    a = ord(s[0]) - 96
+    result = set()
+    s = s + "_"
+    for _ in range(1, len(s)):
+        result.add(a)
+        if s[_] == s[_-1]:   
+            a += ord(s[_]) - 96
         else:
-            print("No")
+            a = ord(s[_]) - 96
+    
+    return ["Yes" if _ in result else "No" for _ in queries]
+
+
+if __name__ == '__main__':
+    s = input()
+    queries_count = int(input())
+    queries = list()
+
+    for _ in range(queries_count): queries.append(int(input()))
+
+    result = weightedUniformStrings(s, queries)
+    print('\n'.join(result))
