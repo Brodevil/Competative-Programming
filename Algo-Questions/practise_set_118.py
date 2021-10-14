@@ -19,21 +19,17 @@ And get the solved solution in python, here :|
 
 from string import ascii_lowercase as lc
 
-
 if __name__ == "__main__":
     s = input()
-    queary = list()
-    for _ in range(int(input())): queary.append(int(input()))
     result = list()
 
     for _ in s:
         weight = lc.index(_)+1
-        for i in range(1, s.count(_)+1):
-            print(_, i, s.count(_))
-            result.append(weight*i)
+        for i in range(1, s.count(_)+1): result.append(weight*i)
     
-    for _ in queary:
-        if _ in result:
-            print("YES")
+    for _ in range(int(input())): 
+        queary = int(input())
+        if queary in result:
+            print("Yes")
         else:
-            print("NO")
+            print("No")
