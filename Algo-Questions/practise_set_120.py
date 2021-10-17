@@ -17,3 +17,8 @@ And get the solved solution in python, here :|
 
 # Solution :
 
+for _ in range(int(input())):
+    n = int(input())
+    x_axis = input()
+    y_axis = input()
+    
