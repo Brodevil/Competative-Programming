@@ -16,3 +16,6 @@ And get the solved solution in python, here:|
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1594/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
