@@ -16,3 +16,10 @@ And get the solved solution in python, here :}
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1593/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    i = list(map(int, input().split()))
+    h = max(i)
+    for _ in i:
+        print(0, end=" ") if h == _ and i.count(h) == 1 else print(h-_+1, end=" ")
+    print()
