@@ -16,3 +16,22 @@ And get the solved solution in python, here :}
 # Source =  [HackerRank]](https://www.hackerrank.com/challenges/happy-ladybugs/problem)
 
 # Solution :
+
+
+# Complete the 'happyLadybugs' function below.
+
+# The function is expected to return a STRING.
+# The function accepts STRING b as parameter.
+
+
+def happyLadybugs(b: list) -> str:
+    # Write your code here
+    pass
+
+
+if __name__ == '__main__':
+    for _ in range(int(input())):
+        n = int(input())
+        b = input()
+        result = happyLadybugs(b)
+        print(result)
