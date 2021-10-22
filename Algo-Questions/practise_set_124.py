@@ -25,13 +25,18 @@ And get the solved solution in python, here :}
 
 
 def happyLadybugs(b: list) -> str:
-    # Write your code here
-    pass
+    bugs = {_: b.count(_) for _ in set(b)}
+    if bugs.get("_") is None:
+        return "NO"
+    for _, __ in bugs.items():
+        if __ == 1 and _ != "_":
+            return "NO"
+    return "YES"
 
 
 if __name__ == '__main__':
     for _ in range(int(input())):
         n = int(input())
         b = input()
-        result = happyLadybugs(b)
+        result = happyLadybugs(list(b))
         print(result)
