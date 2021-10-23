@@ -16,3 +16,8 @@ And get the solved solution in python, here :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/strange-code/problem)
 
 # Solution :
+
+
+if __name__ == '__main__':
+    t = int(input())
+    print(3 * (2**n - 1) - t + 1)
