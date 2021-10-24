@@ -16,3 +16,8 @@ And get the Solution, solved by me, here :}
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1574/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
+    for _ in range(n):
+        print("("*(n-_)+")"*(n-_)+"()"*_)
