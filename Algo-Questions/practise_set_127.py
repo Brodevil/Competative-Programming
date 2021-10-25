@@ -16,3 +16,7 @@ And the solution in python, by me, here :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/big-sorting/problem)
 
 # Solution :
+
+ls = list()
+for _ in range(int(input())): ls.append(input())
+for _ in sorted(ls, key= lambda x : int(x)): print(_)
