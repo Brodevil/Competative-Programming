@@ -70,7 +70,7 @@ if __name__ == "__main__":
                     difference -= 1
                     remainingCount -= 1
                 else:
-                    return -1
+                    print(-1)
     if n % 2 == 0:
         ans = "".join(left + (right[::-1]))
     if n % 2 == 1:
