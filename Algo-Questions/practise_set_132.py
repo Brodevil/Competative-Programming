@@ -31,23 +31,29 @@ for _ in range(int(input())):
     
     index = 0
     match = False
-    iteration = 1
+    iteration = 0
     
     for _ in G:
         if not match:
             if P[0] in _:
-                print(_, P[0])
-                match = True
                 index = _.index(P[0])
+                print(_, P[0], _[index: index+c], index, iteration)
+                match = True
+                iteration += 1
+        
         else:
-            print(_, P[iteration], _[index:c-1])
-            if iteration == c:
+            
+            if iteration == c-1:
                 print("YES")
+                print(iteration, index)
                 break
 
-            elif _[index:c-1] != P[iteration]:
+            elif _[index:index+c] != P[iteration]:
                 match = False
+                iteration = 0
             else:
+                print(_, P[iteration-1], _[index:index+c], index, iteration)
                 iteration += 1
+            
     else:
         print("NO")
