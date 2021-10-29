@@ -37,22 +37,22 @@ for _ in range(int(input())):
         if not match:
             if P[0] in _:
                 index = _.index(P[0])
-                print(_, P[0], _[index: index+c], index, iteration)
+                # print(_, P[0], _[index: index+c], index, iteration)
                 match = True
                 iteration += 1
         
         else:
             
-            if iteration == c-1:
+            if iteration == c-1 and c > 2:
                 print("YES")
-                print(iteration, index)
+                # print(iteration, index)
                 break
 
             elif _[index:index+c] != P[iteration]:
                 match = False
                 iteration = 0
             else:
-                print(_, P[iteration-1], _[index:index+c], index, iteration)
+                # print(_, P[iteration-1], _[index:index+c], index, iteration)
                 iteration += 1
             
     else:
