@@ -16,3 +16,8 @@ And get the solution, solved by me, here :}
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1601/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int, input().split()))
+    
