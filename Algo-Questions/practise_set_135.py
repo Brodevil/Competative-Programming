@@ -17,3 +17,14 @@ And get the solution here, solved by me in python :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/camelcase/problem)
 
 # Solution :
+
+from string import ascii_uppercase as up
+
+if __name__ == "__main__":
+    s = input()
+    no = 0
+    for _ in s:
+        if _ in up:
+            no += 1
+
+    print(no + 1)
