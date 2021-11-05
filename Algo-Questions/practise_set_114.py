@@ -11,7 +11,7 @@ And get the Solved solution in python, here :|
 """
 
 # Author = Abhinav
-# Date = 2 Output 2021 (Gandhi Ji)
+# Date = 2 October 2021 (Gandhi Ji)
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/manasa-and-stones/problem)
 

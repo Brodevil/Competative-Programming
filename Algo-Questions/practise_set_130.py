@@ -11,7 +11,7 @@ And get the Solved solution by me, in python, here :}
 """
 
 # Author = Abhinav
-# Date = 27 Output 2021
+# Date = 27 October 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [LeetCode](https://leetcode.com/problems/two-sum/submissions/)
 

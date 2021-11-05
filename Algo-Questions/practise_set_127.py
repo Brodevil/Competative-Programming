@@ -11,7 +11,7 @@ And the solution in python, by me, here :}
 """
 
 # Author = Abhinav
-# Date = 24 Output 2021
+# Date = 24 October 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/big-sorting/problem)
 

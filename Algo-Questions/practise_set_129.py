@@ -11,7 +11,7 @@ And get the solution, solved by me, here :}
 """
 
 # Author = Abhinav
-# Date = 26 Output 2021
+# Date = 26 October 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/richie-rich/problem)
 

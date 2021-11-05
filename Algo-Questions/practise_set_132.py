@@ -11,7 +11,7 @@ And get the solution in python here :}, solved by me.
 """
 
 # Author = Abhinav
-# Date = 28 Output 2021
+# Date = 28 October 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [The Gride Search](https://www.hackerrank.com/challenges/the-grid-search/problem)
 

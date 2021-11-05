@@ -11,7 +11,7 @@ And get the solved solution in python, here:|
 """
 
 # Author = Abhinav
-# Date = 17 Output 2021
+# Date = 17 October 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1594/A)
 
