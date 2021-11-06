@@ -24,7 +24,7 @@ if __name__ == '__main__' :
     num = arr[-1]
     index = n-1
         
-    while arr[index-1] > num:
+    while arr[index-1] > num and index != 0:
         a = arr.copy()
         a[index] = arr[index-1]
         print(*a)
