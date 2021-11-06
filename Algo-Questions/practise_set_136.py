@@ -16,3 +16,19 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/insertionsort1/problem)
 
 # Solution :
+
+if __name__ == '__main__' :
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    num = arr[-1]
+    index = n-1
+        
+    while arr[index-1] > num:
+        a = arr.copy()
+        a[index] = arr[index-1]
+        print(*a)
+        arr[index-1], arr[index] = arr[index], arr[index-1]
+        index -= 1
+
+    print(*arr)
