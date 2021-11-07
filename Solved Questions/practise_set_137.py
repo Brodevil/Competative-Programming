@@ -16,3 +16,16 @@ And get solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/insertionsort2/problem)
 
 # Solution :
+
+if __name__ == '__main__' :
+    n = int(input())
+    arr = list(map(int, input().split()))
+
+    for _ in range(n):
+        num = arr[_]
+
+        while _ != 0 and num < arr[_-1]:
+            arr[_-1], arr[_] = arr[_], arr[_-1]
+            _ -= 1
+        print(*arr)
+
