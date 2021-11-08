@@ -28,4 +28,3 @@ if __name__ == '__main__' :
             arr[_-1], arr[_] = arr[_], arr[_-1]
             _ -= 1
         print(*arr)
-
