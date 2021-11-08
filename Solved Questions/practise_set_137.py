@@ -23,8 +23,11 @@ if __name__ == '__main__' :
 
     for _ in range(n):
         num = arr[_]
-
+        a = arr.copy()
+        if _ == 0:
+            continue
         while _ != 0 and num < arr[_-1]:
             arr[_-1], arr[_] = arr[_], arr[_-1]
             _ -= 1
+        
         print(*arr)
