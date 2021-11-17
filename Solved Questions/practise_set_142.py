@@ -25,9 +25,7 @@ for _ in range(int(input())):
 
     for _ in s[1:]:
         x = key.index(_) + 1
-        f = abs(x - position)
-        # print(_, x, position, f)
+        unit += abs(x - position)
         position = x
-        unit += f
     
     print(unit)
