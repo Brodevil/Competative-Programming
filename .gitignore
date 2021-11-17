@@ -16,3 +16,4 @@ __pycached__/
 *.pyc 
 *io 
 *.log
+.ipynb_checkpoints/
