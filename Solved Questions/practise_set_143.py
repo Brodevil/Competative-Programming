@@ -18,11 +18,7 @@ And get the solution here, solved in python by me :}
 # Solution :
 
 for _ in range(int(input())):
-    x, n = map(int, input().split())
-    for _ in range(1, n+1):
-        if x % 2 == 0:
-            x -= _
-        else:
-            x += _
-    
-    print(x)
+    s, n = map(int, input().split())
+    for i in range((n-1)//4*4+1, n+1):
+        s += i if s%2 else -i
+    print(s)
