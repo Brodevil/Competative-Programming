@@ -16,3 +16,13 @@ And get the solution here, solved in python by me :}
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1607/B)
 
 # Solution :
+
+for _ in range(int(input())):
+    x, n = map(int, input().split())
+    for _ in range(1, n+1):
+        if x % 2 == 0:
+            x -= _
+        else:
+            x += _
+    
+    print(x)
