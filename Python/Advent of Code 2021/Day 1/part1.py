@@ -6,9 +6,6 @@
 
 # Solution : 
 
-from os import path
-
-
 inputs = open("input.txt", "rt")
 inputs = list(map(int, inputs.read().splitlines()))
 
