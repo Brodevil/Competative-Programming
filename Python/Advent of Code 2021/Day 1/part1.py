@@ -6,12 +6,12 @@
 
 # Solution : 
 
+from os import path
 
-if __name__ == "__main__":
-    inputs = open("input.txt", "rt")
-    inputs.readlines()
 
-    for _ in inputs:
-        print(_)
+inputs = open("input.txt", "rt")
+inputs = list(map(int, inputs.read().splitlines()))
 
-        
+print(sum([1 for _ in range(1, len(inputs)) if inputs[_-1] < inputs[_]]))
+
+# Answer : 1266
