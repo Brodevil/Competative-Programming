@@ -8,6 +8,18 @@
 
 inputs = open("input.txt", "rt")
 inputs = inputs.read().splitlines()
+forward, depth, aim = 0, 0, 0
 
+for _ in inputs:
+    x = int(_[-1])
+    if "forward" in _:
+        forward += x
+        depth += (aim * x)
+    elif "up" in _:
+        aim -= x
+    elif "down" in _:
+        aim += x
 
-# Answer : 
+print(forward * depth)
+
+# Answer : 2120734350

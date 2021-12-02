@@ -11,12 +11,13 @@ inputs = inputs.read().splitlines()
 forward, depth = 0, 0
 
 for _ in inputs:
+    x = int(_[-1])
     if "forward" in _:
-        forward += int(_[-1])
+        forward += x
     elif "down" in _:
-        depth += int(_[-1])
+        depth += x
     elif "up" in _:
-        depth -= int(_[-1])
+        depth -= x
 
 print(forward * depth)
 
