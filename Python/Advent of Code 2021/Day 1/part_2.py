@@ -2,7 +2,7 @@
 
 # Author = Abhinav
 # Date = 1st of December 2021
-# Source =  [Advent Of Code](https://adventofcode.com/2021/day/1)
+# Source =  [Advent Of Code](https://adventofcode.com/2021/day/1#part2)
 
 # Solution : 
 
