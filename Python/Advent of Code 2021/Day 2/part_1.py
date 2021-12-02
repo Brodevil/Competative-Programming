@@ -7,7 +7,17 @@
 # Solution : 
 
 inputs = open("input.txt", "rt")
-inputs = list(map(int, inputs.read().splitlines()))
-    
+inputs = inputs.read().splitlines()
+forward, depth = 0, 0
 
-# Answer : 
+for _ in inputs:
+    if "forward" in _:
+        forward += int(_[-1])
+    elif "down" in _:
+        depth += int(_[-1])
+    elif "up" in _:
+        depth -= int(_[-1])
+
+print(forward * depth)
+
+# Answer : 1893605
