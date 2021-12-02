@@ -6,6 +6,8 @@
 
 # Solution : 
 
-
+inputs = open("input.txt", "rt")
+inputs = list(map(int, inputs.read().splitlines()))
+    
 
 # Answer : 
