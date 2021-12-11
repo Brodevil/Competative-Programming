@@ -16,3 +16,14 @@ And get the solution here, solved in python by me :}
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1614/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n, l, r, k = map(int, input().split())
+    arr = list(map(int, input().split()))
+    arr = sorted([_ for _ in arr if _ >= l and _ <= r])
+    n = list()
+
+    for _ in arr:
+        if not sum(n) + _ > k:
+            n.append(_)
+    print(len(n))
