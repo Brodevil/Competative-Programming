@@ -15,3 +15,14 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/runningtime/problem)
 
 # Solution :
+
+shifts = 0
+
+n = int(input())
+arr = list(map(int, input().split()))
+
+for _ in range(n):
+    for i in range(_, n):
+        if arr[_] > arr[i]:
+            shifts += 1
+print(shifts)
