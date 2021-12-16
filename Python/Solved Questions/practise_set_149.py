@@ -15,3 +15,32 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/quicksort2/problem)
 
 # Solution :
+
+
+def quick_sort(ar: list):
+    if len(ar) <= 1:
+        return ar
+    left, equal, right = partition(ar)
+    newarr = quick_sort(left) + equal + quick_sort(right)
+    print(" ".join(str(e) for e in newarr))
+    return newarr
+
+
+def partition(ar: list):
+    left = []
+    equal = [ar[0]]
+    right = []
+    for elem in ar[1:]:
+        if elem == ar[0]:
+            equal.append(elem)
+        elif elem < ar[0]:
+            left.append(elem)
+        else:
+            right.append(elem)
+    return left, equal, right
+
+
+n = input()
+ar = list(map(int, input().split()))
+
+quick_sort(ar)
