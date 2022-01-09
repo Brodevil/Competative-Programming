@@ -1,4 +1,4 @@
-# Copetative Programming Question 147  = Quicksort 2 - Sorting  (From HackerRank)
+# Competative Programming Question 149  = Quicksort 2 - Sorting  (From HackerRank)
 
 """
 Quicksort 2 - Sorting |
