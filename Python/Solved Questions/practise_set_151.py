@@ -15,3 +15,24 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/caesar-cipher-1/problem)
 
 # Solution :
+
+from string import ascii_lowercase, ascii_uppercase
+
+n, s, k = int(input()), input(), int(input())
+new = ""
+
+def work(s, ls):
+    global new
+    n = ls.index(s) + k
+    new += ls[n%26]
+
+for _ in s:
+    if _ in ascii_lowercase:
+        work(_, ascii_lowercase)
+
+    elif _ in ascii_uppercase:
+        work(_, ascii_uppercase)
+    else:
+        new += _
+
+print(new)
