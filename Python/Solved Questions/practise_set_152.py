@@ -15,3 +15,7 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/mars-exploration/problem)
 
 # Solution :
+
+s = input()
+ss = "SOS"*(len(s)//3)
+print(sum([1 for i, j in zip(s, ss) if i != j]))
