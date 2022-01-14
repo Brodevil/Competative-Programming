@@ -15,3 +15,8 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://codeforces.com/problemset/problem/1624/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    print(max(arr) - min(arr))
