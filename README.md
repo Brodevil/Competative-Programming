@@ -6,7 +6,7 @@
 <br><br>
 - In this [repository](https://github.com/Brodevil/Python-Algorithms/) I just dump my sloved Algorithms question in python.
 - Nothing special but every file contain the question as well as solution
-- This Python-practise repository was started at `18th of April 2021` 
+- This repository was started at `18th of April 2021` 
 - In this repository I had also did few competative Programming question for more practise
 - Most of the questions will be from the [HackerRank](https://www.hackerrank.com/), [CodeForces](https://codeforces.com/), [CodeChef](https://www.codechef.com/), and some random questions.<br><br>
 
