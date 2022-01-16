@@ -17,5 +17,8 @@ And get the solution here, solved in python by me :}
 # Solution :
 
 for _ in range(int(input())):
-    l = map(int, input().split())
-    print("YES" if sum(l)%2 == 0 else "NO")
+    a, b, c = map(int, input().split())
+    if (a+b == c or a+c == b or b+c == a) or ((a == b and c % 2 == 0) or (b == c and a % 2 == 0) or (a == c and b % 2 == 0)):
+        print('YES')
+    else:
+        print('NO')
