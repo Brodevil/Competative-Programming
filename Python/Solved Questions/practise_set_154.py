@@ -15,3 +15,7 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://codeforces.com/problemset/problem/1622/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    l = map(int, input().split())
+    print("YES" if sum(l)%2 == 0 else "NO")
