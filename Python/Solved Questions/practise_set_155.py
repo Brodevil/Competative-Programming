@@ -1,17 +1,18 @@
-# Competative Programming Question 155 = Sequence Master (From CodeChef)
+# Competative Programming Question 155 = Two vs Ten (From CodeChef)
 
 """
-Sequence Master |
+Two vs Ten |
 
-Get the Problem Statement on Sequence Master : https://www.codechef.com/problems/MASTER
+Get the Problem Statement on CodeChef : https://www.codechef.com/problems/TWOVSTEN
 
 And get the solution here, solved in python by me :}
 
 """
 
 # Author = Abhinav
-# Date = 16 January 2022
+# Date = 17 January 2022
 # Pourpose = Just for practise and imporving skills
-# Source =  [CodeChef](https://www.codechef.com/problems/MASTER)
+# Source =  [CodeChef](https://www.codechef.com/problems/TWOVSTEN)
 
 # Solution :
+
