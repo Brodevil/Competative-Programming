@@ -18,15 +18,15 @@ And get the solution here, solved in python by me :}
 
 
 def countingSort(arr: list):
-    # Write your code here
-    pass
+    ls = [0]*100
+    for _ in arr:
+        ls[_] += 1
 
+    return ls
 
 if __name__ == '__main__':
     n = int(input())
-
     arr = list(map(int, input().split()))
 
     result = countingSort(arr)
-
-    print(result)
+    print(*result)
