@@ -15,3 +15,9 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/countingsort3/problem)
 
 # Solution :
+
+arr = list()
+for _ in range(int(input())):
+    x, s = input().split()
+    arr.append([int(x), s])
+
