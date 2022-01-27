@@ -15,3 +15,8 @@ And get the solution here, solved in python by me :}
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1625/A)
 
 # Solution :
+
+for _ in range(int(input())):
+    n, e = map(int, input().split())
+    arr = list(map(int, input().split()))
+    
