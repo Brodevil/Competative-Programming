@@ -17,6 +17,14 @@ And get the solution here, solved in python by me :}
 # Solution :
 
 for _ in range(int(input())):
-    n, e = map(int, input().split())
+    n, l = map(int, input().split())
     arr = list(map(int, input().split()))
+    arr = [bin(_)[2:].zfill(l) for _ in arr]
+    ans = ""
+
+    for _ in range(l):
+        temp = "".join([i[_] for i in arr])
+        if temp.count("1") > temp.count("0"): ans += "1"
+        else: ans += "0"
     
+    print(int(ans, 2))
