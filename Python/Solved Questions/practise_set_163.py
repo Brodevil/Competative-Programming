@@ -10,8 +10,12 @@ And get the solution here, solved in python by me :}
 """
 
 # Author = Abhinav
-# Date = 27 January 2022
+# Date = 29 January 2022
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/insertion-sort/problem)
 
 # Solution :
+
+for _ in range(int(input())):
+    n = int(input())
+    arr = list(map(int, input().split()))
