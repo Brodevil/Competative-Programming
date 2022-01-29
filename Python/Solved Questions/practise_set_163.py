@@ -26,5 +26,5 @@ for _ in range(int(input())):
             arr[_], arr[_+1] = arr[_+1], arr[_]
             ans += 1
             if _ != 0: _ -= 1
-    
+
     print(ans)
