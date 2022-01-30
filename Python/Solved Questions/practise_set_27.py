@@ -61,13 +61,13 @@ In the fourth test case, since d=0 so each packet should contain the same number
 # Motive = This is to get famalier with competative programming and practise 2 to 3 problem daily
 
 
-if __name__ == '__main__':    
+if __name__ == "__main__":
     result = list()
     for i in range(int(input())):
         r, b, d = list(map(int, input().split()))
-        if r>=b:
+        if r >= b:
             min, max = b, r
-        elif r<b:
+        elif r < b:
             min, max = r, b
         d *= min
         mod = max - min
@@ -77,4 +77,3 @@ if __name__ == '__main__':
             result.append("No")
     for i in result:
         print(i)
-        

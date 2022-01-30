@@ -17,7 +17,7 @@ And get solution here, solved in python by me :}
 
 # Solution :
 
-if __name__ == '__main__' :
+if __name__ == "__main__":
     n = int(input())
     arr = list(map(int, input().split()))
 
@@ -26,8 +26,8 @@ if __name__ == '__main__' :
         a = arr.copy()
         if _ == 0:
             continue
-        while _ != 0 and num < arr[_-1]:
-            arr[_-1], arr[_] = arr[_], arr[_-1]
+        while _ != 0 and num < arr[_ - 1]:
+            arr[_ - 1], arr[_] = arr[_], arr[_ - 1]
             _ -= 1
-        
+
         print(*arr)

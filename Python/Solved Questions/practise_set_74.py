@@ -1,4 +1,4 @@
-# Python Practise 74 = Viral Advertising (From hackerrank) 
+# Python Practise 74 = Viral Advertising (From hackerrank)
 
 """
 Viral Advertising | Problem Statment :
@@ -13,7 +13,7 @@ And get the solved solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 19 August 2021 
+# Date = 19 August 2021
 # Pourpose = Just for practise and imporving python skills
 # Source =  [Hackerrnak](https://www.hackerrank.com/challenges/strange-advertising/problem)
 
@@ -28,16 +28,15 @@ And get the solved solution in python by Brodevil here :|
 
 def viralAdvertising(n: int) -> int:
     shared = [2]
-    for i in range(n-1):
-        shared.append(int(3*shared[i]/2))
-    
+    for i in range(n - 1):
+        shared.append(int(3 * shared[i] / 2))
+
     return sum(shared)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     result = viralAdvertising(n)
 
     print(result)
-

@@ -24,7 +24,9 @@ for _ in range(int(input())):
 
     for _ in range(l):
         temp = "".join([i[_] for i in arr])
-        if temp.count("1") > temp.count("0"): ans += "1"
-        else: ans += "0"
-    
+        if temp.count("1") > temp.count("0"):
+            ans += "1"
+        else:
+            ans += "0"
+
     print(int(ans, 2))

@@ -38,11 +38,14 @@ def breakingRecords(scores: list):
                 lowest.append(scores[_])
             elif scores[_] > highest[-1]:
                 highest.append(scores[_])
-            
-    return [len(highest)-1, len(lowest)-1, ]
+
+    return [
+        len(highest) - 1,
+        len(lowest) - 1,
+    ]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     scores = list(map(int, input().rstrip().split()))

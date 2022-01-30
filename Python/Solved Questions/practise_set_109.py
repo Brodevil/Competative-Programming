@@ -11,7 +11,7 @@ And get the solved solution in python, here :|
 """
 
 # Author = Abhinav
-# Date = 24 September 2021 
+# Date = 24 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/lisa-workbook/problem)
 
@@ -26,15 +26,15 @@ def lisas_workbook(n: int, k: int, a: list) -> int:
         num_probs_in_chapter = a[i]
         num_full_pages, leftover_probs = divmod(num_probs_in_chapter, k)
 
-        total_pages = num_full_pages + ( 1 if leftover_probs else 0 )
-        problems_in_chapter = iter(range(1, a[i]+1))
+        total_pages = num_full_pages + (1 if leftover_probs else 0)
+        problems_in_chapter = iter(range(1, a[i] + 1))
 
         for _ in range(total_pages):
-            probs_on_page = [next(problems_in_chapter, None) for _ in range(k)]    
+            probs_on_page = [next(problems_in_chapter, None) for _ in range(k)]
             if cur_page in probs_on_page:
                 num_special += 1
-            cur_page += 1        
-    
+            cur_page += 1
+
     return num_special
 
 

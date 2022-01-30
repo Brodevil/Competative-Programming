@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 30 August 2021 
+# Date = 30 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/non-divisible-subset/problem)
 
@@ -32,16 +32,16 @@ def nonDivisibleSubset(k: int, s: list) -> int:
         counts[number % k] += 1
 
     count = min(counts[0], 1)
-    for i in range(1, k//2+1):
+    for i in range(1, k // 2 + 1):
         if i != k - i:
-            count += max(counts[i], counts[k-i])
-    if k % 2 == 0: 
+            count += max(counts[i], counts[k - i])
+    if k % 2 == 0:
         count += 1
 
     return count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

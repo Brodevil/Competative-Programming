@@ -17,9 +17,9 @@ import sys
 
 # Author : Abhinav
 # Date : 19 April 2021
-# Pourpose : For more python practise 
+# Pourpose : For more python practise
 
-        
+
 def palindromify(lis):
     """
     This find the next palindrom of value having more then 10
@@ -34,8 +34,8 @@ def palindromify(lis):
                     lis[index] = value
                     break
     return lis
-        
-            
+
+
 if __name__ == "__main__":
     # getting the int of input and putting as a list
     try:
@@ -43,9 +43,9 @@ if __name__ == "__main__":
     except ValueError:
         print("Enter the league input it should be integer")
         # I can simply user exit() but for the testing and practise I user sys.exit()
-        sys.exit() 
-        
-    '''
+        sys.exit()
+
+    """
     # one more another method to take list as a input :
     times = int(input("Enter lenght of your list : \t"))
     lst = list()
@@ -53,7 +53,6 @@ if __name__ == "__main__":
         item = int(input("Enter the number : \t"))
         lst.append(item)
     print(lst)
-    '''
+    """
     # called the functions in the fstring
     print(f"Palindromify of your list {lst} is :=: \t{palindromify(lst)}")
-

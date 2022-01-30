@@ -39,8 +39,7 @@ Sample Output 0 :
 # Motive = Just for the python practise to not just learn python also to expert it
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     integerTuples = tuple(map(int, input().split()))
     print(hash(integerTuples))

@@ -25,7 +25,7 @@ for _ in range(int(input())):
     s = 0
     b = sorted([[a[i], i] for i in range(len(a))], reverse=True)
     pos = 1
-    
+
     for k, i in b:
         res[i + 1] = pos
         s += 2 * k * abs(pos)
@@ -33,6 +33,6 @@ for _ in range(int(input())):
             pos = -pos
         else:
             pos = -pos + 1
-    
+
     print(s)
     print(*res)

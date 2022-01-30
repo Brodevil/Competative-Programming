@@ -34,20 +34,21 @@ def weightedUniformStrings(s: str, queries: list) -> list:
     s = s + "_"
     for _ in range(1, len(s)):
         result.add(a)
-        if s[_] == s[_-1]:   
+        if s[_] == s[_ - 1]:
             a += ord(s[_]) - 96
         else:
             a = ord(s[_]) - 96
-    
+
     return ["Yes" if _ in result else "No" for _ in queries]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
     queries_count = int(input())
     queries = list()
 
-    for _ in range(queries_count): queries.append(int(input()))
+    for _ in range(queries_count):
+        queries.append(int(input()))
 
     result = weightedUniformStrings(s, queries)
-    print('\n'.join(result))
+    print("\n".join(result))

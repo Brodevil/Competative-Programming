@@ -105,11 +105,10 @@ def print_rangoli(size):
     L = []
     for i in range(n):
         s = "-".join(letters[i:n])
-        L.append((s[::-1]+s[1:]).center(4*n-3, "-"))
-    print('\n'.join(L[:0:-1]+L))
-    
+        L.append((s[::-1] + s[1:]).center(4 * n - 3, "-"))
+    print("\n".join(L[:0:-1] + L))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     print_rangoli(n)

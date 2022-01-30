@@ -20,7 +20,7 @@ n = int(input())
 arr = list(map(int, input().split()))
 
 # Sorted list in index form
-index_ls = [0]*100
+index_ls = [0] * 100
 for _ in arr:
     index_ls[_] += 1
 

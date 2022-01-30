@@ -11,7 +11,7 @@ And get the solved solution in python By Brodevil here :|
 
 
 # Author = Abhinav
-# Date = 31 August 2021 
+# Date = 31 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/repeated-string/problem)
 
@@ -28,12 +28,12 @@ And get the solved solution in python By Brodevil here :|
 
 def repeatedString(s: str, n: int) -> int:
     if n % len(s) == 0:
-        return s.count("a")*n
+        return s.count("a") * n
     else:
-        return (s[: (n % len(s))].count("a") + (s.count("a")*(n // len(s))))
+        return s[: (n % len(s))].count("a") + (s.count("a") * (n // len(s)))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
 
     n = int(input().strip())

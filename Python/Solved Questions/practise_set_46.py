@@ -92,6 +92,7 @@ Sum everything except 5, the sum is 1 + 2 + 3 + 4 = 10.
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
+
 def miniMaxSum(arr: list):
     # Write your code here
     arr.sort()
@@ -99,7 +100,7 @@ def miniMaxSum(arr: list):
     print(smallest, biggest)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     arr = list(map(int, input().rstrip().split()))
 

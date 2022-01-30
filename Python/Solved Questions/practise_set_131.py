@@ -29,6 +29,9 @@ class Solution(object):
         _l2 = int("".join([str(_) for _ in l2[::-1]]))
         return [int(_) for _ in str(_l1 + _l2)[::-1]]
 
+
 result = Solution()
-output = result.addTwoNumbers(list(map(int, input().split())), list(map(int, input().split())))
+output = result.addTwoNumbers(
+    list(map(int, input().split())), list(map(int, input().split()))
+)
 print(output)

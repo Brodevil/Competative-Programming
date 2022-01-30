@@ -74,8 +74,7 @@ Sample Output :
 # Purpose = Just for the python practise to not just learn python also to expert it
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n, m = map(int, input().split())
-    pattern = [('.|.' * (2 * i + 1)).center(m, '-') for i in range(n // 2)]
-    print('\n'.join(pattern + ['WELCOME'.center(m, '-')] + pattern[::-1]))
-
+    pattern = [(".|." * (2 * i + 1)).center(m, "-") for i in range(n // 2)]
+    print("\n".join(pattern + ["WELCOME".center(m, "-")] + pattern[::-1]))

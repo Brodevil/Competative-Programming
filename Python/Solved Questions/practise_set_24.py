@@ -56,10 +56,10 @@ this-is-a-string
 
 
 def split_and_join(line):
-    return  "-".join(line.split())
+    return "-".join(line.split())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     line = input()
     result = split_and_join(line)
     print(result)

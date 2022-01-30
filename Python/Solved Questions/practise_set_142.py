@@ -27,5 +27,5 @@ for _ in range(int(input())):
         x = key.index(_) + 1
         unit += abs(x - position)
         position = x
-    
+
     print(unit)

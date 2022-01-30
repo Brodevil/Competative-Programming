@@ -50,7 +50,6 @@ A string is a collection of characters.
 # Motive = Just for the python practise to not just learn python also to expert it
 
 
-
 # Complete the 'print_full_name' function below.
 #
 # The function is expected to return a STRING.
@@ -59,11 +58,12 @@ A string is a collection of characters.
 #  2. STRING last
 #
 
+
 def print_full_name(first, last):
     print(f"Hello {first} {last}! You just delved into python.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_name = input()
     last_name = input()
     print_full_name(first_name, last_name)

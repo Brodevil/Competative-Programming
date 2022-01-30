@@ -73,12 +73,13 @@ Candle heights are [3, 2, 1, 3]. The tallest candles are 3 units, and there are 
 # The function accepts INTEGER_ARRAY candles as parameter.
 #
 
+
 def birthdayCakeCandles(candles: list):
     # Write your code here
     return candles.count(sorted(candles)[-1])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     candles_count = int(input().strip())
 
     candles = list(map(int, input().rstrip().split()))

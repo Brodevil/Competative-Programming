@@ -77,7 +77,6 @@ Student 4 received a grade below 33, so the grade will not be modified and the s
 """
 
 
-
 # Author = Abhinav
 # Date = 21 July 2021
 # Pourpose = Now I am getting very less time to touch my laptop, so in few time lets Practise some new thing in Python
@@ -94,11 +93,10 @@ Student 4 received a grade below 33, so the grade will not be modified and the s
 # The function accepts INTEGER_ARRAY grades as parameter.
 
 
-
 def next_five_factor(num: int):
     for _ in range(1, 6):
         if (num + _) % 5 == 0:
-            return num+_
+            return num + _
 
 
 def gradingStudents(grades: list):
@@ -108,11 +106,11 @@ def gradingStudents(grades: list):
             next_five = next_five_factor(_)
             if not next_five - _ >= 3:
                 grades[index] = next_five
-            
+
     return grades
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     grades_count = int(input().strip())
 
     grades = []

@@ -82,14 +82,14 @@ Sample Output 0 :
 # Motive = Just for the python practise to not just learn python also to expert it
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     commands = [input() for i in range(int(input()))]
     lst = list()
     for i in commands:
         function, *num = i.split()
         num = list(map(int, num))
         lst.append([function, num])
-        
+
     commands = list()
     for command, num in lst:
         if command == "print":
@@ -115,8 +115,8 @@ for _ in range(n):
     s = input().split()
     cmd = s[0]
     args = s[1:]
-    if cmd !="print":
-        cmd += "("+ ",".join(args) +")"
-        eval("l."+cmd)
+    if cmd != "print":
+        cmd += "(" + ",".join(args) + ")"
+        eval("l." + cmd)
     else:
         print(l)

@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil, here :
 """
 
 # Author = Abhinav
-# Date = 2 September 2021 
+# Date = 2 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/equality-in-a-array/problem)
 
@@ -29,12 +29,12 @@ def equalizeArray(arr: list) -> int:
     largest = 0
     for _ in arr:
         num = arr.count(_)
-        if num > largest :
+        if num > largest:
             largest = num
-    return len(arr)- largest
+    return len(arr) - largest
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))

@@ -24,14 +24,14 @@ And get the solved solution in python, here :|
 
 
 def fairRations(B: list) -> int:
-    idx = [i for i, x in enumerate(B) if x % 2 == 1 ]
+    idx = [i for i, x in enumerate(B) if x % 2 == 1]
     if len(idx) % 2 == 1:
         return "NO"
     else:
-        return sum([ (idx[i+1]-idx[i])*2 for i in range(0, len(idx), 2)])
+        return sum([(idx[i + 1] - idx[i]) * 2 for i in range(0, len(idx), 2)])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     N = int(input())
     B = list(map(int, input().split()))
     result = fairRations(B)

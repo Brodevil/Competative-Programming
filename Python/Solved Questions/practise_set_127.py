@@ -19,6 +19,7 @@ And the solution in python, by me, here :}
 
 # In Python, This is the fasted solution, but still we aren't getting all the test cases correct. Its becoming wrong due to time exceeds
 ls = list()
-for _ in range(int(input())): ls.append(input())
-for _ in sorted(ls, key= lambda x : int(x)): print(_)
-    
+for _ in range(int(input())):
+    ls.append(input())
+for _ in sorted(ls, key=lambda x: int(x)):
+    print(_)

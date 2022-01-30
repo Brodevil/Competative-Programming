@@ -59,7 +59,6 @@ Sample Output 0 :
 """
 
 
-
 # Author = Abhinav
 # Date = 15 July 2021
 # Pourpose = Now I am getting very less time to touch my laptop, so in few time lets Practise some new thing in Python
@@ -76,29 +75,29 @@ Sample Output 0 :
 # The function accepts STRING s as parameter.
 #
 
+
 def timeConversion(s):
     # Write your code here
     meridium = s[-2:]
     s = s.replace(s[-2:], "")
     times = list(map(int, s.split(":")))
-    
+
     if meridium == "PM" and not times[0] == 12:
         times[0] += 12
-    
+
     elif meridium == "AM" and times[0] == 12:
         times[0] = 0
-    
+
     for _ in range(len(times)):
         if len(str(times[_])) == 1:
             times[_] = f"0{times[_]}"
         else:
             times[_] = str(times[_])
-        
-    return ":".join(times)         
-    
+
+    return ":".join(times)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
 
     result = timeConversion(s)

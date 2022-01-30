@@ -12,7 +12,7 @@ And get he solved solution in python by brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 17 August 2021 
+# Date = 17 August 2021
 # Pourpose = Just for practise and imporving python skills
 # Source =  [Hackerrnak](https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem)
 
@@ -32,15 +32,15 @@ And get he solved solution in python by brodevil here :|
 
 def beautifulDays(i: int, j: int, k: int) -> int:
     results = 0
-    for _ in range(i, j+1):
-        num = (abs(_ - int(str(_)[::-1])))/k
+    for _ in range(i, j + 1):
+        num = (abs(_ - int(str(_)[::-1]))) / k
         if num % 1 == 0 and num >= 0:
             results += 1
-    
+
     return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     i = int(first_multiple_input[0])

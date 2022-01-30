@@ -28,11 +28,11 @@ And Get the solved solution here :|
 #  3. INTEGER_ARRAY ar
 
 
-def divisibleSumPairs(n: int, k: int, ar: list) -> int:   
-    return sum([1 for _ in range(len(ar)) for i in ar[_+1:] if (ar[_] + i) % k == 0])
+def divisibleSumPairs(n: int, k: int, ar: list) -> int:
+    return sum([1 for _ in range(len(ar)) for i in ar[_ + 1 :] if (ar[_] + i) % k == 0])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

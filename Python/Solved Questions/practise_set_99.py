@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 13 September 2021 
+# Date = 13 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1559/A)
 
@@ -21,4 +21,4 @@ And get the solved solution in python by Brodevil, here :|
 for _ in range(int(input())):
     n = int(input())
     s = input()
-    print(eval(s.replace(' ','&')))
+    print(eval(s.replace(" ", "&")))

@@ -12,7 +12,7 @@ And get the solved solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 20 August 2021 
+# Date = 20 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrnak](https://www.hackerrank.com/challenges/save-the-prisoner/problem)
 
@@ -32,14 +32,14 @@ def saveThePrisoner(prisoners: int, candy: int, chair: int) -> int:
     #         chair += 1
     #     if chair > prisoners:
     #         chair = 1
-        
+
     # return chair
 
     # another quick solution :
     return ((chair - 1 + candy - 1) % prisoners) + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     for t_itr in range(int(input())):
         first_multiple_input = input().rstrip().split()
 

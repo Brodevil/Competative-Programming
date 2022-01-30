@@ -21,14 +21,14 @@ And get the solution, solved by me, here :}
 for _ in range(int(input())):
     n, h = map(int, input().split())
     arr = list(map(int, input().split()))
-    
+
     arr.sort(reverse=True)
     m = arr[0] + arr[1]
-    ans = 2 * (h//m)
+    ans = 2 * (h // m)
 
-    if (h % m > arr[0] and h % m > 0):
+    if h % m > arr[0] and h % m > 0:
         ans += 2
     elif h % m > 0:
-        ans+=1
-    
+        ans += 1
+
     print(ans)

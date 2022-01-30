@@ -103,17 +103,16 @@ True
 # Pourpose = Just for the python practise to not just learn python also to expert it
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
 
     # a long way
     for i in s:
-        if i.isalnum() :
+        if i.isalnum():
             print(True)
             break
     else:
         print(False)
-
 
     for i in s:
         if i.isalpha():
@@ -122,14 +121,12 @@ if __name__ == '__main__':
     else:
         print(False)
 
-
     for i in s:
         if i.isdigit():
             print(True)
             break
     else:
         print(False)
-
 
     for i in s:
         if i.islower():
@@ -138,17 +135,15 @@ if __name__ == '__main__':
     else:
         print(False)
 
-
     for i in s:
         if i.isupper():
             print(True)
             break
     else:
         print(False)
-  
-  
+
     # more pythonic way
-    print(any(c.isalnum()  for c in s))
+    print(any(c.isalnum() for c in s))
     print(any(c.isalpha() for c in s))
     print(any(c.isdigit() for c in s))
     print(any(c.islower() for c in s))

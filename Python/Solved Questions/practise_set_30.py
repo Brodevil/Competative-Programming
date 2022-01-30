@@ -1,4 +1,4 @@
-# Python practise - Compitative Programming (From Adventofcode 2020) = Day 2: Password Philosophy 
+# Python practise - Compitative Programming (From Adventofcode 2020) = Day 2: Password Philosophy
 
 """
 --- Day 2: Password Philosophy ---
@@ -1032,7 +1032,6 @@ data = """2-5 z: zzztvz
 # Pourpose = Just for the python practise to not just learn python also to expert it
 
 
-
 if __name__ == "__main__":
     data = data.split("\n")
     validPasswords = 0  # part 1
@@ -1041,29 +1040,28 @@ if __name__ == "__main__":
         charctors, password = i.split(": ")
         lowerrang, upperrang = map(int, charctors.split()[0].split("-"))
         charctors = charctors.split()[1]
-        numCharactors = 0   # part 1
+        numCharactors = 0  # part 1
         numAplhabet = 0
         for i in enumerate(list(password)):
-            # part 1 condition 
+            # part 1 condition
             if i[1] == charctors:
                 numCharactors += 1
-            
+
             # part 2 condition
-            if i[0]+1 == lowerrang or i[0]+1 == upperrang:
+            if i[0] + 1 == lowerrang or i[0] + 1 == upperrang:
                 if i[1] == charctors:
                     numAplhabet += 1
 
         # part 1 conditions
         if numCharactors >= lowerrang and numCharactors <= upperrang:
             validPasswords += 1
-    
+
         # part 2 conditoins
         if numAplhabet == 1:
             validPassword2 += 1
-        
+
     # part 1 answer
     print(validPasswords)
 
     # part 2 answer
     print(validPassword2)
-

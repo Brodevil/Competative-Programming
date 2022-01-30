@@ -11,7 +11,7 @@ And get the solved solution in python By Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 3 September 2021 
+# Date = 3 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/queens-attack-2/problem)
 
@@ -29,34 +29,32 @@ And get the solved solution in python By Brodevil, here :|
 #  5. 2D_INTEGER_ARRAY obstacles
 
 
-def queensAttack(n: int, k: int,
-                 r_q: int, c_q: int, 
-                 obstacles: list) -> int:
+def queensAttack(n: int, k: int, r_q: int, c_q: int, obstacles: list) -> int:
     # Write your code here
     attack = 0
 
-    # Rows Downwards 
-    for _ in range(r_q-1, 0, -1):
+    # Rows Downwards
+    for _ in range(r_q - 1, 0, -1):
         if [_, c_q] not in obstacles and _ != 0:
             attack += 1
         else:
             break
 
-    # Rows Upwards 
+    # Rows Upwards
     for _ in range(r_q, n):
         if [_, c_q] not in obstacles and _ != 0:
             attack += 1
         else:
             break
 
-    # Columns Downwards 
-    for _ in range(c_q-1, 0, -1):
+    # Columns Downwards
+    for _ in range(c_q - 1, 0, -1):
         if [r_q, _] not in obstacles and _ != 0:
             attack += 1
         else:
             break
 
-    # Columns Upwards 
+    # Columns Upwards
     for _ in range(c_q, n):
         if [r_q, _] not in obstacles and _ != 0:
             attack += 1
@@ -66,7 +64,7 @@ def queensAttack(n: int, k: int,
     # Horizontally Right - dowwards
     position = [r_q, c_q]
     while position not in obstacles:
-        position = [position[0]-1, position[1]-1]
+        position = [position[0] - 1, position[1] - 1]
         attack += 1
         if 1 in position or n in position:
             break
@@ -74,16 +72,15 @@ def queensAttack(n: int, k: int,
     # Horizontally Right - upwards
     position = [r_q, c_q]
     while position not in obstacles:
-        position = [position[0]+1, position[1]+1]
+        position = [position[0] + 1, position[1] + 1]
         attack += 1
         if 1 in position or n in position:
             break
 
-
     # Horizontally Left - dowwards
     position = [r_q, c_q]
     while position not in obstacles:
-        position = [position[0]+1, position[1]-1]
+        position = [position[0] + 1, position[1] - 1]
         attack += 1
         if 1 in position or n in position:
             break
@@ -91,7 +88,7 @@ def queensAttack(n: int, k: int,
     # Horizontally Left - upwards
     position = [r_q, c_q]
     while position not in obstacles:
-        position = [position[0]-1, position[1]+1]
+        position = [position[0] - 1, position[1] + 1]
         attack += 1
         if 1 in position or n in position:
             break
@@ -99,7 +96,7 @@ def queensAttack(n: int, k: int,
     return attack
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

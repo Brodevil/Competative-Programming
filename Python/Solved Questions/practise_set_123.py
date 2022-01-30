@@ -22,7 +22,7 @@ for _ in range(int(input())):
     arr = list(map(int, input().split()))
     d = sum(arr)
     condition = True
-    
+
     for i in range(2, round(d ** 0.5) + 1):
         if d % i == 0:
             condition = False

@@ -17,12 +17,12 @@ And get the solution here, solved in python by me :}
 # Solution :
 
 n = int(input())
-arr = [[] for _ in range(n//2+1)]
+arr = [[] for _ in range(n // 2 + 1)]
 
 for _ in range(n):
     x, s = input().split()
     x = int(x)
-    if _ < n//2:
+    if _ < n // 2:
         arr[x].append("-")
     else:
         arr[x].append(s)

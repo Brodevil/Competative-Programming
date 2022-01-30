@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 11 September 2021 
+# Date = 11 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [CodeFroces](https://codeforces.com/problemset/problem/1562/A)
 
@@ -20,5 +20,4 @@ And get the solved solution in python by Brodevil, here :|
 
 for _ in range(int(input())):
     a, b = map(int, input().split())
-    print(b % max(a, b//2+1))
-    
+    print(b % max(a, b // 2 + 1))

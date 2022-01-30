@@ -12,7 +12,7 @@ And get the solved solution in python here :|
 """
 
 # Author = Abhinav
-# Date = 17 September 2021 
+# Date = 17 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/beautiful-triplets/problem)
 
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     results = 0
 
     for i in range(n):
-        if arr[i] + d in arr and arr[i]+2*d in arr:
+        if arr[i] + d in arr and arr[i] + 2 * d in arr:
             results += 1
 
     print(results)

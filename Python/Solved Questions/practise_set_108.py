@@ -11,7 +11,7 @@ And get the python solution, here :|
 """
 
 # Author = Abhinav
-# Date = 23 September 2021 
+# Date = 23 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/service-lane/problem))
 
@@ -24,4 +24,4 @@ if __name__ == "__main__":
 
     for _ in range(t):
         i, j = map(int, input().split())
-        print(min(arr[i: j+1]))
+        print(min(arr[i : j + 1]))

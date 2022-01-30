@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 6 September 2021 
+# Date = 6 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/organizing-containers-of-balls/problem)
 
@@ -22,9 +22,9 @@ for _ in range(q):
     n = int(input().strip())
     M = list()
     for M_i in range(n):
-       M_t = [int(M_temp) for M_temp in input().strip().split(' ')]
-       M.append(M_t)
-    
+        M_t = [int(M_temp) for M_temp in input().strip().split(" ")]
+        M.append(M_t)
+
     var1 = list()
     var2 = list()
 
@@ -33,7 +33,7 @@ for _ in range(q):
         var2.append(sum(M[i]))
         for j in range(n):
             var1[i] += M[j][i]
-    
+
     var1.sort()
     var2.sort()
 

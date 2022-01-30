@@ -11,7 +11,7 @@ And get the Solution in python By Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 25 August 2021 
+# Date = 25 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/extra-long-factorials/problem)
 
@@ -23,13 +23,13 @@ And get the Solution in python By Brodevil, here :|
 
 def extraLongFactorials(n: int) -> int:
     result = 1
-    for _ in range(1, n+1):
+    for _ in range(1, n + 1):
         result = result * _
 
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
     result = extraLongFactorials(n)
     print(result)

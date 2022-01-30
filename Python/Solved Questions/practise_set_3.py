@@ -48,25 +48,23 @@ resutl_3 = lst.copy()
 
 for index, element in enumerate(resutl_3):
     # condition first checking for the list which is contain the even number of length then hum bich me stop ho jayenge nahi to jaisa list that vesa hi hoo jayega bhia
-    if len(resutl_3)/2 == index:
+    if len(resutl_3) / 2 == index:
         break
 
     # condition secondly checking to stop the iteration of odd number of lenght of list in center because ek number bich kr left hoo hi jayega n esslia
-    elif len(resutl_3)//2 == index:
+    elif len(resutl_3) // 2 == index:
         break
 
-    from_last = resutl_3[len(lst)-1-index]
-    resutl_3[len(lst)-1-index] = element
+    from_last = resutl_3[len(lst) - 1 - index]
+    resutl_3[len(lst) - 1 - index] = element
     resutl_3[index] = from_last
-
 
 
 # better solution of 3rd method
 solu_3 = lst.copy()
-for i in range(len(solu_3)//2):
-    solu_3[i], solu_3[len(solu_3)-i-1] = solu_3[len(solu_3)-i-1], solu_3[i]
+for i in range(len(solu_3) // 2):
+    solu_3[i], solu_3[len(solu_3) - i - 1] = solu_3[len(solu_3) - i - 1], solu_3[i]
 print(f"This is another bette solution for the 3rd condition or method {solu_3}")
-
 
 
 # output stuffs
@@ -77,4 +75,3 @@ print(resutl_3)
 # checking whether the result we get same from all three methods
 if resutl_3 == result_1 == result_2:
     print("All the three method give same results")
-

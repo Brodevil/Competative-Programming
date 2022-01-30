@@ -82,7 +82,6 @@ sentences = [
     Pablo Galindo Salgado @pablogsal
     Ned Deily @nad
     Steve Dower @steve.dower""",
-
     """
     Python Insider
     Python core development news and information.
@@ -128,7 +127,6 @@ sentences = [
     
 
     Posted by Łukasz Langa at 3:19 PM """,
-
     """
     Optimize Windows for better performance
     Windows 7
@@ -227,8 +225,7 @@ sentences = [
     Under Drive[Volume Label], click the drive that contains the paging file you want to change.
 
     Click Custom size, type a new size in megabytes in the Initial size (MB) or Maximum size (MB) box, click Set, and then click OK.
-    """
-
+    """,
 ]
 
 
@@ -238,7 +235,6 @@ import time
 # Author = Abhinav
 # Date = 21 April 2021
 # Purpose = For the python practise
-
 
 
 def matching_words(sentance1, sentance2):
@@ -261,11 +257,17 @@ if __name__ == "__main__":
     if query == "":
         print("Plz Enter Something like string to find it\n")
         exit()
-    
+
     startup_time = time.time()
     scores = [matching_words(query, sentence) for sentence in sentences]
 
-    sortedSentScore = [sentScore for sentScore in sorted(zip(scores, sentences), reverse=True) if sentScore[0] != 0]
-    print(f"\nAbout {len(sortedSentScore)} Results found in ({time.time() - startup_time}) Sec.\n\n\n")
+    sortedSentScore = [
+        sentScore
+        for sentScore in sorted(zip(scores, sentences), reverse=True)
+        if sentScore[0] != 0
+    ]
+    print(
+        f"\nAbout {len(sortedSentScore)} Results found in ({time.time() - startup_time}) Sec.\n\n\n"
+    )
     for score, item in sortedSentScore:
-        print(f"\"{item}\": With a score of {score}\n\n")
+        print(f'"{item}": With a score of {score}\n\n')

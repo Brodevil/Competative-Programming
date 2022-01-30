@@ -19,8 +19,10 @@ And get the solution here, solved in python by me :}
 
 from collections import Counter, OrderedDict
 
+
 class OrderedCounter(Counter, OrderedDict):
     pass
+
 
 d = OrderedCounter(input() for _ in range(int(input())))
 

@@ -21,10 +21,12 @@ from string import ascii_lowercase, ascii_uppercase
 n, s, k = int(input()), input(), int(input())
 new = ""
 
+
 def work(s, ls):
     global new
     n = ls.index(s) + k
-    new += ls[n%26]
+    new += ls[n % 26]
+
 
 for _ in s:
     if _ in ascii_lowercase:

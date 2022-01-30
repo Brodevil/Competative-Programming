@@ -45,14 +45,15 @@ Explanation 0
 # Date = 22 April 2021
 # Pourpose = From the hacker rank picked the question for python practise
 
+
 def is_leap(year):
-    if year%400 == 0:
+    if year % 400 == 0:
         return True
-    
-    elif year%100 == 0:
+
+    elif year % 100 == 0:
         return False
-    
-    elif year%4 == 0:
+
+    elif year % 4 == 0:
         return True
 
     else:
@@ -62,5 +63,3 @@ def is_leap(year):
 if __name__ == "__main__":
     year = int(input())
     print(is_leap(year))
-
-

@@ -17,18 +17,18 @@ And get the solution here, solved in python by me :}
 
 # Solution :
 
-if __name__ == '__main__' :
+if __name__ == "__main__":
     n = int(input())
     arr = list(map(int, input().split()))
 
     num = arr[-1]
-    index = n-1
-        
-    while arr[index-1] > num and index != 0:
+    index = n - 1
+
+    while arr[index - 1] > num and index != 0:
         a = arr.copy()
-        a[index] = arr[index-1]
+        a[index] = arr[index - 1]
         print(*a)
-        arr[index-1], arr[index] = arr[index], arr[index-1]
+        arr[index - 1], arr[index] = arr[index], arr[index - 1]
         index -= 1
 
     print(*arr)

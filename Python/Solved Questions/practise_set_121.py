@@ -20,4 +20,4 @@ And get the solved solution in python, here:|
 
 for _ in range(int(input())):
     n = int(input())
-    print(-(n-1), n)
+    print(-(n - 1), n)

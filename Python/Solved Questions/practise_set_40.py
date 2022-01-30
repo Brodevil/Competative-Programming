@@ -92,7 +92,7 @@ Print each  on a new line.
 
 
 def merge_the_tools(string, k):
-    u = [string[i:i+k] for i in range(0, len(string), k)]
+    u = [string[i : i + k] for i in range(0, len(string), k)]
     t = ""
     s = list()
     for i in u:
@@ -106,10 +106,9 @@ def merge_the_tools(string, k):
 def another_solution(string, k):
     for part in zip(*[iter(string)] * k):
         d = dict()
-        print(''.join([ d.setdefault(c, c) for c in part if c not in d ]))
+        print("".join([d.setdefault(c, c) for c in part if c not in d]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     string, k = input(), int(input())
     merge_the_tools(string, k)
-

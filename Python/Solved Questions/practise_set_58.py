@@ -35,7 +35,7 @@ def migratoryBirds(arr: list):
     return sorted([_[1] for _ in arr2 if _[0] == highest])[0]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     arr_count = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))

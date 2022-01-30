@@ -11,7 +11,7 @@ And get the solved solution in python, below :|
 """
 
 # Author = Abhinav
-# Date = 15 September 2021 
+# Date = 15 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/bigger-is-greater/problem)
 
@@ -31,13 +31,13 @@ def biggerIsGreater(w: str) -> str:
         i -= 1
     if i <= 0:
         return "no answer"
-    
+
     j = len(arr) - 1
     while arr[j] <= arr[i - 1]:
         j -= 1
     arr[i - 1], arr[j] = arr[j], arr[i - 1]
 
-    arr[i : ] = arr[len(arr) - 1 : i - 1 : -1]
+    arr[i:] = arr[len(arr) - 1 : i - 1 : -1]
     return "".join(arr)
 
 

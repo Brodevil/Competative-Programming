@@ -36,12 +36,12 @@ def sockMerchant(n: int, ar: list) -> int:
     for _ in set(ar):
         count = ar.count(_)
         if count >= 2:
-            paires += (count//2)
+            paires += count // 2
 
     return paires
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     ar = list(map(int, input().rstrip().split()))

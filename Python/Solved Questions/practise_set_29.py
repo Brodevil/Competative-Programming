@@ -243,15 +243,14 @@ data = """
 def calculation(lst):
     for element in lst:
         for value in lst:
-            if element + value == 2020:     # this is part one answer
+            if element + value == 2020:  # this is part one answer
                 print(element * value)
 
             for vlaue2 in lst:
                 if element + value + vlaue2 == 2020:
-                    print(element*value*vlaue2)     # this will part 2 answer
+                    print(element * value * vlaue2)  # this will part 2 answer
 
 
 if __name__ == "__main__":
     data = list(map(int, data.split()))
     calculation(data)
-

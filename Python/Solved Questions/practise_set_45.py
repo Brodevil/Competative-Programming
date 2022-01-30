@@ -85,12 +85,13 @@ n = 6.
 # The function accepts INTEGER n as parameter.
 #
 
+
 def staircase(n):
     # Write your code here
-    [print(f"{' '*(n-_)}{'#'*_}") for _ in range(1, n+1)]
-        
+    [print(f"{' '*(n-_)}{'#'*_}") for _ in range(1, n + 1)]
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     n = int(input().strip())
 
     staircase(n)

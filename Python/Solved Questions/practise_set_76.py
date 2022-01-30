@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 21 August 2021 
+# Date = 21 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/circular-array-rotation/problem)
 
@@ -30,12 +30,12 @@ def circularArrayRotation(a: list, k: int, queries: list) -> list:
     k = k % n
     result = list()
     for _ in queries:
-        result.append(a[_-k])
-    
+        result.append(a[_ - k])
+
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

@@ -1,5 +1,5 @@
 # Python practise 15 - (Question from codewithharry) - Clear the clutter
-# Actaully we will work with file in clear the clutter folder which will be not avaiable in the, we had ignore it. AS we will working with fwe files and also to keep everython organized we had created that folder 
+# Actaully we will work with file in clear the clutter folder which will be not avaiable in the, we had ignore it. AS we will working with fwe files and also to keep everython organized we had created that folder
 # and inside that folder a main.py will going to handle everything, the file contain mp3 and mp4 file which can make a issue. So we ignore that directory
 # But the mine.py code will also availabe here bro
 
@@ -55,8 +55,10 @@ def clearClutter(path):
         if not os.path.exists(f"{os.path.join(path, folder.capitalize())}"):
             os.mkdir(f"{os.path.join(path, folder.capitalize())}")
         for file in files:
-            os.replace(os.path.join(path, file), f"{os.path.join(path, folder.capitalize(), file)}")
-            
+            os.replace(
+                os.path.join(path, file),
+                f"{os.path.join(path, folder.capitalize(), file)}",
+            )
 
 
 def isPathExistsToMakeFile(path):
@@ -73,15 +75,57 @@ def clearClutter2(path):
     isPathExistsToMakeFile("Codes")
     isPathExistsToMakeFile("Others")
 
-
-    images = ["Images",".jpg", ".png", ".jpeg", ".gif"]
-    code = ["Codes", ".py", ".c", ".cpp", ".htm", ".html", ".json", ".xml", '.gitignore', ".md", ".pyc", ".bat", ".java", ".r", ".env", "LICENSE"]
+    images = ["Images", ".jpg", ".png", ".jpeg", ".gif"]
+    code = [
+        "Codes",
+        ".py",
+        ".c",
+        ".cpp",
+        ".htm",
+        ".html",
+        ".json",
+        ".xml",
+        ".gitignore",
+        ".md",
+        ".pyc",
+        ".bat",
+        ".java",
+        ".r",
+        ".env",
+        "LICENSE",
+    ]
     media = ["Medias", ".mp3", ".mp4"]
-    docs = ["Docs", ".pptx", ".dot", ".docx", ".pdf", ".docm", ".dotx", ".rtf", ".txt", ".wps", ".xps", ".csv", ".xlsx", ".xlsm", ".xlsb", ".xltx", ".xltm", ".xls", ".xlt", ".xlam", ".xla", ".xlw", ".xlr"]
+    docs = [
+        "Docs",
+        ".pptx",
+        ".dot",
+        ".docx",
+        ".pdf",
+        ".docm",
+        ".dotx",
+        ".rtf",
+        ".txt",
+        ".wps",
+        ".xps",
+        ".csv",
+        ".xlsx",
+        ".xlsm",
+        ".xlsb",
+        ".xltx",
+        ".xltm",
+        ".xls",
+        ".xlt",
+        ".xlam",
+        ".xla",
+        ".xlw",
+        ".xlr",
+    ]
     typeFile = [images, code, media, docs]
     files = os.listdir(path)
     for file in files:
-        if file != "main.py":   # You can enter the name of this file so that this file will be no replaced and it will in that directory only
+        if (
+            file != "main.py"
+        ):  # You can enter the name of this file so that this file will be no replaced and it will in that directory only
             if os.path.isfile(file):
                 print(file)
                 for i in typeFile:
@@ -89,19 +133,21 @@ def clearClutter2(path):
                     print(os.path.splitext(file)[1])
                     if os.path.splitext(file)[1] in i:
                         print("Condition satisfied")
-                        os.replace(os.path.join(path, file), os.path.join(path, i[0], file))
+                        os.replace(
+                            os.path.join(path, file), os.path.join(path, i[0], file)
+                        )
                         break
 
                 try:
-                    os.replace(os.path.join(path, file), os.path.join(path, "Others", file))
+                    os.replace(
+                        os.path.join(path, file), os.path.join(path, "Others", file)
+                    )
                 except Exception as a:
                     print("Condition not satisfied")
                     print(a)
 
 
-
 if __name__ == "__main__":
     os.chdir(r"C:\Users\ADMIN\PycharmProjects\Practice Python\Clear The Clutter")
-    # clearClutter(os.getcwd()) 
+    # clearClutter(os.getcwd())
     clearClutter2(os.getcwd())
-

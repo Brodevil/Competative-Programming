@@ -19,12 +19,12 @@ And get the solved solution in python, here :}
 
 f = sorted
 for s in [*open(0)][2::2]:
-    *a, = map(int, s.split())
+    (*a,) = map(int, s.split())
     i = c = 0
     while a > f(a):
         j = i
-        while j < len(a)-1:
-            a[j:j+2] = f(a[j:j+2])
+        while j < len(a) - 1:
+            a[j : j + 2] = f(a[j : j + 2])
             j += 2
         c += 1
         i ^= 1

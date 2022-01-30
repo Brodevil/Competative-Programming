@@ -1,4 +1,4 @@
-# Python Practise 52 = 3D Surface Area (From hackerrank) 
+# Python Practise 52 = 3D Surface Area (From hackerrank)
 
 
 """
@@ -24,7 +24,6 @@ Problem statement : https://www.hackerrank.com/challenges/3d-surface-area/proble
 # The function accepts 2D_INTEGER_ARRAY A as parameter.
 
 
-
 def surfaceArea(A):
     # Write your code here
     area = 0
@@ -38,22 +37,21 @@ def surfaceArea(A):
             for dx, dy in neighs:
                 try:
                     # Raise index exception if trying to access index -1
-                    if -1 in [x+dx, y+dy]:
+                    if -1 in [x + dx, y + dy]:
                         raise IndexError
 
                     # Add area of actual element from neighbours as base
-                    new = el - A[x+dx][y+dy]
+                    new = el - A[x + dx][y + dy]
                     if new > 0:
                         area += new
                 # Add area corresponding to the sides of the figure
                 except IndexError:
                     area += el
-        
+
     return area
-    
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     H = int(first_multiple_input[0])

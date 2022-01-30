@@ -111,7 +111,5 @@ if __name__ == "__main__":
         if shoe_num in x and x[shoe_num]:
             money += rate
             x[shoe_num] -= 1
-        
-    print(money)
-        
 
+    print(money)

@@ -22,7 +22,9 @@ And then totale
 
 
 if __name__ == "__main__":
-    print("Welcome to the Indian Kirana shop keeper's Calculator python program \nKeep Entering your value you wants to add, And to stop the program and get result press 'q'")
+    print(
+        "Welcome to the Indian Kirana shop keeper's Calculator python program \nKeep Entering your value you wants to add, And to stop the program and get result press 'q'"
+    )
     totalSum = list()
     while True:
         value = input("Enter the value and press Enter :\t")
@@ -34,7 +36,7 @@ if __name__ == "__main__":
                 print(f"Order Total so far : {sum(totalSum)}\n")
             except ValueError:
                 print("Enter a league input that will a number or press q to quite.\n")
-        
+
     print(f"Your Bill total is: {sum(totalSum):>10}\nThank you for Shoping with us\n\n")
 
     print("Shree Ram's Shop Bill :")

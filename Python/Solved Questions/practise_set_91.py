@@ -12,7 +12,7 @@ And get the Solved solution in python by Brodevil, here :|
 
 
 # Author = Abhinav
-# Date = 6 September 2021 
+# Date = 6 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/taum-and-bday/problem)
 
@@ -33,16 +33,16 @@ And get the Solved solution in python by Brodevil, here :|
 def taumBday(b: int, w: int, bc: int, wc: int, z: int) -> int:
     # Write your code here
     if bc > wc + z:
-        return (b+w)*(wc) + b*z
-    
+        return (b + w) * (wc) + b * z
+
     elif wc > bc + z:
-        return (b+w)*(bc)+ w*z
-    
+        return (b + w) * (bc) + w * z
+
     else:
-        return (b*bc) + (w * wc)
+        return (b * bc) + (w * wc)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = int(input().strip())
 
     for t_itr in range(t):

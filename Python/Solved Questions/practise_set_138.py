@@ -31,12 +31,11 @@ def introTutorial(V: int, arr: list) -> int:
 
     # Still this is algorithm Learning Process I will do it myself
     result = [_ for _ in range(n) if arr[_] == V][0]
-    
+
     return result
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     V, n = int(input()), int(input())
     arr = list(map(int, input().rstrip().split()))
     result = introTutorial(V, arr)

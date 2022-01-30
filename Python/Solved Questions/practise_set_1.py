@@ -2,7 +2,7 @@
 """
 Your age in 2090
 """
-if __name__ == '__main__':
+if __name__ == "__main__":
     while True:
         age = input("Enter Your are or birth year : ")
         if age.isalpha():
@@ -21,9 +21,11 @@ if __name__ == '__main__':
 
         century = 100 - present_age
 
-        print(f'After {century} years your will be crossing your 100 years :\n')
+        print(f"After {century} years your will be crossing your 100 years :\n")
 
-        further_year = input("Optionally You can just Enter the year I can say your age in that particular year : \t")
+        further_year = input(
+            "Optionally You can just Enter the year I can say your age in that particular year : \t"
+        )
         if further_year == "":
             print("Okay as per your choice this will just optional :")
             break

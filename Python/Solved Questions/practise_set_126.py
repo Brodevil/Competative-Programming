@@ -20,4 +20,4 @@ And get the Solution, solved by me, here :}
 for _ in range(int(input())):
     n = int(input())
     for _ in range(n):
-        print("("*(n-_)+")"*(n-_)+"()"*_)
+        print("(" * (n - _) + ")" * (n - _) + "()" * _)

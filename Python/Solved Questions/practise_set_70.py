@@ -1,4 +1,4 @@
-# Practise set 70 =  The Hurdle Race (From Hackerrank) 
+# Practise set 70 =  The Hurdle Race (From Hackerrank)
 
 """
 The Hurdle Race | Problem Statement :
@@ -30,11 +30,10 @@ def hurdleRace(k: int, height: list) -> int:
     dose = sorted(height)[-1]
     if dose > k:
         return dose - k
-    return 0 
+    return 0
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

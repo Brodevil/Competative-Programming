@@ -20,4 +20,8 @@ And get the solution here, solved in python by me :}
 import re
 
 for _ in range(int(input())):
-    print('YES' if re.search(r'.*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*',input().strip()) else 'NO')
+    print(
+        "YES"
+        if re.search(r".*h.*a.*c.*k.*e.*r.*r.*a.*n.*k.*", input().strip())
+        else "NO"
+    )

@@ -40,7 +40,7 @@ import pyttsx3
 
 
 def speak(str):
-    engine = pyttsx3.init('sapi5')
+    engine = pyttsx3.init("sapi5")
     engine.say(str)
     engine.runAndWait()
 
@@ -48,7 +48,7 @@ def speak(str):
 def jumpble(firstNames, lastNames):
     jumpbledNames = list()
     for index, firstName in enumerate(firstNames):
-        name = f'{firstName.capitalize()} {choice(lastNames)[0]}'
+        name = f"{firstName.capitalize()} {choice(lastNames)[0]}"
         jumpbledNames.append(name)
     return jumpbledNames
 

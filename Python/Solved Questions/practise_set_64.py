@@ -30,14 +30,14 @@ def getMoneySpent(keyboards: list, drives: list, b: int):
         if board > b:
             continue
         for _ in drives:
-            cost = board + _ 
+            cost = board + _
             if cost <= b and cost > under_budget:
                 under_budget = cost
 
     return under_budget
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     bnm = input().split()
 
     b = int(bnm[0])
@@ -49,9 +49,9 @@ if __name__ == '__main__':
     keyboards = list(map(int, input().rstrip().split()))
 
     drives = list(map(int, input().rstrip().split()))
-    
+
     # The maximum amount of money she can spend on a keyboard and USB drive, or -1 if she can't purchase both items
-    
+
     moneySpent = getMoneySpent(keyboards, drives, b)
 
     print(moneySpent)

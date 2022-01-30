@@ -103,6 +103,7 @@ The proportions of occurrence are positive: 3/6 = 0.5000000, negative: 2/6 = 0.3
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
 
+
 def plusMinus(arr):
     # Write your code here
     lenght = len(arr)
@@ -123,7 +124,7 @@ def plusMinus(arr):
     print(f"{zero/lenght:.6f}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))

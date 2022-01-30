@@ -1,4 +1,4 @@
-# Python practise 19 (From Hackerrank) = 
+# Python practise 19 (From Hackerrank) =
 
 """
 Given the names and grades for each student in a class of N students, store them in a nested list and print the name(s) of any student(s)
@@ -67,7 +67,7 @@ so we order their names alphabetically and print each name on a new line.
 # Motive = Just for the python practise to not just learn python also to expert it
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
     marks = [[input(), float(input())] for _ in range(n)]
 

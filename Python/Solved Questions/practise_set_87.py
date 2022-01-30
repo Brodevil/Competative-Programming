@@ -11,7 +11,7 @@ And get the solved solution in python By Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 1 September 2021 
+# Date = 1 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem)
 
@@ -25,16 +25,16 @@ And get the solved solution in python By Brodevil, here :|
 
 
 def jumpingOnClouds(c: list) -> int:
-    x,y = 0,0
-    while x < len(c)-2:
-        x = x + 1 if c[x+2] else x + 2
+    x, y = 0, 0
+    while x < len(c) - 2:
+        x = x + 1 if c[x + 2] else x + 2
         y += 1
-    if x < len(c)-1:
+    if x < len(c) - 1:
         y += 1
     return y
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     c = list(map(int, input().rstrip().split()))

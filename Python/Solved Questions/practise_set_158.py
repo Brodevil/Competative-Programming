@@ -21,7 +21,7 @@ for _ in range(int(input())):
     x = int(input().split()[0])
     arr.append(x)
 
-fq = [0]*100
+fq = [0] * 100
 for _ in arr:
     fq[_] += 1
 

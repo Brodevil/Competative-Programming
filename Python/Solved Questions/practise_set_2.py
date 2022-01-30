@@ -35,12 +35,14 @@ except ValueError:
 if mn == mx:
     print("This is nor a range and minimul and maximum : ")
     exit()
-    
+
 if mn > mx:
-    print("Not a expected range okay, minimal is greater then maximum it should be small then maximum range : ")
+    print(
+        "Not a expected range okay, minimal is greater then maximum it should be small then maximum range : "
+    )
     exit()
 
-for i in range(mn, mx+1):
+for i in range(mn, mx + 1):
     if n % i == 0:
         print(f"{i} is divisor of {n}")
     else:

@@ -29,10 +29,10 @@ And the solution here : |
 
 def birthday(s: list, d: int, m: int):
     # Write your code here
-    return sum([1 for _ in range(len(s)) if sum(s[_:_+m]) == d])
+    return sum([1 for _ in range(len(s)) if sum(s[_ : _ + m]) == d])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     s = list(map(int, input().rstrip().split()))

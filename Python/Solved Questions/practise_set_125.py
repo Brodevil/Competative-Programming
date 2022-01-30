@@ -19,7 +19,7 @@ And get the solved solution in python, here :}
 
 from math import ceil, log2
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     t = int(input())
-    n = ceil(log2(1+t / 3))
-    print(3 * (2**n - 1) - t + 1)
+    n = ceil(log2(1 + t / 3))
+    print(3 * (2 ** n - 1) - t + 1)

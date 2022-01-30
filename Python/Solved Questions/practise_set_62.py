@@ -31,10 +31,10 @@ And get the solved solution in python here :|
 
 def pageCount(n: int, p: int):
     # Write your code here
-    return int(min(p/2, n/2-p/2))
+    return int(min(p / 2, n / 2 - p / 2))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input().strip())
 
     p = int(input().strip())

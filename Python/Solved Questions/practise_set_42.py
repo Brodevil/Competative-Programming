@@ -79,4 +79,3 @@ if __name__ == "__main__":
             happiness -= 1
 
     print(happiness)
-

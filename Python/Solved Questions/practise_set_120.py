@@ -20,9 +20,9 @@ And get the solved solution in python, here :|
 for _ in range(int(input())):
     n = int(input())
     x_axis, y_axis = input(), input()
-    
+
     for i, j in zip(x_axis, y_axis):
-        if i == '1' and j == '1':
+        if i == "1" and j == "1":
             print("NO")
             break
     else:

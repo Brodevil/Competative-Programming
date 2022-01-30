@@ -45,10 +45,11 @@ hACKERrANK.COM PRESENTS "pYTHONIST 2".
 # Date = 26 April 2021
 # Motive = Just for the python practise to not just learn python also to expert it
 
+
 def swap_case(s):
     return s.swapcase()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = swap_case(input())
     print(result)

@@ -31,7 +31,7 @@ def solve(array: list) -> str:
             largest = ans
         elif _ == 0:
             largest = ans
-    
+
     return f"{largest:.9f}"
 
 

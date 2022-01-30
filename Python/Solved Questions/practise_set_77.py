@@ -11,7 +11,7 @@ And get the solution in python by Brodevil here :|
 """
 
 # Author = Abhinav
-# Date = 22 August 2021 
+# Date = 22 August 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [Hackerrank](https://www.hackerrank.com/challenges/permutation-equation/problem)
 
@@ -26,10 +26,10 @@ And get the solution in python by Brodevil here :|
 
 
 def permutationEquation(p: list) -> list:
-    return [p.index(p.index(_)+1)+1 for _ in sorted(p)]
+    return [p.index(p.index(_) + 1) + 1 for _ in sorted(p)]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     input()
     p = list(map(int, input().rstrip().split()))
 

@@ -18,19 +18,20 @@ And get the solution, solved by me, here :}
 # Solution :
 
 from sys import stdin
+
 input = stdin.readline
 
 for _ in range(int(input())):
     n = int(input())
     a = [bin(int(x))[::-1] for x in input().split()]
-    
-    l = [0]*33
+
+    l = [0] * 33
     for num in a:
         for i, char in enumerate(num):
-            l[i] += char=='1'
-    
+            l[i] += char == "1"
+
     ans = []
-    for i in range(1, n+1):
-        if all(x%i == 0 for x in l):
+    for i in range(1, n + 1):
+        if all(x % i == 0 for x in l):
             ans.append(i)
     print(*ans)

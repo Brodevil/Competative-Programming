@@ -27,14 +27,15 @@ And the Solution here |
 from functools import reduce
 from math import gcd
 
+
 def getTotalX(a: list, b: list):
     # Write your code here
-    lcm_a = reduce(lambda x,y: x*y//gcd(x,y), a)
+    lcm_a = reduce(lambda x, y: x * y // gcd(x, y), a)
     gcd_b = reduce(gcd, b)
-    return (sum(1 for x in range(lcm_a,gcd_b+1,lcm_a) if gcd_b%x==0))
+    return sum(1 for x in range(lcm_a, gcd_b + 1, lcm_a) if gcd_b % x == 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

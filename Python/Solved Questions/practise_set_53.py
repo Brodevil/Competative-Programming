@@ -34,15 +34,15 @@ And solution here |
 
 def kangaroo(x1, v1, x2, v2):
     for _ in range(10000):
-       x1 += v1 
-       x2 += v2
-       if x1 == x2:
-           return "YES"
+        x1 += v1
+        x2 += v2
+        if x1 == x2:
+            return "YES"
     else:
-        return 'NO'
+        return "NO"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     x1 = int(first_multiple_input[0])

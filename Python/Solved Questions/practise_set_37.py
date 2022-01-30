@@ -44,14 +44,12 @@ Chris Alan
 # Purpose = Just for the python practise to not just learn python also to expert it
 
 
-
 def solve(s):
     for x in s[:].split():
         s = s.replace(x, x.capitalize())
     return s
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
     print(solve(s))
-

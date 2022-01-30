@@ -19,6 +19,6 @@ And get the solution here, solved in python by me :}
 
 for _ in range(int(input())):
     s, n = map(int, input().split())
-    for i in range((n-1)//4*4+1, n+1):
-        s += i if s%2 else -i
+    for i in range((n - 1) // 4 * 4 + 1, n + 1):
+        s += i if s % 2 else -i
     print(s)

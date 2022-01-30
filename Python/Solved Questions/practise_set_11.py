@@ -39,8 +39,7 @@ Sample Output 0:
 # Pourpose = From the hacker rank picked the question for python practise
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     n = int(input())
-    lis = [str(i) for i in range(1, n+1)]
+    lis = [str(i) for i in range(1, n + 1)]
     print("".join(lis))

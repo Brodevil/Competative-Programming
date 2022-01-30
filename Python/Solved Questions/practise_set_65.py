@@ -1,4 +1,4 @@
-# Python Practise 65 = Cats and a Mouss (From hackerrank) 
+# Python Practise 65 = Cats and a Mouss (From hackerrank)
 
 
 """
@@ -22,19 +22,18 @@ And get the solved solution in python by Brodevil here :|
 
 
 def catAndMouse(x: int, y: int, z: int):
-    catA = abs(x-z)
-    catB = abs(y-z)
-    
+    catA = abs(x - z)
+    catB = abs(y - z)
+
     if catA < catB:
         return "Cat A"
     elif catA > catB:
         return "Cat B"
     elif catA == catB:
         return "Mouse C"
-    
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     q = int(input())
 
     for q_itr in range(q):

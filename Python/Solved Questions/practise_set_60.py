@@ -20,7 +20,6 @@ Bill Division | Problem Statment :
 # Solution :
 
 
-
 #!/bin/python3
 
 # Complete the 'bonAppetit' function below.
@@ -32,10 +31,10 @@ Bill Division | Problem Statment :
 
 
 def bonAppetit(bill: list, k: int, b: int):
-    print('Bon Appetit' if (sum(bill) - bill[k]) // 2 == b else bill[k] // 2)
+    print("Bon Appetit" if (sum(bill) - bill[k]) // 2 == b else bill[k] // 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_multiple_input = input().rstrip().split()
 
     n = int(first_multiple_input[0])

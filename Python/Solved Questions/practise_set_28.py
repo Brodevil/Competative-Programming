@@ -76,9 +76,9 @@ if __name__ == "__main__":
     lis = list()
     for i in range(int(input())):
         n, m, k = list(map(int, input().split()))
-        if n*m-1 == k:
+        if n * m - 1 == k:
             lis.append("Yes")
         else:
             lis.append("No")
     for i in lis:
-        print(i) 
+        print(i)

@@ -20,7 +20,7 @@ Note : Use functions
 
 def factorial(number):
     """A function to just create a list of factorial and return it, I contain in both way that is iterative and recursive"""
-   
+
     # recursive
     # if number == 1 or number == 0:
     #     return 1
@@ -29,29 +29,30 @@ def factorial(number):
 
     # iterative- returning a list so that we can trailing zero's
     factorials = [1]
-    for i in range(1, number+1):
-        factorials.append(factorials[i-1]*i)
+    for i in range(1, number + 1):
+        factorials.append(factorials[i - 1] * i)
     del factorials[0]
     return factorials
-
 
 
 def trailingZero(factorialList):
     """This functions trailing Zeros form the factorils list and returning the list of factorils containging zeros"""
     Zeros = list()
     for i in factorialList:
-        if '0' in str(i):
+        if "0" in str(i):
             Zeros.append(i)
     return Zeros
+
 
 def factorialTrailiingZero(number):
     """This is another solution for the haary bhai and this is finding the 5 as 5 will come to 10 multiple containing 0"""
     count = 0
     i = 5
-    while(number/i != 0):
-        count += int(number/i)
+    while number / i != 0:
+        count += int(number / i)
         i += 5
     return count
+
 
 if __name__ == "__main__":
     try:
@@ -59,7 +60,7 @@ if __name__ == "__main__":
     except ValueError:
         print("Enter a league input that will a number ")
         exit()
-    
+
     # Factorial caculation part 1
     print(f"\nFollowing are the factorials of {number} :")
     numberFactorial = factorial(number)
@@ -73,4 +74,3 @@ if __name__ == "__main__":
     for i in trailedZero:
         print(i)
     print(f"\nTotal {len(trailedZero)} number are trailing Zeros")
-

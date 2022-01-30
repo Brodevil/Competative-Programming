@@ -11,7 +11,7 @@ And get the solved solution in python by Brodevil, here :|
 """
 
 # Author = Abhinav
-# Date = 14 September 2021 
+# Date = 14 September 2021
 # Pourpose = Just for practise and imporving skills
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/encryption/problem)
 
@@ -19,10 +19,10 @@ And get the solved solution in python by Brodevil, here :|
 
 from math import sqrt, floor, ceil
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = input()
-    s = s.replace(" ","")
+    s = s.replace(" ", "")
     r = floor(sqrt(len(s)))
     c = ceil(sqrt(len(s)))
     for i in range(c):
-        print(s[i::c],end=" ")
+        print(s[i::c], end=" ")

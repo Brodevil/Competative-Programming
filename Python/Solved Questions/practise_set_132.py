@@ -27,26 +27,26 @@ for i in range(0, int(input())):
 
     for i in range(0, n):
         thegrid.append(input())
-    
+
     n, c = map(int, input().split())
     subgrid = list()
 
     for i in range(0, n):
         subgrid.append(input())
-    
+
     found = False
 
     for i in range(0, len(thegrid)):
         for j in range(0, len(subgrid)):
             if subgrid[j] in thegrid[i + j]:
-                if (j == len(subgrid)-1):
+                if j == len(subgrid) - 1:
                     found = True
-                    print ("YES")
+                    print("YES")
                     break
                 continue
             else:
                 break
             break
-    
+
     if not found:
-        print ("NO")
+        print("NO")

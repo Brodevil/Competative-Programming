@@ -27,11 +27,11 @@ def utopianTree(n: int) -> int:
             height = height * 2
         else:
             height += 1
-    
+
     return height
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # t = int(input().strip())
 
     # for t_itr in range(t):

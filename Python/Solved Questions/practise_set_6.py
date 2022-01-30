@@ -62,14 +62,19 @@ def num_checker(actual_num, check_num):
 
 
 def result(player_dict):
-    player_dic = {player_dict[key]:key for key in player_dict}
+    player_dic = {player_dict[key]: key for key in player_dict}
     return f"\n{player_dic[sorted(player_dict.values())[0]]} Won As He/She tooked only {sorted(player_dict.values())[0]} Guess to guess the number\n\n"
 
 
 if __name__ == "__main__":
     while True:
         try:
-            players = {i: 1 for i in input("Enter the name of the playser by putting comma ', ' :\t").split(", ")}
+            players = {
+                i: 1
+                for i in input(
+                    "Enter the name of the playser by putting comma ', ' :\t"
+                ).split(", ")
+            }
             a = int(input("Enter the value of a i.e. first number of Range : \t"))
             b = int(input("Enter the value of b i.e second number of Range : \t "))
         except ValueError:
