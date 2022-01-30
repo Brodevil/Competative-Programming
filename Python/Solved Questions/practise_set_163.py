@@ -57,12 +57,8 @@ def merge_sort(arr):
     return inversion_count
 
 
-def inversions(arr):
-    return merge_sort(arr)
-
-
 for _ in range(int(input())):
     n = input()
     arr = list(map(int, input().split()))
-    counts = inversions(arr)
+    counts = merge_sort(arr)
     print(counts)
