@@ -21,9 +21,8 @@ for _ in range(int(input())):
     a = list(map(int, input().split()))
     b = list(map(int, input().split()))
     
-    a_copy, b_copy = a.copy(), b.copy()
+    for i in range(n):
+        if a[i] < b[i]:
+            a[i], b[i] = b[i], a[i]
     
-    for _ in range(n):
-        a_max, b_max = max(a_copy), max(b_copy)
-        
-        
+    print(max(a) * max(b))
