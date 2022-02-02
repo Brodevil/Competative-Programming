@@ -10,7 +10,7 @@ And get the solution here, solved in python by me :}
 """
 
 # Author = Abhinav
-# Date = 1 February 2022
+# Date = 2 February 2022
 # Pourpose = Just for practise and imporving skills
 # Source =  [CodeForces](https://codeforces.com/problemset/problem/1631/B)
 
