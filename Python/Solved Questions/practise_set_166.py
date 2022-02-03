@@ -1,9 +1,9 @@
-# Competative Programming Question 165 = C. And Matching (From CodeForces)
+# Competative Programming Question 165 = K-Goodness String (5pts, 7pts) (From Google KickStart 2021)
 
 """
-C. And Matching |
+K-Goodness String (5pts, 7pts) |
 
-Get the Problem Statement on CodeForces : https://codeforces.com/problemset/problem/1631/C
+Get the Problem Statement on CodeForces : https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cca3
 
 And get the solution here, solved in python by me :}
 
@@ -12,6 +12,6 @@ And get the solution here, solved in python by me :}
 # Author = Abhinav
 # Date = 3 February 2022
 # Pourpose = Just for practise and imporving skills
-# Source =  [CodeForces](https://codeforces.com/problemset/problem/1631/C)
+# Source =  [CodeForces](https://codingcompetitions.withgoogle.com/kickstart/round/0000000000436140/000000000068cca3)
 
 # Solution :
