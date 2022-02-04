@@ -19,3 +19,11 @@ And get the solution here, solved in python by me :}
 for _ in range(int(input())):
     n, k = map(int, input().split())
     s = input()
+    score = 0
+
+    for _ in range(1, n+1):
+        if s[_] != s[n-i+1]:
+            score += 1
+
+
+    print(score)
