@@ -21,9 +21,8 @@ for _ in range(int(input())):
     s = input()
     score = 0
 
-    for _ in range(1, n+1):
-        if s[_] != s[n-i+1]:
+    for _ in range(n//2):
+        if s[_] != s[n-_-1]:
             score += 1
 
-
-    print(score)
+    print(f"Case #{_+1}: {abs(score-k)}")
