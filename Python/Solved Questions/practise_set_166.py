@@ -16,7 +16,7 @@ And get the solution here, solved in python by me :}
 
 # Solution :
 
-for _ in range(int(input())):
+for i in range(int(input())):
     n, k = map(int, input().split())
     s = input()
     score = 0
@@ -25,4 +25,4 @@ for _ in range(int(input())):
         if s[_] != s[n-_-1]:
             score += 1
 
-    print(f"Case #{_+1}: {abs(score-k)}")
+    print(f"Case #{i+1}: {abs(score-k)}")
