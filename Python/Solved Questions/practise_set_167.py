@@ -16,7 +16,6 @@ And get the solution here, solved in python by me :}
 
 # Solution :
 
-
 def count(g):
     h, w = len(g), len(g[0])
 
@@ -46,4 +45,3 @@ if __name__ == '__main__':
         r, c = map(int, input().split())
         grid = [list(map(int, input().split()) for _ in range(r)]
         print(f'Case #{_ + 1}: {count(grid)}')
-
