@@ -43,5 +43,5 @@ def count(g):
 if __name__ == '__main__':
     for _ in range(int(input())):
         r, c = map(int, input().split())
-        grid = [list(map(int, input().split()) for _ in range(r)]
+        grid = [list(map(int, input().split())) for _ in range(r)]
         print(f'Case #{_ + 1}: {count(grid)}')
