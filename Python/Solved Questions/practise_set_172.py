@@ -15,3 +15,19 @@ And get the solution here, solved in python by me :}
 # Source =  [HackerRank](https://www.hackerrank.com/challenges/game-of-thrones/problem)
 
 # Solution :
+
+from collections import Counter
+
+s = input()
+s = dict(Counter(s))
+n = False
+
+for item, no in s.items():
+    if no % 2 != 0 and n:
+        print("NO")
+        break
+    elif no % 2 != 0 and not n:
+        n = True
+else:
+    print("YES")
+
