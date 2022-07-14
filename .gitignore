@@ -17,3 +17,5 @@ __pycached__/
 *io 
 *.log
 .ipynb_checkpoints/
+
+*.exe
