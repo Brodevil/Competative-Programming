@@ -43,6 +43,10 @@
     "files.autoSave": "afterDelay",
     "python.jediEnabled": true,
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": false
+    "python.linting.enabled": false,
+    "files.associations": {
+        "vector": "cpp",
+        "algorithm": "cpp"
+    }
     
 }
