@@ -46,7 +46,8 @@
     "python.linting.enabled": false,
     "files.associations": {
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "iostream": "cpp"
     }
     
 }
