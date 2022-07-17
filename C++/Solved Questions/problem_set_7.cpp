@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include <vector>
-#include <sstream>
 
 using namespace std;
 
@@ -20,10 +19,11 @@ int main()
     vector<vector<int>> arr(n);
     for (int i = 0; i < n; i++)
     {
-        int length;
-        cin >> length;
-        arr[i].resize(length);
-        for (int j = 0; j < length; j++)
+        int len;
+        cin >> len;
+        arr[i].resize(len);
+        
+        for (int j = 0; j < len; j++)
         {
             cin >> arr[i][j];
         }
