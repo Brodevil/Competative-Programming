@@ -17,31 +17,23 @@ int main()
     int n, q;
     cin >> n >> q;
 
-    vector<vector<int>> arr;
-    vector<int> temp;
-    string input;
-
+    vector<vector<int>> arr(n);
     for (int i = 0; i < n; i++)
     {
-        cin >> input;
-        getline(cin, input);
-        istringstream is(input);
-        int num;
-        while (is >> num)
+        int length;
+        cin >> length;
+        arr[i].resize(length);
+        for (int j = 0; j < length; j++)
         {
-            temp.push_back(num);
+            cin >> arr[i][j];
         }
-        temp.erase(temp.begin());
-        arr[i] = temp;
-        temp.clear();      
-        
     }
 
-    int i, k;
-    for (int i = 0; i < q; i++)
+    for (int k = 0; k < q; k++)
     {
-        cin >> i >> k;
-        cout<<arr[i][k];
+        int i, j;
+        cin >> i >> j;
+        cout << arr[i][j] << endl;
     }
 
     return 0;
